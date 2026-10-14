@@ -244,7 +244,7 @@ export async function fetchSignalsForDate(
     WHERE score >= 70
       AND visibility = 'public'
       AND timeline_at::date = ${dateStr}::date
-    ORDER BY score DESC, timeline_at DESC;
+    ORDER BY score DESC, timeline_at DESC
   `;
   return rows;
 }
@@ -263,9 +263,42 @@ export async function fetchAvailableDates(
     WHERE score >= 70
       AND visibility = 'public'
     GROUP BY 1
-    ORDER BY 1 DESC;
+    ORDER BY 1 DESC
   `;
   return rows;
+}
+
+/**
+ * Record delivery state into PostgreSQL deliveries table atomically with deduplication.
+ */
+export async function recordDeliveries(
+  sql: postgres.Sql,
+  items: PublicationItem[],
+  commitSha: string,
+  dateStr: string
+): Promise<number> {
+  if (items.length === 0) return 0;
+
+  let count = 0;
+  await sql.begin(async (tx) => {
+    await tx`
+      INSERT INTO notify_targets (key, purpose, kind, enabled, note)
+      VALUES ('github-daily', 'content', 'log', true, 'GitHub louis-cai/daily-indie-radar')
+      ON CONFLICT (key) DO UPDATE SET enabled = true, updated_at = now()
+    `;
+
+    for (const item of items) {
+      const dedupeKey = `github-${dateStr}-${item.article_id}`;
+      await tx`
+        INSERT INTO deliveries (target_key, subject_kind, subject_id, dedupe_key, status, response, sent_at)
+        VALUES ('github-daily', 'selected', ${item.article_id}, ${dedupeKey}, 'sent', ${commitSha}, now())
+        ON CONFLICT (target_key, dedupe_key) DO UPDATE SET response = EXCLUDED.response, updated_at = now()
+      `;
+      count++;
+    }
+  });
+
+  return count;
 }
 
 /**
@@ -360,7 +393,14 @@ export async function runSync(options: SyncOptions = {}) {
       console.log(
         `[Indie Radar Sync] Idempotency check: Working tree clean. No changes to commit.`
       );
-      return { committed: false, clean: true };
+      const currentSha = execSync("git rev-parse HEAD", {
+        cwd: projectRoot,
+        encoding: "utf8",
+      }).trim();
+      if (showcaseItems.length > 0) {
+        await recordDeliveries(sql, showcaseItems, currentSha, showcaseDate);
+      }
+      return { committed: false, clean: true, commitSha: currentSha };
     }
 
     console.log(`[Indie Radar Sync] Detected changes in working tree:\n${statusOutput}`);
@@ -382,6 +422,12 @@ export async function runSync(options: SyncOptions = {}) {
       execSync("git push origin main", { cwd: projectRoot, stdio: "inherit" });
     }
     console.log(`[Indie Radar Sync] Push completed successfully.`);
+
+    if (showcaseItems.length > 0) {
+      console.log(`[Indie Radar Sync] Recording ${showcaseItems.length} delivery records in PostgreSQL...`);
+      await recordDeliveries(sql, showcaseItems, commitSha, showcaseDate);
+      console.log(`[Indie Radar Sync] Deliveries recorded successfully.`);
+    }
 
     return { committed: true, commitSha };
   } finally {

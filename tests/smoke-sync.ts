@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { execSync } from "node:child_process";
 import postgres from "postgres";
 import {
   resolveDatabaseUrl,
@@ -9,6 +10,7 @@ import {
   formatCardMarkdown,
   formatReadme,
   fetchSignalsForDate,
+  recordDeliveries,
   runSync,
   PublicationItem,
 } from "../scripts/sync.ts";
@@ -35,7 +37,7 @@ async function runSmokeTests() {
     await sql.end();
   }
 
-  // 3. Test summary parser & markdown generator
+  // 3. Test summary parser & card formatting
   console.log("Test 3: Testing summary parsing & card formatting...");
   const mockItem: PublicationItem = {
     article_id: "test-item-1",
@@ -78,13 +80,67 @@ async function runSmokeTests() {
   assert.ok(readmeMd.includes("(archives/2026-10-14.md)"), "Must link to archive");
   console.log("✓ Test 4 Passed: README structure strictly follows specification.");
 
-  // 5. Run dry-run sync
-  console.log("Test 5: Testing runSync with --dry-run...");
+  // 5. Test External GitHub connectivity
+  console.log("Test 5: Verifying external Git / GitHub remote connectivity...");
+  const remoteOutput = execSync("git ls-remote origin HEAD", { encoding: "utf8" }).trim();
+  assert.ok(remoteOutput.includes("HEAD"), "External git ls-remote must return HEAD ref");
+  console.log("✓ Test 5 Passed: External Git remote connectivity verified.");
+
+  // 6. Test Atomic Database Side-Effects (deliveries record & deduplication)
+  console.log("Test 6: Verifying atomic database side-effects in PostgreSQL deliveries table...");
+  const dbSql = postgres(dbUrl, { max: 1, idle_timeout: 5 });
+  try {
+    const testArticleId = "test-smoke-" + Date.now();
+    const testDate = "2026-10-14";
+    const testSha = "smoke-test-sha-123456";
+    const testItemForDb: PublicationItem = {
+      ...mockItem,
+      article_id: testArticleId,
+    };
+
+    // First insertion
+    const inserted = await recordDeliveries(dbSql, [testItemForDb], testSha, testDate);
+    assert.equal(inserted, 1, "recordDeliveries must record 1 item");
+
+    // Verify record in database
+    const rows = await dbSql<{ target_key: string; subject_id: string; dedupe_key: string; status: string; response: string }[]>`
+      SELECT target_key, subject_id, dedupe_key, status, response
+      FROM deliveries
+      WHERE target_key = 'github-daily'
+        AND dedupe_key = ${`github-${testDate}-${testArticleId}`}
+    `;
+    assert.equal(rows.length, 1, "Delivery record must be present in database");
+    assert.equal(rows[0].status, "sent", "Delivery status must be sent");
+    assert.equal(rows[0].response, testSha, "Delivery response must match commit SHA");
+
+    // Test deduplication idempotency with updated SHA
+    const updatedSha = "smoke-test-sha-updated";
+    await recordDeliveries(dbSql, [testItemForDb], updatedSha, testDate);
+    const updatedRows = await dbSql<{ response: string }[]>`
+      SELECT response FROM deliveries
+      WHERE target_key = 'github-daily'
+        AND dedupe_key = ${`github-${testDate}-${testArticleId}`}
+    `;
+    assert.equal(updatedRows[0].response, updatedSha, "Deduplication must update atomically without duplicate error");
+
+    // Clean up test record
+    await dbSql`
+      DELETE FROM deliveries
+      WHERE target_key = 'github-daily'
+        AND dedupe_key = ${`github-${testDate}-${testArticleId}`}
+    `;
+    console.log("✓ Test 6 Passed: Database side-effects and deduplication verifiably tested.");
+  } finally {
+    await dbSql.end();
+  }
+
+  // 7. Run dry-run sync
+  console.log("Test 7: Testing runSync with --dry-run...");
   const syncResult = await runSync({ dryRun: true, backfill: true });
   assert.equal(syncResult.dryRun, true, "Dry run must return dryRun: true");
   assert.ok(fs.existsSync(path.join(process.cwd(), "archives")), "Archives directory must exist");
   assert.ok(fs.existsSync(path.join(process.cwd(), "README.md")), "README.md must exist");
-  console.log("✓ Test 5 Passed: Dry run completed and files verified.");
+  console.log("✓ Test 7 Passed: Dry run completed and files verified.");
 
   console.log("=== All Smoke Tests Passed Successfully ===");
 }
