@@ -1,0 +1,28 @@
+{
+  "name": "daily-indie-radar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daily sync of curated indie-hacker signals from the Indie Radar PostgreSQL database to this public GitHub repository.",
+  "type": "module",
+  "scripts": {
+    "sync": "tsx scripts/sync.ts",
+    "sync:dry": "tsx scripts/sync.ts --dry-run",
+    "test": "tsx tests/smoke-sync.ts"
+  },
+  "keywords": [
+    "indie-hackers",
+    "daily-digest",
+    "curated",
+    "open-source"
+  ],
+  "license": "MIT",
+  "packageManager": "pnpm@10.25.0",
+  "dependencies": {
+    "postgres": "^3.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
