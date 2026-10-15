@@ -6,47 +6,53 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-14
+## 今日精选 (Today's Top Signals) · 2026-10-15
 
-### 1. [Agent HUD 开源：在 Mac 刘海显示 Claude Code 等 17 个 agent 的额度与批准请求](https://www.v2ex.com/t/1248801#reply0)
+### 1. [Liquid AI 开源 LFM2.5-24B-A2B：24B 参数仅 2B 激活，主打快速端侧 Agent](https://www.liquid.ai/blog/lfm2-5-24b-a2b)
 
-- **原标题 / Original**: [开源] Agent HUD：把 Claude Code / Codex 等 17 个 agent 的额度和批准请求放在 Mac 刘海或屏幕边上
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款 Mac 开源应用 Agent HUD，把 17 个 AI agent 的额度用量和批准请求显示在刘海或屏幕边缘，不用切窗口。
-- **💰 商业模式与变现 / Business Logic**: 解决开发者同时跑多个 agent 时不知道额度还剩多少、哪个在等批准的痛点，到 90% 或按当前速率撑不到重置时提醒一次。
-- **🎯 推荐与借鉴 / Takeaway**: 作者开源了一款把 AI agent 额度和批准请求常驻 Mac 刘海的工具，解决多 agent 并行时切窗口盯进度的痛点，工程实现思路可借鉴。
+- **原标题 / Original**: LFM2.5-24B-A2B: Built for fast on-device agents
+- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#模型发布` `#开源/仓库` `#AI工具` `#独立开发`
+- **💡 核心概要 / What It Is**: Liquid AI 发布 LFM2.5 系列最大也是最后的模型 LFM2.5-24B-A2B，24B 总参数、每 token 仅激活 2B 的推理模型，专为端侧 Agent 设计。
 
-### 2. [两张照片生成对口型说唱视频站上线：作者复盘 Next.js、任务队列与 Stripe 真实踩坑](https://www.v2ex.com/t/1248586#reply0)
+### 2. [OpenNavo 开源：基于 Homebrew 的 macOS 图形应用商店，探索由 Agent 负责维护迭代](https://www.v2ex.com/t/1248977#reply2)
 
-- **原标题 / Original**: 做了个"两张照片生成对口型视频"的站，记录几个真踩过的坑
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#实操指南` `#独立开发` `#出海` `#Stripe` `#Next.js` `#V2EX` `#Vercel`
-- **💡 核心概要 / What It Is**: 一款上传两张人脸照片、选固定场景模板即可生成两人说唱视频的网站，照片为必填输入，非文生视频。
-- **🎯 推荐与借鉴 / Takeaway**: 作者发布照片生成说唱视频站，并把生产环境真实踩过的坑逐一复盘，对独立开发者部署和支付环节有直接警示价值。
+- **原标题 / Original**: 做了一个完全开源的 Homebrew 应用商店 OpenNavo，尝试让 Agent 负责整个项目的维护和迭代
+- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#AI工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: OpenNavo 是一个完全开源的 macOS Homebrew 图形化应用商店，整合软件发现、安装、更新和卸载，底层仍使用 Homebrew，不托管安装包。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享开源 Homebrew 图形商店并尝试由 AI Agent 承担大部分维护，对个人开发者降低长期维护成本有工程参考价值。
 
-### 3. [agent-penpal 开源：让两台机器上的 AI agent 自己联调对话](https://www.v2ex.com/t/1248774#reply0)
+### 3. [知了 OnIt 开源：长在钉钉里的 AI 邮件工作台，带企业画像与一键排期](https://www.v2ex.com/t/1248882#reply0)
 
-- **原标题 / Original**: 联调时我当了太久人肉快递员，最后让两个 agent 自己聊上了
+- **原标题 / Original**: 嫌弃网页 AI 只有假大空润色：我写了个长在钉钉里的邮件工作台，带企业画像拆意图、左写信右 AI 双向同步、一键排期开会
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发` `#移动端` `#出海` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 独立开发者开源的邮件工作台知了 OnIt，内嵌钉钉，提供 AI 伴随起草、企业画像拆解邮件意图、左编辑器右 AI 双向同步、一键建视频会议排期。【商业/痛点逻辑】针对原生邮箱 AI 只是假大空润色、独立聊天框 AI 割裂且来回复制、排期需跨 5 个软件人肉搬运三大痛点，让 AI 带着用户真实岗位身份写信，并直调钉钉接口建会、拉日程、向外商发 .ics 附件。
+- **🎯 推荐与借鉴 / Takeaway**: 作者从自身跨国邮件处理痛点出发开源了整套实现，本地化数据方案和 Mock 演示模式对独立开发者有工程借鉴价值。
+
+### 4. [Cloudflare 与 OpenAI 试点成果：帮助 ChatGPT 收录数亿新网页](https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/)
+
+- **原标题 / Original**: Cloudflare and OpenAI: making AI discovery better for everyone
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#Cloudflare` `#OpenAI`
+- **💡 核心概要 / What It Is**: Cloudflare 与 OpenAI 今年 7 月启动的 AI 发现研究试点公布早期结果，用 Cloudflare 网络信号帮助 OpenAI 搜索爬虫发现更多有价值网页。
+- **🎯 推荐与借鉴 / Takeaway**: 官方披露 Cloudflare 与 OpenAI 试点细节，站长可据此了解 AI 时代的站点发现机制与抓取控制方式。
+
+### 5. [Open Typora 开源发布 v0.5.2：直接编辑正文的开源 Markdown 编辑器](https://www.v2ex.com/t/1249106#reply0)
+
+- **原标题 / Original**: 做了一个开源 Markdown 编辑器 Open Typora：直接编辑正文，提供 macOS / Windows 安装包
 - **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#GitHub` `#CLI` `#V2EX`
-- **💡 核心概要 / What It Is**: agent-penpal 是一个让两台机器上的 AI agent 直接互相提问、回答的开源工具，免去开发者在中转复制日志和结论。
-- **💰 商业模式与变现 / Business Logic**: 解决联调时人肉当消息总线的痛点，云端与本地环境来回切换的成本。
-- **🎯 推荐与借鉴 / Takeaway**: 作者从自己人肉联调的真实痛点出发，给出让两台机器上的 agent 直接对话的开源方案，工程思路和痛点拆解都可借鉴。
-
-### 4. [开源 MCP 桥接工具字浮（CharFloat）：直接在本地 WPS 窗口实时编辑表格与文档](https://www.v2ex.com/t/1248738#reply0)
-
-- **原标题 / Original**: 受够了给 AI 上传表格格式全毁还被公司查合规，我手搓了一个在本地 WPS 窗口里实时干活的工具
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#独立开发` `#AI工具` `#开源/仓库` `#桌面端` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 字浮（CharFloat）是一款通过 MCP 协议连接本地办公软件的桥接引擎，能让 DeepSeek、Claude、Cursor 等 AI 客户端直接在本地正在运行的 WPS 窗口中增量编辑表格与文档。
-- **🎯 推荐与借鉴 / Takeaway**: 针对企业内网加密与表格格式损毁痛点，通过 MCP 协议联动本地办公进程做原地修改，为桌面 AI 落地提供了工程借鉴。
+- **标签 / Tags**: `#开源神器` `#独立开发` `#桌面端` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款受 Typora 行内编辑体验启发的开源 Markdown 桌面编辑器，点击排版后的正文即可修改，需要时可切换完整源码，文件保留为普通 .md，无需注册账号。
+- **🎯 推荐与借鉴 / Takeaway**: 作者开源了一款复刻 Typora 行内编辑体验的桌面编辑器，MIT 协议，适合关注本地 Markdown 工作流与桌面产品工程实现的读者参考。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-14 情报精选 (4 篇)](archives/2026-10-14.md)
+- [📅 2026-10-15 情报精选 (5 篇)](archives/2026-10-15.md)
+- [📅 2026-10-14 情报精选 (7 篇)](archives/2026-10-14.md)
 - [📅 2026-10-13 情报精选 (8 篇)](archives/2026-10-13.md)
 - [📅 2026-10-12 情报精选 (14 篇)](archives/2026-10-12.md)
 - [📅 2026-10-11 情报精选 (13 篇)](archives/2026-10-11.md)
