@@ -6,53 +6,78 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-15
+## 今日精选 (Today's Top Signals) · 2026-10-16
 
-### 1. [Liquid AI 开源 LFM2.5-24B-A2B：24B 参数仅 2B 激活，主打快速端侧 Agent](https://www.liquid.ai/blog/lfm2-5-24b-a2b)
+### 1. [SoloMCN 开源二更：让 Claude Code 把别人的 skill 沉淀成可复用的做法](https://www.v2ex.com/t/1249336#reply0)
 
-- **原标题 / Original**: LFM2.5-24B-A2B: Built for fast on-device agents
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#模型发布` `#开源/仓库` `#AI工具` `#独立开发`
-- **💡 核心概要 / What It Is**: Liquid AI 发布 LFM2.5 系列最大也是最后的模型 LFM2.5-24B-A2B，24B 总参数、每 token 仅激活 2B 的推理模型，专为端侧 Agent 设计。
+- **原标题 / Original**: 开源「一人 MCN」二更：把别人的 skill 丢进总控台， Claude Code 自己沉淀成一套做法，以后一直会做
+- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#独立开发` `#AI工具` `#开源/仓库` `#自动化` `#GitHub`
+- **💡 核心概要 / What It Is**: SoloMCN 是一个开源的「一人 MCN」工作台，让 Claude Code 从找热点到抖音发布全流程自动化。【商业/痛点逻辑】解决用别人的 skill 经验散落在聊天记录里、下次要从头来的问题：装进总控台后 Claude 自己写成做法技能，改动有逐行对比、可撤回，技能更新时可三方合并。
+- **🎯 推荐与借鉴 / Takeaway**: 项目把别人的 skill 沉淀成可复用、可对比撤回的流程资产，对管理 Claude Code 经验有工程借鉴价值。
 
-### 2. [OpenNavo 开源：基于 Homebrew 的 macOS 图形应用商店，探索由 Agent 负责维护迭代](https://www.v2ex.com/t/1248977#reply2)
+### 2. [hw-harness 开源：用 Claude Code 为无 Linux 驱动硬件逆向工程](https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/)
 
-- **原标题 / Original**: 做了一个完全开源的 Homebrew 应用商店 OpenNavo，尝试让 Agent 负责整个项目的维护和迭代
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#AI工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: OpenNavo 是一个完全开源的 macOS Homebrew 图形化应用商店，整合软件发现、安装、更新和卸载，底层仍使用 Homebrew，不托管安装包。
-- **🎯 推荐与借鉴 / Takeaway**: 作者分享开源 Homebrew 图形商店并尝试由 AI Agent 承担大部分维护，对个人开发者降低长期维护成本有工程参考价值。
+- **原标题 / Original**: Using AI to reverse engineer hardware
+- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发`
+- **💡 核心概要 / What It Is**: GNOME 开发者开源的 hw-harness，一套让 Claude 或 Codex 会话在 KVM 虚拟机里运行 Windows 厂商驱动、用 usbmon 在宿主机抓包并 diff 两条轨迹，从而为无 Linux 支持的硬件写出驱动的通用工具。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享用 Claude Code 逆向工程无 Linux 驱动硬件的完整工作流，开源的 hw-harness 提供可复用的 USB 抓包对比方法。
 
-### 3. [知了 OnIt 开源：长在钉钉里的 AI 邮件工作台，带企业画像与一键排期](https://www.v2ex.com/t/1248882#reply0)
+### 3. [开源「一人 MCN」SoloMCN 更新：一句话让 Claude Code 学会做动画并沉淀成 skill](https://www.v2ex.com/t/1249343#reply0)
 
-- **原标题 / Original**: 嫌弃网页 AI 只有假大空润色：我写了个长在钉钉里的邮件工作台，带企业画像拆意图、左写信右 AI 双向同步、一键排期开会
+- **原标题 / Original**: 开源「一人 MCN」更新：一句话让 Claude Code 学会做动画，做法自动沉淀成 skill，以后一直会做
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#自动化` `#独立开发` `#GitHub` `#Anthropic` `#V2EX`
+- **💡 核心概要 / What It Is**: SoloMCN 是一个开源的「一人 MCN」工具，让 Claude Code 从找热点一路做到抖音发布。本次更新核心是经验沉淀：用户只需在总控台一句话，Claude 会自动安装 huashu-art-motion 等技能，写出动画短片做法并接入写脚本、生成、修改流程，所有改动以草稿形式逐行对比、确认后才生效，且可与上游三方合并。
+- **🎯 推荐与借鉴 / Takeaway**: 展示了把别人 skill 沉淀成可复用、可撤回做法的工程思路，对管理 Claude Code 经验积累很有借鉴价值。
+
+### 4. [ESP32-S3 开源项目让 iPhone 可被 AI 控制：一块 40 元板子模拟 USB 鼠标](https://www.v2ex.com/t/1249290#reply1)
+
+- **原标题 / Original**: 通过 ESP32-S3 让 iPhone 设备可被 AI 控制
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#独立开发` `#非AI/通用工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一个开源项目，用 XIAO ESP32S3 板子模拟 USB 鼠标键盘并当 AirPlay 接收端，让 AI 视觉模型直接操控 iPhone。【商业/痛点逻辑】无需 Mac 居中调度，也不需要 Xcode 和开发者账号，整套硬件只要 40 来块。
+- **🎯 推荐与借鉴 / Takeaway**: 作者用一块几十元的 ESP32-S3 让 iPhone 可被 AI 操控，链路优化与指针校准的踩坑过程有工程借鉴价值。
+
+### 5. [Sill 开源：把 Mac 任意窗口串流到 iPhone 和 iPad 上触控操作](https://github.com/Saffsanity/sill)
+
+- **原标题 / Original**: Any window from your Mac, on your iPhone and iPad
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#移动端` `#非AI/通用工具` `#GitHub`
+- **💡 核心概要 / What It Is**: Sill 是一款把 Mac 上的任意窗口或整个桌面串流到 iPhone、iPad 并支持触控、键盘、触控板和 Apple Pencil 操作的工具。
+- **🎯 推荐与借鉴 / Takeaway**: 纯本地无服务器的 Mac 到 iPhone/iPad 窗口串流方案，工程选型与隐私设计对客户端开发者有借鉴。
+
+### 6. [开源 macOS 应用 Luti：让网页版 Claude / ChatGPT 等通过 MCP 操作本地项目](https://www.v2ex.com/t/1249199#reply0)
+
+- **原标题 / Original**: 做了个开源 macOS 应用 Luti：让网页版 Claude / ChatGPT / Grok / Gemini / Muse 等通过 MCP 直接操作本地项目
 - **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发` `#移动端` `#出海` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 独立开发者开源的邮件工作台知了 OnIt，内嵌钉钉，提供 AI 伴随起草、企业画像拆解邮件意图、左编辑器右 AI 双向同步、一键建视频会议排期。【商业/痛点逻辑】针对原生邮箱 AI 只是假大空润色、独立聊天框 AI 割裂且来回复制、排期需跨 5 个软件人肉搬运三大痛点，让 AI 带着用户真实岗位身份写信，并直调钉钉接口建会、拉日程、向外商发 .ics 附件。
-- **🎯 推荐与借鉴 / Takeaway**: 作者从自身跨国邮件处理痛点出发开源了整套实现，本地化数据方案和 Mock 演示模式对独立开发者有工程借鉴价值。
+- **标签 / Tags**: `#开源神器` `#桌面端` `#AI工具` `#开源/仓库` `#GitHub` `#V2EX` `#Anthropic` `#OpenAI`
+- **💡 核心概要 / What It Is**: 原生 macOS 应用 Luti，本地优先运行时，通过 MCP 把 Claude、ChatGPT、Grok、Gemini、Muse 等云端 AI 接入 Mac 上选定的项目文件夹。
+- **🎯 推荐与借鉴 / Takeaway**: 开源项目把网页版 Claude 等云端 AI 通过 MCP 接入本地项目，边界与连接设计的取舍过程可作工程参考。
 
-### 4. [Cloudflare 与 OpenAI 试点成果：帮助 ChatGPT 收录数亿新网页](https://blog.cloudflare.com/cloudflare-openai-discovery-agentic-web/)
+### 7. [IPinfo 数据显示 RPKI 已保护 70% 互联网路由，中国一年内从 3.7% 升至 83.0%](https://ipinfo.io/blog/rpki-protects-70-internet-routes)
 
-- **原标题 / Original**: Cloudflare and OpenAI: making AI discovery better for everyone
+- **原标题 / Original**: RPKI now protects 70% of internet routes
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#Cloudflare` `#OpenAI`
-- **💡 核心概要 / What It Is**: Cloudflare 与 OpenAI 今年 7 月启动的 AI 发现研究试点公布早期结果，用 Cloudflare 网络信号帮助 OpenAI 搜索爬虫发现更多有价值网页。
-- **🎯 推荐与借鉴 / Takeaway**: 官方披露 Cloudflare 与 OpenAI 试点细节，站长可据此了解 AI 时代的站点发现机制与抓取控制方式。
+- **标签 / Tags**: `#出海基建` `#行业动态`
+- **💡 核心概要 / What It Is**: IPinfo 基于每日路由与 RPKI 快照的年度分析，显示 2026 年 9 月 RPKI 有效前缀占比从 54.0% 升至 70.3%，无效路由几乎不再传播。
 
-### 5. [Open Typora 开源发布 v0.5.2：直接编辑正文的开源 Markdown 编辑器](https://www.v2ex.com/t/1249106#reply0)
+### 8. [zzhub-pipeline 全套公众号写作封面发布自动化工具包开源](https://www.v2ex.com/t/1249426#reply0)
 
-- **原标题 / Original**: 做了一个开源 Markdown 编辑器 Open Typora：直接编辑正文，提供 macOS / Windows 安装包
+- **原标题 / Original**: 开源！全套公众号写作、封面、发布自动化工具包
 - **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#独立开发` `#桌面端` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款受 Typora 行内编辑体验启发的开源 Markdown 桌面编辑器，点击排版后的正文即可修改，需要时可切换完整源码，文件保留为普通 .md，无需注册账号。
-- **🎯 推荐与借鉴 / Takeaway**: 作者开源了一款复刻 Typora 行内编辑体验的桌面编辑器，MIT 协议，适合关注本地 Markdown 工作流与桌面产品工程实现的读者参考。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#自动化` `#非AI/通用工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 作者开源一套每天在用的公众号自动化流水线，写完 Markdown 交给 CLI，即可自动完成格式归档、AI 审校、封面生成并送入微信官方草稿箱。【商业/痛点逻辑】解决公众号写作中找图裁切、排版反复复制粘贴、离开电脑无法发文等机械重复痛点；封面插件兼顾 2.35:1 与 1:1 双视区，纯算法排版后端 Canvas 渲染，无需无头 Chrome。
+- **🎯 推荐与借鉴 / Takeaway**: 作者开源自己每天在用的公众号全自动发布流水线，覆盖审校、封面、排版和官方接口发布，工程拆分思路清晰可借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-15 情报精选 (5 篇)](archives/2026-10-15.md)
-- [📅 2026-10-14 情报精选 (7 篇)](archives/2026-10-14.md)
+- [📅 2026-10-16 情报精选 (8 篇)](archives/2026-10-16.md)
+- [📅 2026-10-15 情报精选 (14 篇)](archives/2026-10-15.md)
+- [📅 2026-10-14 情报精选 (8 篇)](archives/2026-10-14.md)
 - [📅 2026-10-13 情报精选 (8 篇)](archives/2026-10-13.md)
 - [📅 2026-10-12 情报精选 (14 篇)](archives/2026-10-12.md)
 - [📅 2026-10-11 情报精选 (13 篇)](archives/2026-10-11.md)
