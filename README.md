@@ -6,78 +6,47 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-16
+## 今日精选 (Today's Top Signals) · 2026-10-17
 
-### 1. [SoloMCN 开源二更：让 Claude Code 把别人的 skill 沉淀成可复用的做法](https://www.v2ex.com/t/1249336#reply0)
+### 1. [FLUX 3 Image Klein 开源：5.6B 参数的文生图、图像编辑与多参考生成模型](https://bfl.ai/blog/flux-3-image-klein)
 
-- **原标题 / Original**: 开源「一人 MCN」二更：把别人的 skill 丢进总控台， Claude Code 自己沉淀成一套做法，以后一直会做
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#独立开发` `#AI工具` `#开源/仓库` `#自动化` `#GitHub`
-- **💡 核心概要 / What It Is**: SoloMCN 是一个开源的「一人 MCN」工作台，让 Claude Code 从找热点到抖音发布全流程自动化。【商业/痛点逻辑】解决用别人的 skill 经验散落在聊天记录里、下次要从头来的问题：装进总控台后 Claude 自己写成做法技能，改动有逐行对比、可撤回，技能更新时可三方合并。
-- **🎯 推荐与借鉴 / Takeaway**: 项目把别人的 skill 沉淀成可复用、可对比撤回的流程资产，对管理 Claude Code 经验有工程借鉴价值。
+- **原标题 / Original**: FLUX 3 Image Klein
+- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#模型发布` `#开源/仓库` `#AI工具`
+- **💡 核心概要 / What It Is**: Black Forest Labs 发布 5.6B 参数开源权重模型 FLUX 3 Image Klein，支持文生图、图像编辑和最多 10 张参考图的多参考生成。
+- **🎯 推荐与借鉴 / Takeaway**: BFL 官方发布 5.6B 开源图像模型，参数更小却声称领先更大的开源模型，对本地部署和消费级 GPU 推理有参考价值。
 
-### 2. [hw-harness 开源：用 Claude Code 为无 Linux 驱动硬件逆向工程](https://blogs.gnome.org/uraeus/2026/10/15/aiandreverseengineerhardware/)
+### 2. [DeepSeek V4.1 Flash 1017 上线 OpenRouter：552B MoE 架构，$0.15/$0.60 每百万 token](https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017)
 
-- **原标题 / Original**: Using AI to reverse engineer hardware
-- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发`
-- **💡 核心概要 / What It Is**: GNOME 开发者开源的 hw-harness，一套让 Claude 或 Codex 会话在 KVM 虚拟机里运行 Windows 厂商驱动、用 usbmon 在宿主机抓包并 diff 两条轨迹，从而为无 Linux 支持的硬件写出驱动的通用工具。
-- **🎯 推荐与借鉴 / Takeaway**: 作者分享用 Claude Code 逆向工程无 Linux 驱动硬件的完整工作流，开源的 hw-harness 提供可复用的 USB 抓包对比方法。
+- **原标题 / Original**: DeepSeek: DeepSeek v4.1 Flash 1017
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#模型发布` `#AI工具` `#DeepSeek`
+- **💡 核心概要 / What It Is**: DeepSeek V4.1 Flash 的 10 月 17 日快照版本，基于全新 Causal Encoder-Decoder 架构的稀疏 MoE 模型，552B 总参数、输入激活 8B、输出激活 16B，原生支持图像理解。
 
-### 3. [开源「一人 MCN」SoloMCN 更新：一句话让 Claude Code 学会做动画并沉淀成 skill](https://www.v2ex.com/t/1249343#reply0)
+### 3. [Yir.AI 上线：AI 生图生视频渠道比价与路由平台，统一参数、故障自动切换](https://www.v2ex.com/t/1249578#reply0)
 
-- **原标题 / Original**: 开源「一人 MCN」更新：一句话让 Claude Code 学会做动画，做法自动沉淀成 skill，以后一直会做
-- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#自动化` `#独立开发` `#GitHub` `#Anthropic` `#V2EX`
-- **💡 核心概要 / What It Is**: SoloMCN 是一个开源的「一人 MCN」工具，让 Claude Code 从找热点一路做到抖音发布。本次更新核心是经验沉淀：用户只需在总控台一句话，Claude 会自动安装 huashu-art-motion 等技能，写出动画短片做法并接入写脚本、生成、修改流程，所有改动以草稿形式逐行对比、确认后才生效，且可与上游三方合并。
-- **🎯 推荐与借鉴 / Takeaway**: 展示了把别人 skill 沉淀成可复用、可撤回做法的工程思路，对管理 Claude Code 经验积累很有借鉴价值。
+- **原标题 / Original**: 我做了一个 AI 生图生视频渠道比价和路由平台： Yir.AI， 朋友请进，听我娓娓道来这个产品的前世今生
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#AI工具` `#SaaS` `#变现` `#独立开发`
+- **💡 核心概要 / What It Is**: Yir.AI 是一个 AI 生图生视频的 API 渠道比价与路由平台，对外统一一套参数，可在多家渠道间自由切换。
+- **💰 商业模式与变现 / Business Logic**: 作者原做生图工具站，在接 KIE、APIMart 和官方 API 时踩坑后抽出此服务；按渠道公开价收费不加价，靠集采折扣分成，并给用户消费返利。
+- **🎯 推荐与借鉴 / Takeaway**: 作者从接上游 API 的真实踩坑中拆出独立产品，比价、防伪签名校验和集采返利思路值得同类开发者参考。
 
-### 4. [ESP32-S3 开源项目让 iPhone 可被 AI 控制：一块 40 元板子模拟 USB 鼠标](https://www.v2ex.com/t/1249290#reply1)
+### 4. [从记忆容量视角重新理解 Transformer：Alex Wang 推导线性层到 self-attention 的容量跃迁](https://alexwang.ai/posts/associative-memory/)
 
-- **原标题 / Original**: 通过 ESP32-S3 让 iPhone 设备可被 AI 控制
-- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#独立开发` `#非AI/通用工具` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一个开源项目，用 XIAO ESP32S3 板子模拟 USB 鼠标键盘并当 AirPlay 接收端，让 AI 视觉模型直接操控 iPhone。【商业/痛点逻辑】无需 Mac 居中调度，也不需要 Xcode 和开发者账号，整套硬件只要 40 来块。
-- **🎯 推荐与借鉴 / Takeaway**: 作者用一块几十元的 ESP32-S3 让 iPhone 可被 AI 操控，链路优化与指针校准的踩坑过程有工程借鉴价值。
-
-### 5. [Sill 开源：把 Mac 任意窗口串流到 iPhone 和 iPad 上触控操作](https://github.com/Saffsanity/sill)
-
-- **原标题 / Original**: Any window from your Mac, on your iPhone and iPad
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#移动端` `#非AI/通用工具` `#GitHub`
-- **💡 核心概要 / What It Is**: Sill 是一款把 Mac 上的任意窗口或整个桌面串流到 iPhone、iPad 并支持触控、键盘、触控板和 Apple Pencil 操作的工具。
-- **🎯 推荐与借鉴 / Takeaway**: 纯本地无服务器的 Mac 到 iPhone/iPad 窗口串流方案，工程选型与隐私设计对客户端开发者有借鉴。
-
-### 6. [开源 macOS 应用 Luti：让网页版 Claude / ChatGPT 等通过 MCP 操作本地项目](https://www.v2ex.com/t/1249199#reply0)
-
-- **原标题 / Original**: 做了个开源 macOS 应用 Luti：让网页版 Claude / ChatGPT / Grok / Gemini / Muse 等通过 MCP 直接操作本地项目
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#桌面端` `#AI工具` `#开源/仓库` `#GitHub` `#V2EX` `#Anthropic` `#OpenAI`
-- **💡 核心概要 / What It Is**: 原生 macOS 应用 Luti，本地优先运行时，通过 MCP 把 Claude、ChatGPT、Grok、Gemini、Muse 等云端 AI 接入 Mac 上选定的项目文件夹。
-- **🎯 推荐与借鉴 / Takeaway**: 开源项目把网页版 Claude 等云端 AI 通过 MCP 接入本地项目，边界与连接设计的取舍过程可作工程参考。
-
-### 7. [IPinfo 数据显示 RPKI 已保护 70% 互联网路由，中国一年内从 3.7% 升至 83.0%](https://ipinfo.io/blog/rpki-protects-70-internet-routes)
-
-- **原标题 / Original**: RPKI now protects 70% of internet routes
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#行业动态`
-- **💡 核心概要 / What It Is**: IPinfo 基于每日路由与 RPKI 快照的年度分析，显示 2026 年 9 月 RPKI 有效前缀占比从 54.0% 升至 70.3%，无效路由几乎不再传播。
-
-### 8. [zzhub-pipeline 全套公众号写作封面发布自动化工具包开源](https://www.v2ex.com/t/1249426#reply0)
-
-- **原标题 / Original**: 开源！全套公众号写作、封面、发布自动化工具包
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#自动化` `#非AI/通用工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 作者开源一套每天在用的公众号自动化流水线，写完 Markdown 交给 CLI，即可自动完成格式归档、AI 审校、封面生成并送入微信官方草稿箱。【商业/痛点逻辑】解决公众号写作中找图裁切、排版反复复制粘贴、离开电脑无法发文等机械重复痛点；封面插件兼顾 2.35:1 与 1:1 双视区，纯算法排版后端 Canvas 渲染，无需无头 Chrome。
-- **🎯 推荐与借鉴 / Takeaway**: 作者开源自己每天在用的公众号全自动发布流水线，覆盖审校、封面、排版和官方接口发布，工程拆分思路清晰可借鉴。
+- **原标题 / Original**: You could have invented transformers from memory
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
+- **标签 / Tags**: `#教程/实践` `#论文/研究` `#现象/趋势` `#Hacker News`
+- **💡 核心概要 / What It Is**: 一篇技术长文，把线性层、MLP 和 self-attention 统一解释为不同类型的联想记忆存储，并用干扰信号比推导各层的容量上限。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-16 情报精选 (8 篇)](archives/2026-10-16.md)
+- [📅 2026-10-17 情报精选 (4 篇)](archives/2026-10-17.md)
+- [📅 2026-10-16 情报精选 (12 篇)](archives/2026-10-16.md)
 - [📅 2026-10-15 情报精选 (14 篇)](archives/2026-10-15.md)
-- [📅 2026-10-14 情报精选 (8 篇)](archives/2026-10-14.md)
+- [📅 2026-10-14 情报精选 (9 篇)](archives/2026-10-14.md)
 - [📅 2026-10-13 情报精选 (8 篇)](archives/2026-10-13.md)
 - [📅 2026-10-12 情报精选 (14 篇)](archives/2026-10-12.md)
 - [📅 2026-10-11 情报精选 (13 篇)](archives/2026-10-11.md)
