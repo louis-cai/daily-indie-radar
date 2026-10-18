@@ -6,45 +6,62 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-17
+## 今日精选 (Today's Top Signals) · 2026-10-18
 
-### 1. [FLUX 3 Image Klein 开源：5.6B 参数的文生图、图像编辑与多参考生成模型](https://bfl.ai/blog/flux-3-image-klein)
+### 1. [DeepSeek 上线 Search 与 Fetch API：$0.75/千次成功请求，支持搜索语法与 Markdown 抓取](https://api-docs.deepseek.com/guides/search/)
 
-- **原标题 / Original**: FLUX 3 Image Klein
-- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#模型发布` `#开源/仓库` `#AI工具`
-- **💡 核心概要 / What It Is**: Black Forest Labs 发布 5.6B 参数开源权重模型 FLUX 3 Image Klein，支持文生图、图像编辑和最多 10 张参考图的多参考生成。
-- **🎯 推荐与借鉴 / Takeaway**: BFL 官方发布 5.6B 开源图像模型，参数更小却声称领先更大的开源模型，对本地部署和消费级 GPU 推理有参考价值。
+- **原标题 / Original**: DeepSeek search and fetch – $0.75 per 1000 successful requests
+- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#AI工具` `#出海` `#DeepSeek` `#OpenAI`
+- **💡 核心概要 / What It Is**: DeepSeek 推出 Search API 和 Fetch API，为 Agent 与 RAG 应用提供实时网页内容，Search 返回结构化搜索结果，Fetch 抓取单页并转为 Markdown。
 
-### 2. [DeepSeek V4.1 Flash 1017 上线 OpenRouter：552B MoE 架构，$0.15/$0.60 每百万 token](https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017)
+### 2. [BeatBrowser 开源：让 Codex、Claude Code、Cursor 共用你已登录的 Chrome](https://www.v2ex.com/t/1249726#reply0)
 
-- **原标题 / Original**: DeepSeek: DeepSeek v4.1 Flash 1017
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#模型发布` `#AI工具` `#DeepSeek`
-- **💡 核心概要 / What It Is**: DeepSeek V4.1 Flash 的 10 月 17 日快照版本，基于全新 Causal Encoder-Decoder 架构的稀疏 MoE 模型，552B 总参数、输入激活 8B、输出激活 16B，原生支持图像理解。
+- **原标题 / Original**: 开源浏览器控制插件 BeatBrowser：让 Codex、Claude Code 共用你已登录的 Chrome
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#Chrome插件` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一个 Chrome 扩展加本地 Node 桥接，让 Codex、Claude Code、Cursor 等 Agent 通过 MCP 操作你正在使用、已有登录态的 Chrome。
+- **🎯 推荐与借鉴 / Takeaway**: 作者直击多 Agent 共用登录态浏览器的痛点，工程设计和已知缺陷都写得坦诚，适合做同类工具选型参考。
 
-### 3. [Yir.AI 上线：AI 生图生视频渠道比价与路由平台，统一参数、故障自动切换](https://www.v2ex.com/t/1249578#reply0)
+### 3. [Sphinx 开源：发布前考问你是否真理解 AI 生成的代码的 Git hook](https://sphinx-six-theta.vercel.app/)
 
-- **原标题 / Original**: 我做了一个 AI 生图生视频渠道比价和路由平台： Yir.AI， 朋友请进，听我娓娓道来这个产品的前世今生
+- **原标题 / Original**: Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#CLI` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: Sphinx 是一个免费开源的 Git hook 工具，在 agent 辅助开发的代码推送前，就 diff 内容向你提问，答对才允许 push。【商业/痛点逻辑】解决开发者外包思考给 AI 后却不理解代码的隐患，充当一个没看过你聊天记录的审查者。
+
+### 4. [开源网络书签工具 Karakeep 0.34 发布：增强反爬抓取并降低部署内存占用](https://www.appinn.com/karakeep-0-34/)
+
+- **原标题 / Original**: 近3万星，Karakeep 0.34 发布：网页抓取更强了，支持自动离线阅读，内存占用更低
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#非AI/通用工具` `#GitHub`
+- **💡 核心概要 / What It Is**: 开源网络书签工具 Karakeep 发布 v0.34.0 版本，通过将抓取引擎更换为 Patchright 与完整 Google Chrome，大幅提升对 Cloudflare 等验证页面的穿透能力。
+
+### 5. [LayoutKeeper 开源：解决 macOS 每天插拔外接屏后窗口布局全乱的问题](https://www.v2ex.com/t/1249797#reply0)
+
+- **原标题 / Original**: 一天插拔两次外接屏：家里的屏和公司的屏，我的窗口现在分得清了
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: macOS 开源工具 LayoutKeeper，通过 EDID 识别不同外接屏，插入后自动恢复窗口位置和所在桌面。
+- **💰 商业模式与变现 / Business Logic**: 解决一天两次在公司和家里屏幕间插拔、窗口全被挤回内建屏的痛点。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者分享用 EDID 认屏加跨桌面窗口恢复的思路，工程取舍和私有 API 局限都写得很实在。
+
+### 6. [everybacklink.com 上线：收录 509 个可提交外链站点，专供 bot 自动发外链](https://www.v2ex.com/t/1249698#reply0)
+
+- **原标题 / Original**: 做了个外链整合站，给你的 bot 当外链库让它自动去发外链
 - **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#SaaS` `#变现` `#独立开发`
-- **💡 核心概要 / What It Is**: Yir.AI 是一个 AI 生图生视频的 API 渠道比价与路由平台，对外统一一套参数，可在多家渠道间自由切换。
-- **💰 商业模式与变现 / Business Logic**: 作者原做生图工具站，在接 KIE、APIMart 和官方 API 时踩坑后抽出此服务；按渠道公开价收费不加价，靠集采折扣分成，并给用户消费返利。
-- **🎯 推荐与借鉴 / Takeaway**: 作者从接上游 API 的真实踩坑中拆出独立产品，比价、防伪签名校验和集采返利思路值得同类开发者参考。
-
-### 4. [从记忆容量视角重新理解 Transformer：Alex Wang 推导线性层到 self-attention 的容量跃迁](https://alexwang.ai/posts/associative-memory/)
-
-- **原标题 / Original**: You could have invented transformers from memory
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#教程/实践` `#论文/研究` `#现象/趋势` `#Hacker News`
-- **💡 核心概要 / What It Is**: 一篇技术长文，把线性层、MLP 和 self-attention 统一解释为不同类型的联想记忆存储，并用干扰信号比推导各层的容量上限。
+- **标签 / Tags**: `#新出海产品` `#SEO` `#独立开发` `#出海` `#V2EX`
+- **💡 核心概要 / What It Is**: 一个外链整合目录站，收录 509 个可提交站点，分 AI 工具目录、SaaS 目录、发布平台、社区等类别。
+- **💰 商业模式与变现 / Business Logic**: 作者受用 grok bot 定时发外链做法启发，发现网上 awesome 列表死链多、信息乱，于是让 bot 跑一天整理成站；其中 214 个免费或有免费方案，可按价格和分类筛选，每站附提交入口、要求和步骤。
+- **🎯 推荐与借鉴 / Takeaway**: 围绕 bot 自动发外链的实际痛点整理目录站，附带 llms.txt 与 API，可参考其面向 AI agent 的站点设计思路。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-17 情报精选 (4 篇)](archives/2026-10-17.md)
-- [📅 2026-10-16 情报精选 (12 篇)](archives/2026-10-16.md)
+- [📅 2026-10-18 情报精选 (6 篇)](archives/2026-10-18.md)
+- [📅 2026-10-17 情报精选 (5 篇)](archives/2026-10-17.md)
+- [📅 2026-10-16 情报精选 (11 篇)](archives/2026-10-16.md)
 - [📅 2026-10-15 情报精选 (14 篇)](archives/2026-10-15.md)
 - [📅 2026-10-14 情报精选 (9 篇)](archives/2026-10-14.md)
 - [📅 2026-10-13 情报精选 (8 篇)](archives/2026-10-13.md)
