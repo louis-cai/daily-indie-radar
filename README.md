@@ -6,60 +6,63 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-18
+## 今日精选 (Today's Top Signals) · 2026-10-19
 
-### 1. [DeepSeek 上线 Search 与 Fetch API：$0.75/千次成功请求，支持搜索语法与 Markdown 抓取](https://api-docs.deepseek.com/guides/search/)
+### 1. [Superlite 开源：比 Superpowers 快的 Claude Code 自动构建插件](https://contextfirst.blog/superlite-hand-an-agent-a-spec/)
 
-- **原标题 / Original**: DeepSeek search and fetch – $0.75 per 1000 successful requests
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#出海` `#DeepSeek` `#OpenAI`
-- **💡 核心概要 / What It Is**: DeepSeek 推出 Search API 和 Fetch API，为 Agent 与 RAG 应用提供实时网页内容，Search 返回结构化搜索结果，Fetch 抓取单页并转为 Markdown。
+- **原标题 / Original**: Superlite: A Faster Alternatie to Superpowers
+- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#自动化` `#CLI` `#开源/仓库` `#GitHub` `#Anthropic`
+- **💡 核心概要 / What It Is**: Superlite 是一个 Claude Code 插件，接管规格说明后自动规划任务、并行分派给多档模型代理、审查代码并汇总决策清单。【商业/痛点逻辑】针对 superpowers 类工作流频繁等待人工确认的问题，改为一次批准、只在破坏性或安全敏感操作时暂停。
+- **🎯 推荐与借鉴 / Takeaway**: 作者实测拆解了 Claude Code 自动化工作流的性能瓶颈，给出并行任务拆分和 hooks 强制规则的工程借鉴。
 
-### 2. [BeatBrowser 开源：让 Codex、Claude Code、Cursor 共用你已登录的 Chrome](https://www.v2ex.com/t/1249726#reply0)
+### 2. [PDFMathTranslate 发布跨平台保留格式翻译客户端 PDFMathReader，支持 Mac、Win、Linux 与 iOS](https://www.v2ex.com/t/1250000#reply0)
 
-- **原标题 / Original**: 开源浏览器控制插件 BeatBrowser：让 Codex、Claude Code 共用你已登录的 Chrome
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#Chrome插件` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一个 Chrome 扩展加本地 Node 桥接，让 Codex、Claude Code、Cursor 等 Agent 通过 MCP 操作你正在使用、已有登录态的 Chrome。
-- **🎯 推荐与借鉴 / Takeaway**: 作者直击多 Agent 共用登录态浏览器的痛点，工程设计和已知缺陷都写得坦诚，适合做同类工具选型参考。
+- **原标题 / Original**: PDF 保留格式翻译跨平台客户端（Mac, Win, Linux , iOS）
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#移动端` `#AI工具` `#GitHub` `#V2EX` `#OpenAI`
+- **💡 核心概要 / What It Is**: GitHub 开源项目 PDFMathTranslate 的全新跨平台客户端 PDFMathReader，支持实时翻译 PDF 且保留公式、表格等排版，覆盖 Mac、Win、Linux 与 iOS。
+- **🎯 推荐与借鉴 / Takeaway**: 开源项目 PDFMathTranslate 团队发布新客户端，保留排版实时翻译 PDF，附完整功能与开源地址可供借鉴。
 
-### 3. [Sphinx 开源：发布前考问你是否真理解 AI 生成的代码的 Git hook](https://sphinx-six-theta.vercel.app/)
+### 3. [wxa-runner 开源：在普通 Chrome 里直接跑微信小程序，免开发者工具与扫码登录](https://www.v2ex.com/t/1249958#reply1)
 
-- **原标题 / Original**: Show HN: Sphinx – A hook that quizzes you on your AI's code before shipping
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#CLI` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: Sphinx 是一个免费开源的 Git hook 工具，在 agent 辅助开发的代码推送前，就 diff 内容向你提问，答对才允许 push。【商业/痛点逻辑】解决开发者外包思考给 AI 后却不理解代码的隐患，充当一个没看过你聊天记录的审查者。
+- **原标题 / Original**: 写了个在普通 Chrome 里直接跑微信小程序的工具： wxa-runner
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#Chrome插件` `#自动化` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开源工具 wxa-runner，可在普通 Chrome（含无头浏览器）里用官方基础库直接运行微信小程序。
+- **🎯 推荐与借鉴 / Takeaway**: 把微信小程序搬进普通 Chrome 跑，缓解开发者工具重、登录烦、CI 难自动化三大痛点，工程思路可借鉴。
 
-### 4. [开源网络书签工具 Karakeep 0.34 发布：增强反爬抓取并降低部署内存占用](https://www.appinn.com/karakeep-0-34/)
+### 4. [whatsapp-mcp 开源：在 Cloudflare 上免费运行，让 AI 代理读取和搜索你的 WhatsApp 消息](https://github.com/finereli/whatsapp-mcp)
 
-- **原标题 / Original**: 近3万星，Karakeep 0.34 发布：网页抓取更强了，支持自动离线阅读，内存占用更低
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#非AI/通用工具` `#GitHub`
-- **💡 核心概要 / What It Is**: 开源网络书签工具 Karakeep 发布 v0.34.0 版本，通过将抓取引擎更换为 Patchright 与完整 Google Chrome，大幅提升对 Cloudflare 等验证页面的穿透能力。
+- **原标题 / Original**: Show HN: WhatsApp MCP running free on Cloudflare
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#Cloudflare` `#独立开发` `#GitHub`
+- **💡 核心概要 / What It Is**: 一个开源自托管 MCP 服务器，部署在自己的 Cloudflare 账户中，让 Claude Code、Claude Desktop 等 MCP 客户端搜索和读取你的 WhatsApp 聊天记录，只读、不能发消息。
+- **🎯 推荐与借鉴 / Takeaway**: 开源项目展示了在 Cloudflare 上自托管 WhatsApp MCP 的完整实现，数据留在自有账户，工程细节可借鉴。
 
-### 5. [LayoutKeeper 开源：解决 macOS 每天插拔外接屏后窗口布局全乱的问题](https://www.v2ex.com/t/1249797#reply0)
+### 5. [Mistral 发布 Timestral 时序基础模型：209M 参数登顶三大基准](https://mistral.ai/news/timestral/)
 
-- **原标题 / Original**: 一天插拔两次外接屏：家里的屏和公司的屏，我的窗口现在分得清了
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: macOS 开源工具 LayoutKeeper，通过 EDID 识别不同外接屏，插入后自动恢复窗口位置和所在桌面。
-- **💰 商业模式与变现 / Business Logic**: 解决一天两次在公司和家里屏幕间插拔、窗口全被挤回内建屏的痛点。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者分享用 EDID 认屏加跨桌面窗口恢复的思路，工程取舍和私有 API 局限都写得很实在。
+- **原标题 / Original**: Timestral: Mistral release time-series foundation models
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#模型发布` `#开源/仓库` `#AI工具`
+- **💡 核心概要 / What It Is**: Mistral 发布首个时序基础模型家族 Timestral，提供概率型多变量预测，共 5M、28M、123M、209M 四种规格。
+- **💰 商业模式与变现 / Business Logic**: 面向企业传感器遥测、可观测性指标等场景，支持零样本预测和已知未来协变量，可经 Mistral Forge 做领域微调并支持私有化部署。
 
-### 6. [everybacklink.com 上线：收录 509 个可提交外链站点，专供 bot 自动发外链](https://www.v2ex.com/t/1249698#reply0)
+### 6. [OhMyGame 开源 10 天斩获 936 star：AI 游戏创作工具冷启动复盘](https://www.v2ex.com/t/1250127#reply0)
 
-- **原标题 / Original**: 做了个外链整合站，给你的 bot 当外链库让它自动去发外链
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#SEO` `#独立开发` `#出海` `#V2EX`
-- **💡 核心概要 / What It Is**: 一个外链整合目录站，收录 509 个可提交站点，分 AI 工具目录、SaaS 目录、发布平台、社区等类别。
-- **💰 商业模式与变现 / Business Logic**: 作者受用 grok bot 定时发外链做法启发，发现网上 awesome 列表死链多、信息乱，于是让 bot 跑一天整理成站；其中 214 个免费或有免费方案，可按价格和分类筛选，每站附提交入口、要求和步骤。
-- **🎯 推荐与借鉴 / Takeaway**: 围绕 bot 自动发外链的实际痛点整理目录站，附带 llms.txt 与 API，可参考其面向 AI agent 的站点设计思路。
+- **原标题 / Original**: OhMyGame 开源 10 天拿到 936 个 star 的一个小复盘
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 📌 cases
+- **标签 / Tags**: `#变现实录` `#开源/仓库` `#独立开发` `#GitHub` `#X/Twitter`
+- **💡 核心概要 / What It Is**: OhMyGame 是一个开源的 AI 游戏创作工具，主打一人 AI 游戏工作室，用户描述想法后由 Agent 完成设计、资产生成、开发和测试。
+- **💰 商业模式与变现 / Business Logic**: 无投流，靠 X 内容传播冷启动，X 单渠道带来 1,194 位访客，约占前五来源合计的 54%，两次增长高峰均由 X 帖子带动。
+- **🎯 推荐与借鉴 / Takeaway**: 小团队开源冷启动的一手数据复盘，X 单渠道贡献约 54% 访客的经验对无流量团队有参考价值。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-18 情报精选 (6 篇)](archives/2026-10-18.md)
+- [📅 2026-10-19 情报精选 (6 篇)](archives/2026-10-19.md)
+- [📅 2026-10-18 情报精选 (7 篇)](archives/2026-10-18.md)
 - [📅 2026-10-17 情报精选 (5 篇)](archives/2026-10-17.md)
 - [📅 2026-10-16 情报精选 (11 篇)](archives/2026-10-16.md)
 - [📅 2026-10-15 情报精选 (14 篇)](archives/2026-10-15.md)
