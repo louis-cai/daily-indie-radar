@@ -6,51 +6,96 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-20
+## 今日精选 (Today's Top Signals) · 2026-10-21
 
-### 1. [DeepSeek 开源推理引擎 DeepInfer：支撑大规模生产服务的高性能框架](https://github.com/deepseek-ai/DeepInfer)
+### 1. [NetWasm 0.10.0 开源：C# 编译产物体积首次小于 Rust WASM](https://github.com/zion-sati/NetWasm)
 
-- **原标题 / Original**: DeepSeek just open-sourced its inference engine
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#模型发布` `#开源/仓库` `#AI工具` `#GitHub` `#DeepSeek`
-- **💡 核心概要 / What It Is**: DeepSeek 开源了驱动其大规模生产服务的推理框架 DeepInfer，提供离线推理与规模化服务核心能力，当前支持 DeepSeek-V4.1-Flash 模型。
-- **🎯 推荐与借鉴 / Takeaway**: DeepSeek 开源了支撑其生产环境的高性能推理引擎，读者可关注其确定性采样、结构化输出等工程细节。
+- **原标题 / Original**: C# now beats Rust on WASM size
+- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#独立开发` `#CLI` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: NetWasm 是独立的开源编译器、运行时和 SDK，将 C# 和 .NET CIL 直接编译为 WebAssembly/WASI，不携带桌面 CLR 或 dotnet.js。
+- **🎯 推荐与借鉴 / Takeaway**: 对需要小体积 Wasm 部署的 C# 开发者有直接参考价值，附完整对比数据和复现步骤。
 
-### 2. [All API Hub 开源：统一管理 AI 中转站账号、API Key、自动签到与模型比价](https://www.v2ex.com/t/1250203#reply0)
+### 2. [eMudhra CA 中间证书私钥仅 8 比特强度，作者毫秒级破解全部 8 把](https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/)
 
-- **原标题 / Original**: [开源] All API Hub：统一管理 AI 中转站账号、API Key、自动签到和模型比价
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#Chrome插件` `#开源/仓库` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款开源浏览器扩展，把 AI 中转站账号、Coding Plan、API Key 集中在一个面板管理。
-- **💰 商业模式与变现 / Business Logic**: 解决多站点用户每天挨个登录签到领额度、逐个网站比价、翻公告的碎片化痛点，附自动签到、模型比价、用量统计和 AI 网关集成。
-- **🎯 推荐与借鉴 / Takeaway**: 作者开源的浏览器扩展，把 AI 中转站的账号、Key、签到和比价集中到一个面板，工程思路可借鉴。
+- **原标题 / Original**: Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds
+- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#行业动态` `#安全/对齐` `#出海`
+- **💡 核心概要 / What It Is**: 安全研究者 Scott Helme 发现证书机构 eMudhra 的 8 把中间 CA 私钥因生成脚本缺陷退化为单字节弱密钥，可在毫秒内暴力破解。
+- **🎯 推荐与借鉴 / Takeaway**: 作者亲自暴力破解 eMudhra 弱密钥并实测非浏览器客户端全部放行，可作为理解 CA 信任链与客户端吊销盲区的实战案例。
 
-### 3. [Pitwall 上线：原生 Mac 看板统一调度 Codex、Claude Code 等 Coding Agent](https://www.v2ex.com/t/1250178#reply0)
+### 3. [Antumi 开源：多 Agent 桌面工作台，统一管理 Claude Code、Codex、Cursor 并盘活订阅额度](https://www.v2ex.com/t/1250538#reply0)
 
-- **原标题 / Original**: 做了一款 Mac 工具，给 Codex 和 Claude Code 们配了个调度看板
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#桌面端` `#AI工具` `#独立开发` `#出海` `#V2EX`
-- **💡 核心概要 / What It Is**: Pitwall 是一款原生 Mac 应用，把同时运行的多个 Coding Agent（Codex、Claude Code、Cursor、Devin、Pi）的会话状态集中到一块看板，支持菜单栏状态、通知、一键跳回会话，Pro 版可在看板直接批准权限请求。
-- **🎯 推荐与借鉴 / Takeaway**: 原文解释了为何一个无技术门槛的小工具也选择一开始收费，其买断定价与细分定位对出海开发者有商业逻辑参考。
+- **原标题 / Original**: 开源自用的多 Agent 桌面工作台， Agent 放一起管，订阅额度一点不浪费
+- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#独立开发` `#AI工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: Antumi（安图米）是一款开源桌面端工具，把已装好的 Claude Code、Codex、Cursor CLI 集中在一个工作台里管理。【商业/痛点逻辑】解决多开终端的烦恼：一键移交上下文换 Agent 接着干、汇总各窗口待批准事项并系统通知、状态栏并排显示三家额度并提醒「该花了」、自动把 Agent 提到的事项记成待办，避免订阅额度浪费。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者自用后开源的多 Agent 桌面工作台，解决了订阅额度浪费和上下文移交的真实痛点，工程实现思路可借鉴。
 
-### 4. [Mole Windows 版上线：清理、卸载与系统维护工具，早鸟价 15.20 美元](https://www.v2ex.com/t/1250170#reply0)
+### 4. [统一控制 UnitCtrl 发布 Windows 版：电脑控制安卓设备，纯局域网不走云端且免费](https://www.v2ex.com/t/1250595#reply0)
 
-- **原标题 / Original**: 能清理、卸载和系统维护的 Mole Windows 版终于来啦，聊聊我是怎么用 Mac 开发它的
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#独立开发` `#桌面端` `#CLI` `#变现` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: Mole 是一款系统清理、软件卸载与维护工具，Windows 版正式上线，功能与 Mac 版基本一致。
-- **💰 商业模式与变现 / Business Logic**: Mac 版积累的用户持续催更 Windows 版，通过早鸟定价获客，现价 15.20 美元可用两台电脑，11 月 11 日截止，老用户输入 MOLEAGAIN 仅需 10 美元，各功能可先免费试用。
-- **🎯 推荐与借鉴 / Takeaway**: 作者完整复盘了用 Mac 独自开发 Windows 原生桌面软件的工程路径与兼容性测试方法，对跨平台独立开发者有实操借鉴。
+- **原标题 / Original**: 统一控制出 Windows 版了：在 Windows / Mac 上控制家里的安卓，手机之间也能互控，不走云端，永远免费（安卓内测招募）
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#桌面端` `#开源/仓库` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款跨设备控制工具，可在 Windows / Mac 上查看和操作家中多台安卓设备，手机之间也能互控。
+- **💰 商业模式与变现 / Business Logic**: 面向家里闲置的旧手机、平板等备用设备的使用痛点，主打无账号、不经云端、隐私可控，永久免费无广告，目前靠 Google Play 封闭测试推进安卓版上架。
+- **🎯 推荐与借鉴 / Takeaway**: 作者公开从 Mac 到 Windows 的迭代过程和编码器延迟排查细节，局域网控制方案与无云端隐私取舍都有工程参考价值。
+
+### 5. [ccx 开源：一键在 Claude Code 与 Codex 间带上下文接力](https://www.v2ex.com/t/1250714#reply0)
+
+- **原标题 / Original**: Claude 和 Codex 来回切的人有救了：写了个 ccx，一键带着上下文切过去接着干
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#AI工具` `#独立开发` `#GitHub` `#V2EX` `#Anthropic`
+- **💡 核心概要 / What It Is**: ccx 是一个 Mac 菜单栏工具，把 Claude Code 会话与 Codex 线程关联起来，双向同步消息、工具调用、计划和 git status。
+- **🎯 推荐与借鉴 / Takeaway**: 作者为解决 Claude Code 与 Codex 双向切换丢上下文的痛点开源了 ccx，工程思路与本地化实现可供借鉴。
+
+### 6. [PHP 官方提前预警两项 9.2 分严重漏洞，10 月 21 日 22:00 发布紧急修复](https://www.appinn.com/php-critical-rce-vulnerability-2026/)
+
+- **原标题 / Original**: PHP 官方罕见提前预警：两项 9.2 分严重漏洞，今晚 10 点发布修复｜请加班
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#行业动态` `#出海` `#安全/对齐`
+- **💡 核心概要 / What It Is**: PHP 官方于 10 月 20 日罕见提前预警 PHP 核心存在两项 CVSS v4.0 评分 9.2 分的严重漏洞，并定于北京时间 10 月 21 日 22:00 发布紧急安全更新。
+
+### 7. [eMudhra 中间证书私钥泄露：一招测试你的浏览器是否已拦截](https://www.appinn.com/test-browser-security-emudhra-certificate/)
+
+- **原标题 / Original**: 测试你的浏览器安全性：如果能打开这个网站，就踩中了印度证书机构的离谱大雷
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#现象/趋势` `#小众软件` `#Google`
+- **💡 核心概要 / What It Is**: 印度证书机构 eMudhra 的中间证书私钥被暴力破解，原因是一个几乎全为零的离谱私钥，攻击者可借此为任意域名签发 HTTPS 证书。Google Chrome 与 Firefox 于 10 月 17 日通过 CRLSet 和 OneCRL 远程封锁，苹果 19 日、微软 20 日跟进，但 curl、Python、Node.js 等依赖系统证书库的应用可能仍受影响。
+
+### 8. [网页版键帽生成器上线：离线可用、参数化建模并直接导出 3D 打印](https://www.v2ex.com/t/1250568#reply0)
+
+- **原标题 / Original**: 写了个网页版键帽生成器（离线可用）可直接 3D 打印
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#非AI/通用工具` `#开源/仓库` `#桌面端` `#GitHub`
+- **💡 核心概要 / What It Is**: 一个纯静态网页键帽生成器，可自定义外形、字符、颜色后直接导出 3D 打印。
+- **💰 商业模式与变现 / Business Logic**: 解决现有在线工具要联网注册、STL 还需回切片软件补材料的痛点，全部免费在线使用。
+- **🎯 推荐与借鉴 / Takeaway**: 独立开发者把参数化键帽建模做成纯静态网页，离线可用并直接导出打印文件，工程取舍和已知坑都写得实在。
+
+### 9. [Win11Debloat 更新官方中文版：一键卸载 90+ 款 Windows 11 预装软件，新增禁用 Chrome AI 选项](https://www.appinn.com/win11debloat/)
+
+- **原标题 / Original**: Win11Debloat 官方中文版 – 一键卸载 90+ 款 Windows 11 预装软件[2026.10.21更新]
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#非AI/通用工具` `#开源/仓库` `#GitHub`
+- **💡 核心概要 / What It Is**: 你看到的内容可能由第三方 AI 基于小众软件文章提炼总结而成，可能与原文真实意图存在偏差。Win11Debloat 是一款开源 PowerShell 脚本工具，可一键安全卸载 90+ 款 Windows 11/10 预装应用（50 多个微软自带和 40 多个第三方软件），被移除的应用多数可通过 Microsoft Store 或 WinGet 重新安装。
+
+### 10. [Splash 1.4 发布：本地推理比 Strata 快约 30%，支持 Qwen3.8-Flash-Next](https://www.appinn.com/splash-1-4/)
+
+- **原标题 / Original**: 卷起来了！昨天 Strata 刚升级，今天 Splash 1.4 就宣布快了 30%
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#桌面端` `#评测/基准` `#GitHub`
+- **💡 核心概要 / What It Is**: Splash 1.4 是 Inco AI 开发的开源本地 AI 推理引擎，专为 Apple Silicon 优化，开发者公布在 M5 Pro、64GB 内存 Mac 上运行 Qwen3.8-Flash-Next Q2_0 模型时，速度比 Strata 快约 30%，最高生成 120 tokens/s，32K 输入处理 1,312 tokens/s。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-20 情报精选 (4 篇)](archives/2026-10-20.md)
+- [📅 2026-10-21 情报精选 (10 篇)](archives/2026-10-21.md)
+- [📅 2026-10-20 情报精选 (8 篇)](archives/2026-10-20.md)
 - [📅 2026-10-19 情报精选 (12 篇)](archives/2026-10-19.md)
 - [📅 2026-10-18 情报精选 (7 篇)](archives/2026-10-18.md)
 - [📅 2026-10-17 情报精选 (5 篇)](archives/2026-10-17.md)
-- [📅 2026-10-16 情报精选 (11 篇)](archives/2026-10-16.md)
+- [📅 2026-10-16 情报精选 (12 篇)](archives/2026-10-16.md)
 - [📅 2026-10-15 情报精选 (14 篇)](archives/2026-10-15.md)
 - [📅 2026-10-14 情报精选 (9 篇)](archives/2026-10-14.md)
 - [📅 2026-10-13 情报精选 (8 篇)](archives/2026-10-13.md)
