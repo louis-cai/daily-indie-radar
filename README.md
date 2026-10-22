@@ -6,92 +6,108 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-21
+## 今日精选 (Today's Top Signals) · 2026-10-22
 
-### 1. [NetWasm 0.10.0 开源：C# 编译产物体积首次小于 Rust WASM](https://github.com/zion-sati/NetWasm)
+### 1. [Calends 开源：面向合租场景的订阅账本，支持 AI 与 MCP 管理](https://www.v2ex.com/t/1251052#reply0)
 
-- **原标题 / Original**: C# now beats Rust on WASM size
-- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#独立开发` `#CLI` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: NetWasm 是独立的开源编译器、运行时和 SDK，将 C# 和 .NET CIL 直接编译为 WebAssembly/WASI，不携带桌面 CLR 或 dotnet.js。
-- **🎯 推荐与借鉴 / Takeaway**: 对需要小体积 Wasm 部署的 C# 开发者有直接参考价值，附完整对比数据和复现步骤。
+- **原标题 / Original**: 做了近 10 年合租车主，我开源了自己的订阅账本 Calends
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#SaaS` `#出海` `#AI工具` `#V2EX` `#GitHub` `#Cloudflare` `#DeepSeek`
+- **💡 核心概要 / What It Is**: Calends 是一款 MIT 开源的订阅管理账本，专为长期合租车主设计，可记录成员付款进度、代付、欠款和垫付金额。
+- **💰 商业模式与变现 / Business Logic**: 市面订阅 App 难以满足合租场景中跨区涨价、代付、礼品卡等细节记录需求，作者基于自身近 10 年开 YouTube、5 年多 Spotify 车队的真实痛点自建方案。
+- **🎯 推荐与借鉴 / Takeaway**: 作者以近十年合租车主的真实记账痛点为切口，展示了订阅账本的功能设计与 AI、MCP 集成思路，工程借鉴清晰。
 
-### 2. [eMudhra CA 中间证书私钥仅 8 比特强度，作者毫秒级破解全部 8 把](https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/)
+### 2. [开源下载器 FluxDown 发布插件系统：支持跨端界面与沙箱安全控制](https://www.v2ex.com/t/1250962#reply0)
 
-- **原标题 / Original**: Eight Bits of Trust; eMudhra's CA keys cracked in milliseconds
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#行业动态` `#安全/对齐` `#出海`
-- **💡 核心概要 / What It Is**: 安全研究者 Scott Helme 发现证书机构 eMudhra 的 8 把中间 CA 私钥因生成脚本缺陷退化为单字节弱密钥，可在毫秒内暴力破解。
-- **🎯 推荐与借鉴 / Takeaway**: 作者亲自暴力破解 eMudhra 弱密钥并实测非浏览器客户端全部放行，可作为理解 CA 信任链与客户端吊销盲区的实战案例。
+- **原标题 / Original**: 给开源下载器 FluxDown 做了一套插件系统：网页解析、拦截下载、自定义界面，桌面和 Web 端通用
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#桌面端` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开源多协议下载器 FluxDown 随 v0.6.0 版本发布全新插件系统，支持网页解析、下载拦截以及跨桌面与 Web 端的自定义 JSX 界面。插件系统通过 QuickJS 沙箱隔离解决第三方脚本安全性问题，提供细粒度权限申请、网络边界访问控制、审计日志与自动熔断保护。
+- **🎯 推荐与借鉴 / Takeaway**: 该项目展示了桌面与Web端共用JSX插件界面的工程设计，为开发者设计跨端安全沙箱与权限管理机制提供了实用参考。
 
-### 3. [Antumi 开源：多 Agent 桌面工作台，统一管理 Claude Code、Codex、Cursor 并盘活订阅额度](https://www.v2ex.com/t/1250538#reply0)
+### 3. [FulcrumSec 公开 PingCAP TiDB Cloud 数据泄露：10.6 TB 外泄含 11.5 万明文 API 密钥](https://fulcrumsec.vg/pingcap/)
 
-- **原标题 / Original**: 开源自用的多 Agent 桌面工作台， Agent 放一起管，订阅额度一点不浪费
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#独立开发` `#AI工具` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: Antumi（安图米）是一款开源桌面端工具，把已装好的 Claude Code、Codex、Cursor CLI 集中在一个工作台里管理。【商业/痛点逻辑】解决多开终端的烦恼：一键移交上下文换 Agent 接着干、汇总各窗口待批准事项并系统通知、状态栏并排显示三家额度并提醒「该花了」、自动把 Agent 提到的事项记成待办，避免订阅额度浪费。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者自用后开源的多 Agent 桌面工作台，解决了订阅额度浪费和上下文移交的真实痛点，工程实现思路可借鉴。
+- **原标题 / Original**: PingCap TiDB Leaks
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#行业动态`
+- **💡 核心概要 / What It Is**: 安全方 FulcrumSec 公开对 PingCAP（TiDB Cloud 托管数据库厂商）的入侵结果，宣称总计外泄 10.6 TB、先期放出约 200 GB 五个压缩包。
+- **🎯 推荐与借鉴 / Takeaway**: 同一套多租户托管架构的失控样本，对做云服务与租户隔离、密钥管理的团队有直接警示意义。
 
-### 4. [统一控制 UnitCtrl 发布 Windows 版：电脑控制安卓设备，纯局域网不走云端且免费](https://www.v2ex.com/t/1250595#reply0)
+### 4. [Omnara 开源：可自托管的 Claude Managed Agents 替代方案](https://github.com/omnara-ai/omnara)
 
-- **原标题 / Original**: 统一控制出 Windows 版了：在 Windows / Mac 上控制家里的安卓，手机之间也能互控，不走云端，永远免费（安卓内测招募）
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#桌面端` `#开源/仓库` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款跨设备控制工具，可在 Windows / Mac 上查看和操作家中多台安卓设备，手机之间也能互控。
-- **💰 商业模式与变现 / Business Logic**: 面向家里闲置的旧手机、平板等备用设备的使用痛点，主打无账号、不经云端、隐私可控，永久免费无广告，目前靠 Google Play 封闭测试推进安卓版上架。
-- **🎯 推荐与借鉴 / Takeaway**: 作者公开从 Mac 到 Windows 的迭代过程和编码器延迟排查细节，局域网控制方案与无云端隐私取舍都有工程参考价值。
+- **原标题 / Original**: Show HN: Omnara – Open-source alternative to Claude Managed Agents
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#自动化` `#SaaS` `#GitHub` `#Anthropic` `#OpenAI`
+- **💡 核心概要 / What It Is**: Omnara 是一个开源的托管 Agent 平台，可用任意模型在任意机器上运行 AI Agent，内置工具、权限、密钥与事件流。
+- **💰 商业模式与变现 / Business Logic**: 对标 Claude Managed Agents 与 OpenAI Agents API 的锁定模式，主打开源可自托管、自带模型密钥、数据留在自己的 Postgres。
+- **🎯 推荐与借鉴 / Takeaway**: 开源托管 Agent 平台对标 Claude Managed Agents，可自托管、任意模型与机器，工程选型与部署细节都有参考价值。
 
-### 5. [ccx 开源：一键在 Claude Code 与 Codex 间带上下文接力](https://www.v2ex.com/t/1250714#reply0)
+### 5. [AWS Lightsail 全球多区域共享流量监控与自动停机部署手册](https://www.v2ex.com/t/1250791#reply0)
 
-- **原标题 / Original**: Claude 和 Codex 来回切的人有救了：写了个 ccx，一键带着上下文切过去接着干
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
+- **标签 / Tags**: `#实操指南` `#出海基建` `#自动化` `#非AI/通用工具`
+- **💡 核心概要 / What It Is**: 一套基于 AWS Lambda + SNS + EventBridge 的 Lightsail 全球多区域流量监控与自动停机方案，附完整部署手册和 Python 代码。
+- **🎯 推荐与借鉴 / Takeaway**: 作者针对 Lightsail 多区域流量池缺自动停机的痛点给出完整方案，附全套部署步骤与删除实例的计费陷阱提醒，工程参考具体。
+
+### 6. [ns2jb 发布：Switch 2 固件 23.0.1 首个纯软件越狱](https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/)
+
+- **原标题 / Original**: Jailbreaking the Switch 2
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#非AI/通用工具` `#开源/仓库` `#Hacker News` `#GitHub`
+- **💡 核心概要 / What It Is**: ns2jb 是针对 Switch 2 当前最新固件 23.0.1 的纯软件 tethered 越狱，作者称这是该主机首个同类漏洞利用。
+
+### 7. [OpenAI 开源官方 CLI：命令行直接调用 REST API](https://github.com/openai/openai-cli)
+
+- **原标题 / Original**: OpenAI CLI
 - **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#AI工具` `#独立开发` `#GitHub` `#V2EX` `#Anthropic`
-- **💡 核心概要 / What It Is**: ccx 是一个 Mac 菜单栏工具，把 Claude Code 会话与 Codex 线程关联起来，双向同步消息、工具调用、计划和 git status。
-- **🎯 推荐与借鉴 / Takeaway**: 作者为解决 Claude Code 与 Codex 双向切换丢上下文的痛点开源了 ccx，工程思路与本地化实现可供借鉴。
+- **标签 / Tags**: `#开源神器` `#AI工具` `#CLI` `#OpenAI` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: OpenAI 官方发布的开源命令行工具，用于在终端直接调用 OpenAI REST API。【功能亮点】采用资源式命令结构，支持 responses、images、files、admin 等命令组，带 Tab 补全、可读输出、GJSON 数据提取、mTLS 双向认证与多种输出格式。
 
-### 6. [PHP 官方提前预警两项 9.2 分严重漏洞，10 月 21 日 22:00 发布紧急修复](https://www.appinn.com/php-critical-rce-vulnerability-2026/)
+### 8. [LayoutKeeper 开源：macOS 外接屏拔线后一键还原窗口位置与 Mission Control 桌面](https://www.v2ex.com/t/1250852#reply0)
 
-- **原标题 / Original**: PHP 官方罕见提前预警：两项 9.2 分严重漏洞，今晚 10 点发布修复｜请加班
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#行业动态` `#出海` `#安全/对齐`
-- **💡 核心概要 / What It Is**: PHP 官方于 10 月 20 日罕见提前预警 PHP 核心存在两项 CVSS v4.0 评分 9.2 分的严重漏洞，并定于北京时间 10 月 21 日 22:00 发布紧急安全更新。
+- **原标题 / Original**: Rectangle、Stay 我都用， LayoutKeeper 是第三种东西：说说窗口工具的三分法
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#独立开发` `#痛点需求` `#GitHub`
+- **💡 核心概要 / What It Is**: LayoutKeeper 是开源（GPL-3.0）的 macOS 菜单栏工具，记录外接屏上每个窗口的位置和所在 Mission Control 桌面，拔线重插后一键还原。
+- **🎯 推荐与借鉴 / Takeaway**: 作者以窗口管理工具的三分法拆解 Rectangle、Stay 与自家产品的分工，对做 macOS 小工具的开发者有场景切入和工程借鉴参考。
 
-### 7. [eMudhra 中间证书私钥泄露：一招测试你的浏览器是否已拦截](https://www.appinn.com/test-browser-security-emudhra-certificate/)
+### 9. [WorldTUI：微调 360M 模型模拟真实终端，浏览器本地运行](https://simedw.com/2026/10/21/world-model-terminal/)
 
-- **原标题 / Original**: 测试你的浏览器安全性：如果能打开这个网站，就踩中了印度证书机构的离谱大雷
+- **原标题 / Original**: WorldTUI: I trained a 360M model to pretend to be a terminal
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源/仓库` `#AI工具` `#模型发布` `#现象/趋势`
+- **💡 核心概要 / What It Is**: 作者将 Qwen2.5-Coder-0.5B 微调成 WorldTUI，用 360M 参数模型预测按键后屏幕变化，模拟一个没有 shell 和文件系统的终端，可运行 vim、tmux、Python REPL 和贪吃蛇。
+
+### 10. [HTTP/3 Header Accordions 漏洞曝光：几百 KiB 数据可拖垮服务器，10 种实现中 7 种受影响](https://www.appinn.com/http3-header-accordions/)
+
+- **原标题 / Original**: HTTP/3 爆出严重漏洞：几百 KB 数据，就能让服务器卡死
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐` `#现象/趋势` `#小众软件` `#Google`
-- **💡 核心概要 / What It Is**: 印度证书机构 eMudhra 的中间证书私钥被暴力破解，原因是一个几乎全为零的离谱私钥，攻击者可借此为任意域名签发 HTTPS 证书。Google Chrome 与 Firefox 于 10 月 17 日通过 CRLSet 和 OneCRL 远程封锁，苹果 19 日、微软 20 日跟进，但 curl、Python、Node.js 等依赖系统证书库的应用可能仍受影响。
+- **标签 / Tags**: `#安全/对齐` `#出海基建` `#行业动态` `#Cloudflare`
+- **💡 核心概要 / What It Is**: 安全团队 FoxIO 披露的 HTTP/3 拒绝服务攻击，利用 QPACK 头部压缩的资源放大效应。【痛点逻辑】几百 KiB 输入可换数千倍服务器资源消耗，实测约 516 KiB 数据让 Bun 陷入 CPU 100% 死循环，约 5.8 MiB 可致 2 GiB 容器 OOM，小流量即可让服务停止响应。
 
-### 8. [网页版键帽生成器上线：离线可用、参数化建模并直接导出 3D 打印](https://www.v2ex.com/t/1250568#reply0)
+### 11. [MD2X 免费上线：Markdown 一键排版 X（Twitter）长文，代码、表格、Mermaid 自动转图片](https://www.v2ex.com/t/1251059#reply0)
 
-- **原标题 / Original**: 写了个网页版键帽生成器（离线可用）可直接 3D 打印
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#非AI/通用工具` `#开源/仓库` `#桌面端` `#GitHub`
-- **💡 核心概要 / What It Is**: 一个纯静态网页键帽生成器，可自定义外形、字符、颜色后直接导出 3D 打印。
-- **💰 商业模式与变现 / Business Logic**: 解决现有在线工具要联网注册、STL 还需回切片软件补材料的痛点，全部免费在线使用。
-- **🎯 推荐与借鉴 / Takeaway**: 独立开发者把参数化键帽建模做成纯静态网页，离线可用并直接导出打印文件，工程取舍和已知坑都写得实在。
+- **原标题 / Original**: 做了个免费工具：写 Markdown，一键排好 X（Twitter）长文，代码、表格、Mermaid 图自动转图片
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#独立开发` `#开源/仓库` `#非AI/通用工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: MD2X 是一款免费网页工具，左边写 Markdown、右边实时预览，一键排版成 X（Twitter）长文（Articles），支持复制标题和正文并保留格式。
+- **🎯 推荐与借鉴 / Takeaway**: 作者从自身排版痛点切入，做了免费的 Markdown 转 X 长文工具，纯浏览器端渲染的方案和开源实现有工程参考价值。
 
-### 9. [Win11Debloat 更新官方中文版：一键卸载 90+ 款 Windows 11 预装软件，新增禁用 Chrome AI 选项](https://www.appinn.com/win11debloat/)
+### 12. [RigCheck 上线：查显卡 / Mac 能否本地跑开源模型，作者自费租卡实测 24 次](https://www.v2ex.com/t/1250904#reply0)
 
-- **原标题 / Original**: Win11Debloat 官方中文版 – 一键卸载 90+ 款 Windows 11 预装软件[2026.10.21更新]
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#非AI/通用工具` `#开源/仓库` `#GitHub`
-- **💡 核心概要 / What It Is**: 你看到的内容可能由第三方 AI 基于小众软件文章提炼总结而成，可能与原文真实意图存在偏差。Win11Debloat 是一款开源 PowerShell 脚本工具，可一键安全卸载 90+ 款 Windows 11/10 预装应用（50 多个微软自带和 40 多个第三方软件），被移除的应用多数可通过 Microsoft Store 或 WinGet 重新安装。
-
-### 10. [Splash 1.4 发布：本地推理比 Strata 快约 30%，支持 Qwen3.8-Flash-Next](https://www.appinn.com/splash-1-4/)
-
-- **原标题 / Original**: 卷起来了！昨天 Strata 刚升级，今天 Splash 1.4 就宣布快了 30%
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#桌面端` `#评测/基准` `#GitHub`
-- **💡 核心概要 / What It Is**: Splash 1.4 是 Inco AI 开发的开源本地 AI 推理引擎，专为 Apple Silicon 优化，开发者公布在 M5 Pro、64GB 内存 Mac 上运行 Qwen3.8-Flash-Next Q2_0 模型时，速度比 Strata 快约 30%，最高生成 120 tokens/s，32K 输入处理 1,312 tokens/s。
+- **原标题 / Original**: RigCheck：查你的显卡 / Mac 能不能本地跑新出的开源模型，数字都有来源，还自己租卡实测了 24 次
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#AI工具` `#独立开发` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 英文小站 localrigcheck.com，用真实模型文件大小和 llama.cpp 逐层 KV cache 计算方式，判断你的显卡或 Mac 能否跑某个开源模型。
+- **🎯 推荐与借鉴 / Takeaway**: 作者公开了从真实文件大小估算显存需求的方法和自费租卡实测数据，对做本地模型工具的开发者有工程借鉴价值。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-21 情报精选 (10 篇)](archives/2026-10-21.md)
-- [📅 2026-10-20 情报精选 (8 篇)](archives/2026-10-20.md)
+- [📅 2026-10-22 情报精选 (12 篇)](archives/2026-10-22.md)
+- [📅 2026-10-21 情报精选 (19 篇)](archives/2026-10-21.md)
+- [📅 2026-10-20 情报精选 (7 篇)](archives/2026-10-20.md)
 - [📅 2026-10-19 情报精选 (12 篇)](archives/2026-10-19.md)
 - [📅 2026-10-18 情报精选 (7 篇)](archives/2026-10-18.md)
 - [📅 2026-10-17 情报精选 (5 篇)](archives/2026-10-17.md)
