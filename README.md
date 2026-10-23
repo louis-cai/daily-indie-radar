@@ -6,106 +6,61 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-22
+## 今日精选 (Today's Top Signals) · 2026-10-23
 
-### 1. [Calends 开源：面向合租场景的订阅账本，支持 AI 与 MCP 管理](https://www.v2ex.com/t/1251052#reply0)
+### 1. [统计 7K 个产品技术栈：新项目选型向 Resend、Supabase、PostHog 集中，迁移 PR 一年涨 11 倍](https://www.v2ex.com/t/1251289#reply0)
 
-- **原标题 / Original**: 做了近 10 年合租车主，我开源了自己的订阅账本 Calends
-- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#SaaS` `#出海` `#AI工具` `#V2EX` `#GitHub` `#Cloudflare` `#DeepSeek`
-- **💡 核心概要 / What It Is**: Calends 是一款 MIT 开源的订阅管理账本，专为长期合租车主设计，可记录成员付款进度、代付、欠款和垫付金额。
-- **💰 商业模式与变现 / Business Logic**: 市面订阅 App 难以满足合租场景中跨区涨价、代付、礼品卡等细节记录需求，作者基于自身近 10 年开 YouTube、5 年多 Spotify 车队的真实痛点自建方案。
-- **🎯 推荐与借鉴 / Takeaway**: 作者以近十年合租车主的真实记账痛点为切口，展示了订阅账本的功能设计与 AI、MCP 集成思路，工程借鉴清晰。
+- **原标题 / Original**: 统计了 7K 个产品的技术栈，分享一点发现
+- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 📌 null
+- **标签 / Tags**: `#现象/趋势` `#独立开发` `#AI工具` `#SaaS`
+- **💡 核心概要 / What It Is**: 一位独立开发者整理了 7000 多个线上 AI-native 产品的技术栈（附出处），并发布数据分析。2024 年前到 2026 年上线的产品中，事务邮件从 SendGrid 51% 转向 Resend 82%，数据库从 Firebase/MongoDB 转向 Supabase 64%，分析工具 PostHog 达 88%，支付端 Polar 和 Dodo 占比上升。
+- **🎯 推荐与借鉴 / Takeaway**: 作者用 7000 多个产品的一手数据拆解技术栈选型与迁移趋势，对开发者工具选品和 SEO 切入点有直接参考。
 
-### 2. [开源下载器 FluxDown 发布插件系统：支持跨端界面与沙箱安全控制](https://www.v2ex.com/t/1250962#reply0)
+### 2. [SLG 三国游戏开源公测：人摸鱼，AI 打仗](https://www.v2ex.com/t/1251231#reply0)
 
-- **原标题 / Original**: 给开源下载器 FluxDown 做了一套插件系统：网页解析、拦截下载、自定义界面，桌面和 Web 端通用
+- **原标题 / Original**: [开源公测] 做了个让 AI 替我打的三国游戏，上班摸鱼， AI 打仗
 - **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#桌面端` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 开源多协议下载器 FluxDown 随 v0.6.0 版本发布全新插件系统，支持网页解析、下载拦截以及跨桌面与 Web 端的自定义 JSX 界面。插件系统通过 QuickJS 沙箱隔离解决第三方脚本安全性问题，提供细粒度权限申请、网络边界访问控制、审计日志与自动熔断保护。
-- **🎯 推荐与借鉴 / Takeaway**: 该项目展示了桌面与Web端共用JSX插件界面的工程设计，为开发者设计跨端安全沙箱与权限管理机制提供了实用参考。
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#出海` `#SaaS` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款网页版三国 SLG，玩家把游戏文档和 token 交给 Claude、ChatGPT 或自写脚本，让 AI 代为建城、练兵、打仗。【商业/痛点逻辑】针对传统 SLG 太肝的痛点，半夜收资源、掐点出兵的活全交给 AI，人只需回来看战报和日报。
+- **🎯 推荐与借鉴 / Takeaway**: 作者公开了让 AI 代打 SLG 的完整玩法与协议设计思路，对想做 AI 原生游戏的开发者有工程借鉴。
 
-### 3. [FulcrumSec 公开 PingCAP TiDB Cloud 数据泄露：10.6 TB 外泄含 11.5 万明文 API 密钥](https://fulcrumsec.vg/pingcap/)
+### 3. [TopCheckouts 排行榜：用付款页访问量挖出 607 个闷声赚钱的出海网站](https://www.v2ex.com/t/1251243#reply0)
 
-- **原标题 / Original**: PingCap TiDB Leaks
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐` `#行业动态`
-- **💡 核心概要 / What It Is**: 安全方 FulcrumSec 公开对 PingCAP（TiDB Cloud 托管数据库厂商）的入侵结果，宣称总计外泄 10.6 TB、先期放出约 200 GB 五个压缩包。
-- **🎯 推荐与借鉴 / Takeaway**: 同一套多租户托管架构的失控样本，对做云服务与租户隔离、密钥管理的团队有直接警示意义。
+- **原标题 / Original**: 给全球闷声发大财的网站做了一个排行榜
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#出海` `#变现` `#独立开发` `#Stripe`
+- **💡 核心概要 / What It Is**: 一个纯静态排行榜站，用 Similarweb 的付款页跳转数据，筛出全球低调赚钱的网站。作者拉取 2026 年 4–9 月导流到 Stripe、Gumroad、Lemon Squeezy、Polar、Creem、Whop 付款页的 15,790 个网站，过滤后剩 607 个。
+- **🎯 推荐与借鉴 / Takeaway**: 用 Similarweb 付款页跳转数据代替晒 MRR 的口径，思路可借鉴，也提醒了付费页访问不等于收入的口径局限。
 
-### 4. [Omnara 开源：可自托管的 Claude Managed Agents 替代方案](https://github.com/omnara-ai/omnara)
+### 4. [Codex-RetryPilot 上线：macOS 小工具自动替 Codex 点重试](https://www.v2ex.com/t/1251232#reply0)
 
-- **原标题 / Original**: Show HN: Omnara – Open-source alternative to Claude Managed Agents
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#自动化` `#SaaS` `#GitHub` `#Anthropic` `#OpenAI`
-- **💡 核心概要 / What It Is**: Omnara 是一个开源的托管 Agent 平台，可用任意模型在任意机器上运行 AI Agent，内置工具、权限、密钥与事件流。
-- **💰 商业模式与变现 / Business Logic**: 对标 Claude Managed Agents 与 OpenAI Agents API 的锁定模式，主打开源可自托管、自带模型密钥、数据留在自己的 Postgres。
-- **🎯 推荐与借鉴 / Takeaway**: 开源托管 Agent 平台对标 Claude Managed Agents，可自托管、任意模型与机器，工程选型与部署细节都有参考价值。
-
-### 5. [AWS Lightsail 全球多区域共享流量监控与自动停机部署手册](https://www.v2ex.com/t/1250791#reply0)
-
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#实操指南` `#出海基建` `#自动化` `#非AI/通用工具`
-- **💡 核心概要 / What It Is**: 一套基于 AWS Lambda + SNS + EventBridge 的 Lightsail 全球多区域流量监控与自动停机方案，附完整部署手册和 Python 代码。
-- **🎯 推荐与借鉴 / Takeaway**: 作者针对 Lightsail 多区域流量池缺自动停机的痛点给出完整方案，附全套部署步骤与删除实例的计费陷阱提醒，工程参考具体。
-
-### 6. [ns2jb 发布：Switch 2 固件 23.0.1 首个纯软件越狱](https://pepsipu.com/blog/2026-10-switch2-jailbreak-ns2jb/)
-
-- **原标题 / Original**: Jailbreaking the Switch 2
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#非AI/通用工具` `#开源/仓库` `#Hacker News` `#GitHub`
-- **💡 核心概要 / What It Is**: ns2jb 是针对 Switch 2 当前最新固件 23.0.1 的纯软件 tethered 越狱，作者称这是该主机首个同类漏洞利用。
-
-### 7. [OpenAI 开源官方 CLI：命令行直接调用 REST API](https://github.com/openai/openai-cli)
-
-- **原标题 / Original**: OpenAI CLI
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#CLI` `#OpenAI` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: OpenAI 官方发布的开源命令行工具，用于在终端直接调用 OpenAI REST API。【功能亮点】采用资源式命令结构，支持 responses、images、files、admin 等命令组，带 Tab 补全、可读输出、GJSON 数据提取、mTLS 双向认证与多种输出格式。
-
-### 8. [LayoutKeeper 开源：macOS 外接屏拔线后一键还原窗口位置与 Mission Control 桌面](https://www.v2ex.com/t/1250852#reply0)
-
-- **原标题 / Original**: Rectangle、Stay 我都用， LayoutKeeper 是第三种东西：说说窗口工具的三分法
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#独立开发` `#痛点需求` `#GitHub`
-- **💡 核心概要 / What It Is**: LayoutKeeper 是开源（GPL-3.0）的 macOS 菜单栏工具，记录外接屏上每个窗口的位置和所在 Mission Control 桌面，拔线重插后一键还原。
-- **🎯 推荐与借鉴 / Takeaway**: 作者以窗口管理工具的三分法拆解 Rectangle、Stay 与自家产品的分工，对做 macOS 小工具的开发者有场景切入和工程借鉴参考。
-
-### 9. [WorldTUI：微调 360M 模型模拟真实终端，浏览器本地运行](https://simedw.com/2026/10/21/world-model-terminal/)
-
-- **原标题 / Original**: WorldTUI: I trained a 360M model to pretend to be a terminal
+- **原标题 / Original**: [自荐] Codex 老卡在 at capacity，我写了个 macOS 小工具替它点「重试」
 - **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源/仓库` `#AI工具` `#模型发布` `#现象/趋势`
-- **💡 核心概要 / What It Is**: 作者将 Qwen2.5-Coder-0.5B 微调成 WorldTUI，用 360M 参数模型预测按键后屏幕变化，模拟一个没有 shell 和文件系统的终端，可运行 vim、tmux、Python REPL 和贪吃蛇。
+- **标签 / Tags**: `#开源神器` `#桌面端` `#自动化` `#开源/仓库` `#GitHub` `#OpenAI`
+- **💡 核心概要 / What It Is**: 一款 macOS 菜单小工具，检测到 Codex 窗口出现 Selected model is at capacity 提示时自动点击「重试」，让人不在电脑前长任务也不中断。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者针对 Codex 长任务卡在容量报错的真实痛点，展示了用辅助功能 API 自动点击的桌面小工具工程思路。
 
-### 10. [HTTP/3 Header Accordions 漏洞曝光：几百 KiB 数据可拖垮服务器，10 种实现中 7 种受影响](https://www.appinn.com/http3-header-accordions/)
+### 5. [Anthropic 用 Claude 对 123 个开源库完成汇编级形式化验证并发现多处长期潜伏漏洞](https://www.anthropic.com/research/formal-verification)
 
-- **原标题 / Original**: HTTP/3 爆出严重漏洞：几百 KB 数据，就能让服务器卡死
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#安全/对齐` `#出海基建` `#行业动态` `#Cloudflare`
-- **💡 核心概要 / What It Is**: 安全团队 FoxIO 披露的 HTTP/3 拒绝服务攻击，利用 QPACK 头部压缩的资源放大效应。【痛点逻辑】几百 KiB 输入可换数千倍服务器资源消耗，实测约 516 KiB 数据让 Bun 陷入 CPU 100% 死循环，约 5.8 MiB 可致 2 GiB 容器 OOM，小流量即可让服务停止响应。
+- **原标题 / Original**: LLMs are making formal software verification feasible at a much larger scale
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#论文/研究` `#AI工具` `#开源/仓库` `#安全/对齐` `#Anthropic`
+- **💡 核心概要 / What It Is**: Anthropic 与 Theorem 合作的 LLM 形式化验证研究，用 Claude 将开源库的 fuzz 测试转化为规范并生成机器码级安全证明。
 
-### 11. [MD2X 免费上线：Markdown 一键排版 X（Twitter）长文，代码、表格、Mermaid 自动转图片](https://www.v2ex.com/t/1251059#reply0)
+### 6. [OrangeLen 免费发布：macOS 按空格预览项目文件夹、Skill/MCP 包和工作流图](https://www.v2ex.com/t/1251240#reply0)
 
-- **原标题 / Original**: 做了个免费工具：写 Markdown，一键排好 X（Twitter）长文，代码、表格、Mermaid 图自动转图片
+- **原标题 / Original**: [分享创造] OrangeLen： macOS 按空格就能看懂整个项目文件夹和 AI 产物（Skill/MCP 包、工作流图、模型元数据），免费，求反馈
 - **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#独立开发` `#开源/仓库` `#非AI/通用工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: MD2X 是一款免费网页工具，左边写 Markdown、右边实时预览，一键排版成 X（Twitter）长文（Articles），支持复制标题和正文并保留格式。
-- **🎯 推荐与借鉴 / Takeaway**: 作者从自身排版痛点切入，做了免费的 Markdown 转 X 长文工具，纯浏览器端渲染的方案和开源实现有工程参考价值。
-
-### 12. [RigCheck 上线：查显卡 / Mac 能否本地跑开源模型，作者自费租卡实测 24 次](https://www.v2ex.com/t/1250904#reply0)
-
-- **原标题 / Original**: RigCheck：查你的显卡 / Mac 能不能本地跑新出的开源模型，数字都有来源，还自己租卡实测了 24 次
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#AI工具` `#独立开发` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 英文小站 localrigcheck.com，用真实模型文件大小和 llama.cpp 逐层 KV cache 计算方式，判断你的显卡或 Mac 能否跑某个开源模型。
-- **🎯 推荐与借鉴 / Takeaway**: 作者公开了从真实文件大小估算显存需求的方法和自费租卡实测数据，对做本地模型工具的开发者有工程借鉴价值。
+- **标签 / Tags**: `#新出海产品` `#独立开发` `#桌面端` `#开源/仓库` `#非AI/通用工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一款免费的 macOS Quick Look 增强工具，在 Finder 按空格即可看懂项目文件夹和 AI 产物。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把 macOS Quick Look 扩展到 AI 时代产物，工程上覆盖 Skill/MCP 包与工作流 JSON 的预览思路值得借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-22 情报精选 (12 篇)](archives/2026-10-22.md)
+- [📅 2026-10-23 情报精选 (6 篇)](archives/2026-10-23.md)
+- [📅 2026-10-22 情报精选 (17 篇)](archives/2026-10-22.md)
 - [📅 2026-10-21 情报精选 (19 篇)](archives/2026-10-21.md)
 - [📅 2026-10-20 情报精选 (7 篇)](archives/2026-10-20.md)
 - [📅 2026-10-19 情报精选 (12 篇)](archives/2026-10-19.md)
