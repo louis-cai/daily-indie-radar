@@ -6,63 +6,62 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-23
+## 今日精选 (Today's Top Signals) · 2026-10-24
 
-### 1. [统计 7K 个产品技术栈：新项目选型向 Resend、Supabase、PostHog 集中，迁移 PR 一年涨 11 倍](https://www.v2ex.com/t/1251289#reply0)
+### 1. [MetriBee 开源：给 GA4 换一张 Rybbit 风格的好看界面，不用跑数据库](https://www.v2ex.com/t/1251507#reply0)
 
-- **原标题 / Original**: 统计了 7K 个产品的技术栈，分享一点发现
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 📌 null
-- **标签 / Tags**: `#现象/趋势` `#独立开发` `#AI工具` `#SaaS`
-- **💡 核心概要 / What It Is**: 一位独立开发者整理了 7000 多个线上 AI-native 产品的技术栈（附出处），并发布数据分析。2024 年前到 2026 年上线的产品中，事务邮件从 SendGrid 51% 转向 Resend 82%，数据库从 Firebase/MongoDB 转向 Supabase 64%，分析工具 PostHog 达 88%，支付端 Polar 和 Dodo 占比上升。
-- **🎯 推荐与借鉴 / Takeaway**: 作者用 7000 多个产品的一手数据拆解技术栈选型与迁移趋势，对开发者工具选品和 SEO 切入点有直接参考。
+- **原标题 / Original**: 开源了 MetriBee：给 GA4 换一张好看的脸，不用跑数据库
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#独立开发` `#出海` `#AI工具` `#GitHub` `#Google`
+- **💡 核心概要 / What It Is**: MetriBee 是一个开源 GA4 看板，把所有站点的 Google Analytics 4 数据放在一屏展示，只跑一个 Node 进程。
+- **🎯 推荐与借鉴 / Takeaway**: 作者给出一条省掉自建数据库的分析思路，用 GA4 存储加 Rybbit 界面兼顾体验与零成本，工程取舍可借鉴。
 
-### 2. [SLG 三国游戏开源公测：人摸鱼，AI 打仗](https://www.v2ex.com/t/1251231#reply0)
+### 2. [开源公测三国 SLG：人摸鱼，AI 替你打仗](https://www.v2ex.com/t/1251476#reply0)
 
 - **原标题 / Original**: [开源公测] 做了个让 AI 替我打的三国游戏，上班摸鱼， AI 打仗
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#出海` `#SaaS` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款网页版三国 SLG，玩家把游戏文档和 token 交给 Claude、ChatGPT 或自写脚本，让 AI 代为建城、练兵、打仗。【商业/痛点逻辑】针对传统 SLG 太肝的痛点，半夜收资源、掐点出兵的活全交给 AI，人只需回来看战报和日报。
-- **🎯 推荐与借鉴 / Takeaway**: 作者公开了让 AI 代打 SLG 的完整玩法与协议设计思路，对想做 AI 原生游戏的开发者有工程借鉴。
-
-### 3. [TopCheckouts 排行榜：用付款页访问量挖出 607 个闷声赚钱的出海网站](https://www.v2ex.com/t/1251243#reply0)
-
-- **原标题 / Original**: 给全球闷声发大财的网站做了一个排行榜
 - **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#出海` `#变现` `#独立开发` `#Stripe`
-- **💡 核心概要 / What It Is**: 一个纯静态排行榜站，用 Similarweb 的付款页跳转数据，筛出全球低调赚钱的网站。作者拉取 2026 年 4–9 月导流到 Stripe、Gumroad、Lemon Squeezy、Polar、Creem、Whop 付款页的 15,790 个网站，过滤后剩 607 个。
-- **🎯 推荐与借鉴 / Takeaway**: 用 Similarweb 付款页跳转数据代替晒 MRR 的口径，思路可借鉴，也提醒了付费页访问不等于收入的口径局限。
+- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#AI工具` `#独立开发` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一款网页版三国 SLG 游戏，玩家把游戏文档、地址和令牌贴给 Claude、ChatGPT 或本地模型，由 AI 自动建城、练兵、打仗。【商业/痛点逻辑】针对 SLG 重度肝的痛点，离线也产资源，新手保护 3 天，每周可免战一次 12 小时。
+- **🎯 推荐与借鉴 / Takeaway**: 把 SLG 游戏做成 AI 可玩的开放协议，MCP 接入任意模型，工程思路和玩法设计都有借鉴价值。
 
-### 4. [Codex-RetryPilot 上线：macOS 小工具自动替 Codex 点重试](https://www.v2ex.com/t/1251232#reply0)
+### 3. [Smart Wrong Notebook 开源：AI 智能错题本，支持拍照识别与安卓单机版](https://www.v2ex.com/t/1251464#reply0)
 
-- **原标题 / Original**: [自荐] Codex 老卡在 at capacity，我写了个 macOS 小工具替它点「重试」
+- **原标题 / Original**: 开源 AI 错题本：支持拍照识别、国内大模型直连（DeepSeek/MiniMax）、组卷打印与安卓单机版
 - **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#桌面端` `#自动化` `#开源/仓库` `#GitHub` `#OpenAI`
-- **💡 核心概要 / What It Is**: 一款 macOS 菜单小工具，检测到 Codex 窗口出现 Selected model is at capacity 提示时自动点击「重试」，让人不在电脑前长任务也不中断。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者针对 Codex 长任务卡在容量报错的真实痛点，展示了用辅助功能 API 自动点击的桌面小工具工程思路。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#独立开发` `#出海` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款 MIT 开源的 AI 智能错题本，fork 自 wttwins/wrong-notebook，覆盖拍照识别、SVG 重绘配图、分步动画讲解、举一反三到组卷打印的完整闭环。
+- **🎯 推荐与借鉴 / Takeaway**: 作者完整展示了从家庭真实痛点出发改造开源项目的思路，安卓单机版的交叉编译打包经验有工程借鉴价值。
 
-### 5. [Anthropic 用 Claude 对 123 个开源库完成汇编级形式化验证并发现多处长期潜伏漏洞](https://www.anthropic.com/research/formal-verification)
+### 4. [BottlecapAI 发布 ThinkingCap-gemma-4-26B-A4B：思考 token 平均减少 38.9%，精度仅降 0.15pp](https://bottlecapai.com/post/thinkingcap-gemma-4-26b/)
 
-- **原标题 / Original**: LLMs are making formal software verification feasible at a much larger scale
+- **原标题 / Original**: Gemma-4-26B-A4B with 39-69% less thinking at same accuracy
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#模型发布` `#开源/仓库` `#AI工具` `#Google`
+- **💡 核心概要 / What It Is**: BottlecapAI 的第五款 ThinkingCap 系列 token 高效模型，基于 Google 的 gemma-4-26B-A4B-it 训练，目标是减少思考 token 消耗而不改变答案质量。
+
+### 5. [Strata 0.2.4 发布：12GB 显卡本地运行 DeepSeek V4.1-Flash](https://www.appinn.com/strata-0-2-4-deepseek-v4-1-flashterminal-0-2-4-1/)
+
+- **原标题 / Original**: Strata 0.2.4 更新：12GB 显卡运行 DeepSeek V4.1-Flash
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#论文/研究` `#AI工具` `#开源/仓库` `#安全/对齐` `#Anthropic`
-- **💡 核心概要 / What It Is**: Anthropic 与 Theorem 合作的 LLM 形式化验证研究，用 Claude 将开源库的 fuzz 测试转化为规范并生成机器码级安全证明。
+- **标签 / Tags**: `#开源神器` `#独立开发` `#DeepSeek` `#开源/仓库` `#桌面端` `#GitHub`
+- **💡 核心概要 / What It Is**: Strata 0.2.4 终端版发布，支持在 RTX 3060 12GB + 46GB 内存上本地运行 DeepSeek V4.1-Flash 量化模型。其采用 MoE 热门专家缓存机制，把常用专家留在内存、其余放 SSD 按需读取，实测生成速度 8～10 tokens/s；压缩最狠的 1.75-bit 版据 ISTA-DASLab 测试仍达原版 98.7% 平均基准表现。
 
-### 6. [OrangeLen 免费发布：macOS 按空格预览项目文件夹、Skill/MCP 包和工作流图](https://www.v2ex.com/t/1251240#reply0)
+### 6. [rqlite 作者复盘分布式 SQLite 十二年演进：从开源共识走向云托管基建](https://philipotoole.com/twelve-years-of-distributed-sqlite/)
 
-- **原标题 / Original**: [分享创造] OrangeLen： macOS 按空格就能看懂整个项目文件夹和 AI 产物（Skill/MCP 包、工作流图、模型元数据），免费，求反馈
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#独立开发` `#桌面端` `#开源/仓库` `#非AI/通用工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 一款免费的 macOS Quick Look 增强工具，在 Finder 按空格即可看懂项目文件夹和 AI 产物。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把 macOS Quick Look 扩展到 AI 时代产物，工程上覆盖 Skill/MCP 包与工作流 JSON 的预览思路值得借鉴。
+- **原标题 / Original**: Twelve years of distributed SQLite
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源/仓库` `#现象/趋势` `#SaaS` `#出海基建` `#GitHub` `#Cloudflare` `#Supabase`
+- **💡 核心概要 / What It Is**: rqlite 作者回顾了自 2014 年将 Raft 与 SQLite 结合以来的分布式 SQLite 技术演进与商业化历程。文章将技术路径划分为强一致共识集群、WAL 流式备份与 CRDT 多写合并三大方向，并梳理了从开源自建逐步演变为 Cloudflare D1 及 Turso 等云托管商业服务的过程。这一复盘为开发者在技术选型与基础设施商业化路径上提供了明确的工程架构参考。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-23 情报精选 (6 篇)](archives/2026-10-23.md)
+- [📅 2026-10-24 情报精选 (6 篇)](archives/2026-10-24.md)
+- [📅 2026-10-23 情报精选 (10 篇)](archives/2026-10-23.md)
 - [📅 2026-10-22 情报精选 (17 篇)](archives/2026-10-22.md)
 - [📅 2026-10-21 情报精选 (19 篇)](archives/2026-10-21.md)
-- [📅 2026-10-20 情报精选 (7 篇)](archives/2026-10-20.md)
+- [📅 2026-10-20 情报精选 (9 篇)](archives/2026-10-20.md)
 - [📅 2026-10-19 情报精选 (12 篇)](archives/2026-10-19.md)
 - [📅 2026-10-18 情报精选 (7 篇)](archives/2026-10-18.md)
 - [📅 2026-10-17 情报精选 (5 篇)](archives/2026-10-17.md)
