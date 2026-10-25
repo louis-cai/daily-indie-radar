@@ -6,58 +6,21 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-24
+## 今日精选 (Today's Top Signals) · 2026-10-25
 
-### 1. [MetriBee 开源：给 GA4 换一张 Rybbit 风格的好看界面，不用跑数据库](https://www.v2ex.com/t/1251507#reply0)
+### 1. [GVS5H Harness 开源：五个 Qwen3.8-27B 实例协作可匹敌 Fable 5](https://github.com/slee-persis/GVS5H)
 
-- **原标题 / Original**: 开源了 MetriBee：给 GA4 换一张好看的脸，不用跑数据库
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#独立开发` `#出海` `#AI工具` `#GitHub` `#Google`
-- **💡 核心概要 / What It Is**: MetriBee 是一个开源 GA4 看板，把所有站点的 Google Analytics 4 数据放在一屏展示，只跑一个 Node 进程。
-- **🎯 推荐与借鉴 / Takeaway**: 作者给出一条省掉自建数据库的分析思路，用 GA4 存储加 Rybbit 界面兼顾体验与零成本，工程取舍可借鉴。
-
-### 2. [开源公测三国 SLG：人摸鱼，AI 替你打仗](https://www.v2ex.com/t/1251476#reply0)
-
-- **原标题 / Original**: [开源公测] 做了个让 AI 替我打的三国游戏，上班摸鱼， AI 打仗
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#AI工具` `#独立开发` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 一款网页版三国 SLG 游戏，玩家把游戏文档、地址和令牌贴给 Claude、ChatGPT 或本地模型，由 AI 自动建城、练兵、打仗。【商业/痛点逻辑】针对 SLG 重度肝的痛点，离线也产资源，新手保护 3 天，每周可免战一次 12 小时。
-- **🎯 推荐与借鉴 / Takeaway**: 把 SLG 游戏做成 AI 可玩的开放协议，MCP 接入任意模型，工程思路和玩法设计都有借鉴价值。
-
-### 3. [Smart Wrong Notebook 开源：AI 智能错题本，支持拍照识别与安卓单机版](https://www.v2ex.com/t/1251464#reply0)
-
-- **原标题 / Original**: 开源 AI 错题本：支持拍照识别、国内大模型直连（DeepSeek/MiniMax）、组卷打印与安卓单机版
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#独立开发` `#出海` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款 MIT 开源的 AI 智能错题本，fork 自 wttwins/wrong-notebook，覆盖拍照识别、SVG 重绘配图、分步动画讲解、举一反三到组卷打印的完整闭环。
-- **🎯 推荐与借鉴 / Takeaway**: 作者完整展示了从家庭真实痛点出发改造开源项目的思路，安卓单机版的交叉编译打包经验有工程借鉴价值。
-
-### 4. [BottlecapAI 发布 ThinkingCap-gemma-4-26B-A4B：思考 token 平均减少 38.9%，精度仅降 0.15pp](https://bottlecapai.com/post/thinkingcap-gemma-4-26b/)
-
-- **原标题 / Original**: Gemma-4-26B-A4B with 39-69% less thinking at same accuracy
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#模型发布` `#开源/仓库` `#AI工具` `#Google`
-- **💡 核心概要 / What It Is**: BottlecapAI 的第五款 ThinkingCap 系列 token 高效模型，基于 Google 的 gemma-4-26B-A4B-it 训练，目标是减少思考 token 消耗而不改变答案质量。
-
-### 5. [Strata 0.2.4 发布：12GB 显卡本地运行 DeepSeek V4.1-Flash](https://www.appinn.com/strata-0-2-4-deepseek-v4-1-flashterminal-0-2-4-1/)
-
-- **原标题 / Original**: Strata 0.2.4 更新：12GB 显卡运行 DeepSeek V4.1-Flash
+- **原标题 / Original**: Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#独立开发` `#DeepSeek` `#开源/仓库` `#桌面端` `#GitHub`
-- **💡 核心概要 / What It Is**: Strata 0.2.4 终端版发布，支持在 RTX 3060 12GB + 46GB 内存上本地运行 DeepSeek V4.1-Flash 量化模型。其采用 MoE 热门专家缓存机制，把常用专家留在内存、其余放 SSD 按需读取，实测生成速度 8～10 tokens/s；压缩最狠的 1.75-bit 版据 ISTA-DASLab 测试仍达原版 98.7% 平均基准表现。
-
-### 6. [rqlite 作者复盘分布式 SQLite 十二年演进：从开源共识走向云托管基建](https://philipotoole.com/twelve-years-of-distributed-sqlite/)
-
-- **原标题 / Original**: Twelve years of distributed SQLite
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源/仓库` `#现象/趋势` `#SaaS` `#出海基建` `#GitHub` `#Cloudflare` `#Supabase`
-- **💡 核心概要 / What It Is**: rqlite 作者回顾了自 2014 年将 Raft 与 SQLite 结合以来的分布式 SQLite 技术演进与商业化历程。文章将技术路径划分为强一致共识集群、WAL 流式备份与 CRDT 多写合并三大方向，并梳理了从开源自建逐步演变为 Cloudflare D1 及 Turso 等云托管商业服务的过程。这一复盘为开发者在技术选型与基础设施商业化路径上提供了明确的工程架构参考。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#GitHub`
+- **💡 核心概要 / What It Is**: GVS5H 是一个免训练的 ledger 自编排脚手架，让同一模型的多个全新实例通过共享文件系统上的计划、笔记和当前解法协作解题。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-24 情报精选 (6 篇)](archives/2026-10-24.md)
+- [📅 2026-10-25 情报精选 (1 篇)](archives/2026-10-25.md)
+- [📅 2026-10-24 情报精选 (9 篇)](archives/2026-10-24.md)
 - [📅 2026-10-23 情报精选 (10 篇)](archives/2026-10-23.md)
 - [📅 2026-10-22 情报精选 (17 篇)](archives/2026-10-22.md)
 - [📅 2026-10-21 情报精选 (19 篇)](archives/2026-10-21.md)
