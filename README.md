@@ -6,20 +6,82 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-25
+## 今日精选 (Today's Top Signals) · 2026-10-26
 
-### 1. [GVS5H Harness 开源：五个 Qwen3.8-27B 实例协作可匹敌 Fable 5](https://github.com/slee-persis/GVS5H)
+### 1. [Hurston-1 开源：主打南方美音与非洲口音的电话场景 TTS](https://huggingface.co/destined/hurston-1)
 
-- **原标题 / Original**: Five Qwen3.8-27B models match Fable 5 Using GVS5H Harness
+- **原标题 / Original**: Show HN: Hurston-1 open source TTS that speak Southern American and Afro-English
+- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: Destined AI 发布的开源口音英语文本转语音模型 Hurston-1，是 ClarityVoice 家族首个开放模型，基于 Maya1（Apache-2.0）微调。
+- **🎯 推荐与借鉴 / Takeaway**: Destined AI 自述了面向电话线场景的开源 TTS 训练与评测过程，对想做语音 AI 产品的开发者有工程借鉴价值。
+
+### 2. [Tailscale SSH 被曝安全漏洞：一台设备失守可获其他服务器 root 权限，共 11 项发现](https://www.appinn.com/tailscale-ssh-security-vulnerabilities-tailworm/)
+
+- **原标题 / Original**: Tailscale SSH 被曝安全漏洞：一台设备失守，可获得其他服务器 root 权限｜另外还有11项漏洞
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#现象/趋势`
+- **💡 核心概要 / What It Is**: 你看到的内容可能由第三方 AI 基于小众软件文章提炼总结而成，可能与原文真实意图存在偏差，请点击链接阅读原文。安全研究员 Erica Windisch 发布 Tailworm 报告，在 Tailscale 及相关组件中发现 11 项安全问题，其中 Tailscale SSH 可经 Unix 套接字转发实现 root 权限提升，实验室中每攻陷一台设备不到 1 秒并自动传播。
+- **🎯 推荐与借鉴 / Takeaway**: Tailworm 报告披露 Tailscale SSH 等 11 项漏洞，附官方回应与关闭命令，对自建组网的开发者是及时的踩坑警示。
+
+### 3. [Lightsail Cost Saver 开源：被 $500 超额费坑后做的流量省钱计算工具](https://www.v2ex.com/t/1252000#reply0)
+
+- **原标题 / Original**: 被 Lightsail 收了 $500 超额费后，我做了个可能是史上最强的 Lightsail 省钱利器（免费开源，还能丢给 AI 算）
+- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#出海` `#SaaS` `#开源/仓库` `#自动化` `#Cloudflare` `#V2EX` `#GitHub` `#Vercel`
+- **💡 核心概要 / What It Is**: 一个免费开源的 Lightsail 流量费用计算工具，输入本月已用流量即可判断安不安全、额度哪天用完、加几台流量实例最省。【商业/痛点逻辑】作者因文件分发服务流量超额被 Lightsail 收了 $500，事后发现只需 $15 加 3 台 IPv6 实例即可覆盖，于是做了工具避免重复踩坑。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把 $500 流量超额费折算成 $15 的实例组合方案，并开源了计算工具，对用 Lightsail 跑流量的开发者有直接省钱参考。
+
+### 4. [G-Diffuser 复盘：用 147 个 subagent 把 F-Zero X 移植到 Nintendo 3DS 并跑出原生 60fps](https://hypnotize.works/gdx-3ds/postmortem/index.html)
+
+- **原标题 / Original**: F-Zero X on Nintendo 3DS
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源/仓库` `#独立开发` `#AI工具` `#GitHub`
+- **💡 核心概要 / What It Is**: 作者对 F-Zero X 反编译项目 G-Diffuser 移植到 Nintendo 3DS 的完整 post-mortem，覆盖 24 天第一阶段和 43 天第二阶段，最终发布 Old 3DS、New 3DS 及 64DD Expansion Kit 三种 .cia/.3dsx 版本。
+
+### 5. [江山时序开源：浏览器里的中国历史交互地图，覆盖 18 朝与 104 位古人行迹](https://meta.appinn.net/t/topic/94075)
+
+- **原标题 / Original**: 【开源自荐】江山时序：浏览器里的中国历史宣纸交互舆图（支持点城溯源 18 朝与百位古人行迹）
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#移动端` `#GitHub` `#小众软件`
+- **💡 核心概要 / What It Is**: 一款开源的中国历史交互地图 Web 应用，可拖动 2400 年时间轴，查看 18 个历史时期的疆域变迁、古城沿革与 104 位历史人物行迹路线。【痛点逻辑】解决读史时需在静态地图集里反复翻查古地名与历代疆域的问题，点击城池即可展开其 18 朝名称沿革，搜索人物可逐站回放其一生行迹与相关诗文。
+
+### 6. [威廉的 AI Club 浏览器插件上线：填住宅 IP 自动生成链式代理分流配置，Chrome 与 Edge 2400+ 用户](https://www.v2ex.com/t/1251886#reply0)
+
+- **原标题 / Original**: 为了 Claude 不被封号，做了个浏览器插件，填住宅 IP 自动生成链式代理的分流配置
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#Chrome插件` `#自动化`
+- **💡 核心概要 / What It Is**: 一款浏览器插件，用户只需填静态住宅 IP，即可自动生成 Claude 等 AI 服务防封号所需的链式代理分流配置。
+- **💰 商业模式与变现 / Business Logic**: 解决手动改 Clash YAML 易填错、Timeout 频发的痛点；基础版免费，增强版三线分流、DNS 与 WebRTC 防泄漏等需加入作者付费社群解锁，插件内购住宅 IP 入口带推广链接并已明示。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把手动改 Clash YAML 的痛点产品化，免费版引流加付费社群解锁，变现路径和防封号场景都值得参考。
+
+### 7. [suga：Go 编写的个人 coding agent，主打长会话上下文管理](https://www.v2ex.com/t/1251957#reply0)
+
+- **原标题 / Original**: 写了个 Go 的个人 coding agent，主要折腾长会话：换段之后第 1 轮的约束还在不在
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#GitHub`
-- **💡 核心概要 / What It Is**: GVS5H 是一个免训练的 ledger 自编排脚手架，让同一模型的多个全新实例通过共享文件系统上的计划、笔记和当前解法协作解题。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: suga 是作者用 Go 写的个人 coding agent，单个二进制支持 Windows / Linux / macOS，重点打磨一整个工作日的长会话体验。
+- **🎯 推荐与借鉴 / Takeaway**: 作者实测长会话 agent 的上下文分段与交接包设计，给出 token 消耗等一手数据，对做 agent 的开发者有工程借鉴。
+
+### 8. [PaperPilot 开源：纯 Rust 零云端 PDF 引擎，支持 MCP、CLI、WASM 与桌面端](https://github.com/KrushnaVardhanReddy/PaperPilot)
+
+- **原标题 / Original**: PaperPilot – Zero-Cloud, Pure-Rust PDF Engine with WASM and MCP
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#桌面端` `#自动化` `#Hacker News` `#GitHub`
+- **💡 核心概要 / What It Is**: PaperPilot 是一套纯 Rust 编写的 PDF 与文档工具包，同一引擎可作 MCP server、CLI、浏览器 WASM、Tauri 桌面应用和本地 REST API（localhost:7823）使用。
+
+### 9. [OpenAI 与 Anthropic 数月内降价最高 80%：LLM API 降价复盘与原因分析](https://minimaxir.com/2026/10/cheap-llms/)
+
+- **原标题 / Original**: OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#现象/趋势` `#行业动态` `#OpenAI` `#Anthropic` `#DeepSeek` `#独立开发`
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-25 情报精选 (1 篇)](archives/2026-10-25.md)
+- [📅 2026-10-26 情报精选 (9 篇)](archives/2026-10-26.md)
+- [📅 2026-10-25 情报精选 (4 篇)](archives/2026-10-25.md)
 - [📅 2026-10-24 情报精选 (9 篇)](archives/2026-10-24.md)
 - [📅 2026-10-23 情报精选 (10 篇)](archives/2026-10-23.md)
 - [📅 2026-10-22 情报精选 (17 篇)](archives/2026-10-22.md)
