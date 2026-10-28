@@ -6,43 +6,88 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-27
+## 今日精选 (Today's Top Signals) · 2026-10-28
 
-### 1. [SoMark 团队开源 OXR：1.3B 文档解析模型，三榜第一并提供免费 API](https://www.v2ex.com/t/1252155#reply0)
+### 1. [Apple 10 天仍未修复：macOS 的 git、curl、python3 依旧信任被攻破的 eMUDRA 证书](https://emudhra.we-have-a-problem.com/apple.html)
 
-- **原标题 / Original**: 我们开源了 OXR： 1.3B 文档解析模型，全球三榜第一，提供免费 API
+- **原标题 / Original**: Ten days later, Git on macOS still trusts the compromised eMudhra certificates
+- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#GitHub`
+- **💡 核心概要 / What It Is**: 一个由 Dennis Jackson 等社区贡献者维护的说明页，披露 eMUDRA 证书事件后 Apple 的修复滞后。
+- **🎯 推荐与借鉴 / Takeaway**: 给出 macOS 系统 git、curl、python3 仍信任被攻破 eMUDRA 证书的检测命令与临时修复思路，供应链风险值得开发者自查。
+
+### 2. [Me2Cloud 开源：从自家宽带测 17 家云厂商 361 个区域真实延迟](https://www.v2ex.com/t/1252514#reply0)
+
+- **原标题 / Original**: [开源发布] ： Me2Cloud，从你自己家的网络，测到各大云 360+ 个区域的真实延迟（开源，可自部署）
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#出海` `#自动化` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: Me2Cloud 是一个开源网页工具，从你自己的浏览器发起 HTTPS 请求，实测到 AWS、Azure、Google Cloud、阿里云等 17 家云厂商共 361 个区域的真实延迟。
+- **🎯 推荐与借鉴 / Takeaway**: 从用户真实宽带视角测云厂商延迟的开源工具，工程细节如防 WAF 限速和代理识别规则值得借鉴。
+
+### 3. [Google 表单 + Apps Script 搭建全自动分发码系统：零成本防刷防并发](https://www.v2ex.com/t/1252447#reply0)
+
+- **原标题 / Original**: 零成本！用 Google 表单 + Apps Script 搭建全自动独立分发码/优惠码系统
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
+- **标签 / Tags**: `#教程/实践` `#独立开发` `#自动化` `#出海` `#非AI/通用工具` `#V2EX` `#Google`
+- **💡 核心概要 / What It Is**: 一套基于 Google Forms + Google Sheets + Apps Script 的自动化兑换码分发系统，用户填表后自动发码到邮箱。
+- **💰 商业模式与变现 / Business Logic**: 解决独立开发者 Giveaway 时人工发码繁琐、Typeform/Jotform 免费版限额、明文贴码被爬虫扫光三大痛点，全程零成本。
+- **🎯 推荐与借鉴 / Takeaway**: 作者亲测跑通零成本发码系统，给出完整脚本与并发防刷细节，对做社区 Giveaway 的独立开发者有直接借鉴。
+
+### 4. [OpenDsec 开源：DeepSeek DSec 论文的沙箱平台自托管实现](https://www.v2ex.com/t/1252637#reply0)
+
+- **原标题 / Original**: 做了一个 DeepSeek DSec sandbox platform 的开源实现： OpenDsec
 - **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#GitHub` `#独立开发` `#V2EX`
-- **💡 核心概要 / What It Is**: SoMark 团队开源的文档智能解析模型 OXR，可将 PDF 和文档图片转成 Markdown / JSON，支持表格、公式、化学式、代码块等 13 类元素并输出版面坐标。
-- **🎯 推荐与借鉴 / Takeaway**: SoMark 团队开源 1.3B 文档解析模型并附免费 API 与部署指南，工程参数与基准数据齐全，适合做文档解析选型参考。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub` `#DeepSeek`
+- **💡 核心概要 / What It Is**: OpenDsec 是一个按 DeepSeek DSec 论文实现的开源、自托管 sandbox platform，独立项目，不含 DeepSeek 代码。
+- **🎯 推荐与借鉴 / Takeaway**: 作者按 DeepSeek DSec 论文自研并开源了自托管 sandbox 平台，架构与冷启动、fork 等实测数据对搭建 agentic 基础设施有工程借鉴。
 
-### 2. [tw93 详解 Mole Windows 开发：C# + WinUI 3 原生选型与 Mac 上跨平台研发实践](https://www.v2ex.com/t/1252101#reply0)
+### 5. [Manatee 菜单栏工具开源：揪出让 Mac 发烫的进程并挪到能效核](https://www.v2ex.com/t/1252659#reply0)
 
-- **原标题 / Original**: 你不知道的客户端开发：选型、原生、多端与借力
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#实操指南` `#教程/实践` `#独立开发` `#桌面端` `#开源/仓库` `#非AI/通用工具` `#V2EX`
-- **💡 核心概要 / What It Is**: 独立开发者 tw93 分享用 Mac 开发 Mole Windows 版的完整技术思路，涵盖客户端选型、双端架构与分发签名。
-- **🎯 推荐与借鉴 / Takeaway**: 作者以 Mole Windows 为例讲透客户端选型与跨平台开发流程，AI 时代的双端架构与签名踩坑都有可借鉴的工程细节。
+- **原标题 / Original**: 做了个菜单栏小工具：找出是哪个进程把 Mac 烤热的，把它挪到能效核继续跑
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#AI工具` `#桌面端` `#V2EX` `#GitHub` `#Anthropic`
+- **💡 核心概要 / What It Is**: 一款 macOS 菜单栏小工具 Manatee，找出导致发热的进程并将其调度到能效核，不杀进程不丢上下文。【商业/痛点逻辑】针对多 agent 并发时十几行同名 node 进程难排查的痛点，按 rootPid 聚合成会话、进程树 CPU 求和，并用最近 6 分钟采样、连续 5 分钟超 200% 的时间窗区分编译抖动与真异常。
+- **🎯 推荐与借鉴 / Takeaway**: 作者公开了进程聚类、时间窗判定和 taskpolicy 降核的实现取舍，对做 macOS 桌面工具的开发者有工程借鉴价值。
 
-### 3. [Cloudflare 紧急通知：Tunnel 用户尽快升级 cloudflared，旧版存在中间人攻击风险](https://www.appinn.com/cloudflare-tunnel-cloudflared-security-update-2026/)
+### 6. [perler-blueprint 开源拼豆图纸生成器：上传图片自动匹配 3759 色真实色板，可导出单文件 HTML](https://www.v2ex.com/t/1252527#reply0)
 
-- **原标题 / Original**: Cloudflare 紧急通知：所有 Tunnel 用户尽快升级 cloudflared
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐` `#Cloudflare`
-- **💡 核心概要 / What It Is**: Cloudflare 向所有 Tunnel 用户发信，要求尽快升级 cloudflared。旧版客户端仍信任此前由 eMudhra 颁发的 4 张证书，可能导致中间人攻击；eMudhra 因 8 张中间证书私钥过于脆弱已退出证书行业，Cloudflare 表示暂未发现漏洞被实际利用。
+- **原标题 / Original**: 做了个拼豆图纸生成器：上传图片自动量化到真实色板，还能导出随身的单文件 HTML
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一个开源拼豆图纸生成器，上传任意图片自动量化成可拼图纸。
+- **💰 商业模式与变现 / Business Logic**: 作者家人找图纸只有现成图或收费/广告满屏的在线工具，作者自用后以 MIT 协议开源分享。
+- **🎯 推荐与借鉴 / Takeaway**: 开源拼豆图纸生成器，Lab 色彩空间量化与单文件 HTML 导出的实现思路对前端开发者有工程借鉴价值。
 
-### 4. [Open3DLab 披露 Roblox 爬虫 34 小时抓取 145.5 GB 3D 模型含成人内容](https://open3dlab.com/news/roblox-downloaded-145-gb-of-models-from-our-sites/)
+### 7. [spec-first 开源 Claude Code 插件：规格驱动的 AI 代理开发，超 1300 个 spec 验证](https://spec-first.dev/)
 
-- **原标题 / Original**: Roblox downloaded 145GB models from us (including adult content) without asking
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 📌 null
-- **标签 / Tags**: `#行业动态` `#安全/对齐` `#AI工具` `#开源/仓库`
-- **💡 核心概要 / What It Is**: Open3DLab、SFMLab 和 SmutBase 三个 3D 资源站披露，一个自称 trellis2-data-sourcing 的 Roblox 爬虫于 10 月 15 日至 16 日抓取了 712 个项目的 1,027 个文件，共 145.5 GB。
+- **原标题 / Original**: Show HN: Specification First Agentic Development Plugin and Prove
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#GitHub` `#Anthropic`
+- **💡 核心概要 / What It Is**: 一套规格优先的 AI 代理开发方法及配套 Claude Code 插件，每个改动先写成含文件行号引用、完成标准的 YAML spec，经全新 reviewer 校验后再构建。
+- **🎯 推荐与借鉴 / Takeaway**: 原文展示了规格优先的开发流程细节，含 commit 门禁和新鲜 reviewer 校验，对想约束 AI 编码代理的团队有工程借鉴价值。
+
+### 8. [ip2geo 开源：零依赖 Go IP 归属地查询库，IPv4 查询比 geoip2-golang 快 14～58 倍](https://www.v2ex.com/t/1252638#reply0)
+
+- **原标题 / Original**: [开源] ip2geo：零依赖的 Go IP 归属地查询库， IPv4 查询比 geoip2-golang 快 14～ 58 倍
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一个零依赖的 Go IP 归属地查询库，把 MaxMind GeoIP2/GeoLite2 或 DB-IP 的 .mmdb 一次性转成紧凑的 .geoc 文件后直接查询 IPv4/IPv6。
+- **🎯 推荐与借鉴 / Takeaway**: 作者给出可复现的基准测试和明确的性能取舍思路，做 Go 服务的开发者可借鉴其减少依赖和数据结构优化的工程做法。
+
+### 9. [reawm 开源：把 macOS 所有窗口变成浏览器式标签页](https://www.v2ex.com/t/1252636#reply0)
+
+- **原标题 / Original**: 做了个 mac 小工具 reawm，把所有窗口变成浏览器那样的标签页
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款 macOS 开源小工具 reawm，把同一屏幕上的窗口收进菜单栏下方的标签栏，像浏览器一样一次只显示一个。【痛点逻辑】解决窗口开太多、翻找麻烦的问题，支持 ⌥1 到 ⌥9 切换、中键关闭、⌥⌘ 拖出窗口，退出时所有窗口放回原位。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把多窗口管理改造成浏览器式标签页，思路直接源于自身痛点，适合关注 macOS 提效小工具的读者参考。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-27 情报精选 (4 篇)](archives/2026-10-27.md)
+- [📅 2026-10-28 情报精选 (9 篇)](archives/2026-10-28.md)
+- [📅 2026-10-27 情报精选 (9 篇)](archives/2026-10-27.md)
 - [📅 2026-10-26 情报精选 (14 篇)](archives/2026-10-26.md)
 - [📅 2026-10-25 情报精选 (4 篇)](archives/2026-10-25.md)
 - [📅 2026-10-24 情报精选 (9 篇)](archives/2026-10-24.md)
