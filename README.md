@@ -6,82 +6,86 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-29
+## 今日精选 (Today's Top Signals) · 2026-10-30
 
-### 1. [no-agent-summary 开源脚本：关闭 Claude Code 每 30 秒的后台 transcript 汇总请求](https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce)
+### 1. [Doomformer 开源：把神经网络编译进 DOOM 地图运行](https://github.com/mottopanikeiku/doomformer)
 
-- **原标题 / Original**: Claude Code regularly sends each background agent’s transcript to its model
-- **评分 / Signal Score**: ⭐ `85.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#自动化` `#出海` `#Anthropic` `#GitHub`
-- **💡 核心概要 / What It Is**: 一个约 80 行的 Bun preload 脚本 no-agent-summary.js，通过包装 setTimeout/setInterval 阻止 Claude Code 为每个后台 agent 定期发起 transcript 汇总请求。
-- **🎯 推荐与借鉴 / Takeaway**: 实测数据揭示了 Claude Code 状态栏的隐性 token 消耗，并给出不修改二进制的关闭方案，工程细节值得借鉴。
+- **原标题 / Original**: Show HN: I Turned DOOM into a Transformer
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: 开源工具 Doomformer，能把整数神经网络（MLP、CNN、Transformer）编译成 ZDoom 地图，在 ViZDoom 里由 voodoo doll 完成全部运算。
+- **🎯 推荐与借鉴 / Takeaway**: 把整数神经网络编译成 ZDoom 地图用 voodoo doll 做运算，附完整的容差为 0 的验证体系和引擎边界实测，工程严谨度值得一看。
 
-### 2. [开源中文手册：一张 RTX 4090 从零走通 QLoRA 微调 + vLLM 部署](https://www.v2ex.com/t/1252859#reply1)
+### 2. [开源 Zotero 插件 Mktero 发布：把论文 PDF 转成可跳回原文的 Markdown](https://www.v2ex.com/t/1253294#reply0)
 
-- **原标题 / Original**: 写了本开源中文手册：一张 4090 从零走通 QLoRA 微调 + vLLM 部署，给不做算法的开发者
+- **原标题 / Original**: 做了一个开源 Zotero 插件 Mktero：把论文 PDF 读成能跳回原文的 Markdown
 - **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#教程/实践` `#AI工具` `#独立开发` `#GitHub`
-- **💡 核心概要 / What It Is**: 一本开源中文电子书，面向不做算法的开发者，手把手走通 QLoRA 微调到 vLLM 部署的全流程。【商业/痛点逻辑】针对网上教程默认 ML 背景、只给代码不讲原理的问题，每段代码都说明做什么、为什么、会看到什么。
-- **🎯 推荐与借鉴 / Takeaway**: 手册把 QLoRA 微调到 vLLM 部署的完整链路拆给非算法开发者，工程细节和排错记录对自学者有直接参考价值。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: Mktero 是一款 MIT 开源的 Zotero 7–10 扩展，右键论文 PDF 即可转为单栏连续 Markdown 阅读。
+- **💰 商业模式与变现 / Business Logic**: 解决双栏 PDF 阅读顺序混乱、公式表格复制乱码、Markdown 笔记与原文对不上等读论文痛点，段落、公式、表格保留页码映射，可一键跳回 PDF 原位置。
+- **🎯 推荐与借鉴 / Takeaway**: 作者开源的 Zotero 插件解决了双栏 PDF 阅读和笔记对不上号的痛点，工程上按内容寻址缓存和本地文字层校对思路值得借鉴。
 
-### 3. [小密盾上线：¥69 起买断制密码管理器，专治 Claude Code 明文要密码](https://www.v2ex.com/t/1252919#reply0)
+### 3. [开发者发布 GitHub Actions 编译的 Windows 版 ungoogled-chromium：保留 MV2、开启 AVX2 并移植 Brave/Cromite/Helium 补丁](https://www.v2ex.com/t/1253032#reply0)
 
-- **原标题 / Original**: 做了个 1Password 的买断替代「小密盾」,¥69 起,顺手解决了 Claude Code 老问我要密码的问题
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#独立开发` `#AI工具` `#桌面端` `#移动端` `#V2EX`
-- **💡 核心概要 / What It Is**: 独立开发者用 Claude Code 两个月做出来的密码管理器「小密盾」（rootkey），覆盖 Mac、Windows、iPhone、iPad、安卓，Linux 出预览版。
-- **🎯 推荐与借鉴 / Takeaway**: 作者从 1Password 涨价和 AI 明文泄密的亲身痛点切入，给出了买断定价与最小化授权的完整产品设计，可作痛点切入参考。
+- **原标题 / Original**: 分享一个 GitHub Actions 编译的 Windows 版 ungoogled-chromium（保留 MV2 / 开启 AVX2 / 移植 Brave、Cromite、Helium 补丁）
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 作者基于 ungoogled-chromium 自行维护的 Windows 构建版浏览器，去除谷歌服务绑定与后台遥测，保留 MV2 版 uBlock Origin。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享了自己维护的 Chromium 分支构建，读者可参考其 GitHub Actions 分段交叉编译的工程做法与隐私补丁选择。
 
-### 4. [Trends.vc 拆解逆向工程应用趋势：涨价催生复刻、克隆工具与宿主劫持风险](https://trends.vc/reverse-engineered-apps-price-hike-rebuilds-clone-the-clone-trojan-repos/)
+### 4. [tinyworldformer 开源：在 Raspberry Pi Pico 2 W 上运行微型世界模型玩 5 款小游戏](https://github.com/SheepSeb/tinyworldformer)
 
-- **原标题 / Original**: Reverse-Engineered Apps: Price-Hike Rebuilds, Clone The Clone, Trojan Repos
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📌 cases
-- **标签 / Tags**: `#变现实录` `#出海` `#变现` `#MRR` `#AI工具` `#现象/趋势` `#GitHub`
-- **💡 核心概要 / What It Is**: Trends.vc 第 0188 期报告，分析 AI 编程代理让付费软件被数日内重建并以更低价格出售的趋势。
-- **🎯 推荐与借鉴 / Takeaway**: 拆解了 AI 时代付费软件被快速重建的商业模式与真实营收数据，对理解软件定价逻辑和开源变现路径有参考。
-
-### 5. [Qwenputer 开源：在 Qwen 3.5 4B 权重里编译出可运行的 RISC-V CPU](https://divagr.com/blog/qwenputer)
-
-- **原标题 / Original**: Qwenputer: A functioning, deterministic RISC-V CPU inside Qwen3.5
+- **原标题 / Original**: A tiny world model running games on a Raspberry Pi Pico 2 W
 - **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
 - **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#GitHub`
-- **💡 核心概要 / What It Is**: 一个实验性开源项目，将 32 位 RISC-V CPU（RV32IM）直接编译进 Qwen 3.5 4B 的权重，利用模型自身的 Gated DeltaNet 线性 RNN 层状态作为 RAM，在 forward pass 中运行，无需任何外部工具或沙箱。
+- **💡 核心概要 / What It Is**: 开源项目 tinyworldformer，用两个小神经网络（世界模型预测下一帧和奖励，actor 网络选动作）在 Raspberry Pi Pico 2 W 微控制器上生成并游玩 Breakout、Doom-lite、Flappy Bird、Pong、Pac-Man lite 五款小游戏。
 
-### 6. [Mino 开源：用 Go 从零写终端 coding agent 的 15 章教程](https://www.v2ex.com/t/1252848#reply0)
+### 5. [Overtone 开源：一次转写，字幕自动适配 16:9 与 9:16 任意屏幕形状](https://github.com/lonthq/overtone-captions)
 
-- **原标题 / Original**: 从零写一个 Agent： 15 章开源教程，每章都能跑
+- **原标题 / Original**: Show HN: Overtone – Transcribe, correct and cut captions for any screen shape
 - **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#CLI` `#开源/仓库` `#AI工具` `#独立开发` `#GitHub` `#V2EX` `#OpenAI` `#Anthropic`
-- **💡 核心概要 / What It Is**: 开源项目 Mino，用 Go 从零实现一个终端 coding agent，并配套中英双语、每章可运行的 15 章教程。【商业/痛点逻辑】针对开发者想搞懂 Claude Code 这类 agent 内部机制的痛点，不用 agent 框架，仅用官方 OpenAI Go SDK 调 Responses API，逐章讲透模型交互、工具调用、上下文压缩、权限与沙箱等原理。
-- **🎯 推荐与借鉴 / Takeaway**: 作者从零实现终端 coding agent 并拆成 15 章可运行教程，覆盖工具调用、上下文压缩与沙箱，适合想搞懂 agent 原理的开发者。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#AI工具` `#Hacker News` `#GitHub`
+- **💡 核心概要 / What It Is**: 开源 CLI 与 .overtone.json 格式，把每个词的时间和说话人存一次，再按 16:9、9:16 等任意画面比例分别切割字幕。【商业/痛点逻辑】传统字幕只按单屏宽度填行，竖屏视频里断行落在 the、of 等弱词上，多说话人还挤在一条字幕里，Overtone 用版本化规则集按阅读习惯重切。
+- **🎯 推荐与借鉴 / Takeaway**: 开源字幕工具把一次转写拆成多屏幕切割，给了本地化视频分发中 16:9 与 9:16 共用一条流水线的工程思路。
 
-### 7. [MPE 开源：画流程图直接生成 Cursor / Claude 可调用的 MCP 工具](https://www.v2ex.com/t/1252794#reply0)
+### 6. [群晖确认勒索病毒攻击利用 2024 年 12 月已修复漏洞，敦促升级 DSM 到最新版](https://www.appinn.com/synology-ransomware-attack-dsm-security-update/)
 
-- **原标题 / Original**: [开源] 做了一个用“画流程图”直接生成 Cursor / Claude MCP 工具的引擎 MPE (Rust+Tauri)
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#独立开发` `#桌面端` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 开源桌面工具 MPE（Multi-Protocol Flow Executor），在画布上拖拽编排流程，一键暴露给 Cursor / Claude Desktop 作为 MCP Tool 调用。
-- **🎯 推荐与借鉴 / Takeaway**: 作者本人开源的流程图编排引擎，把多协议流程直接暴露为 Cursor / Claude 可调用的 MCP 工具，工程思路值得借鉴。
-
-### 8. [Alpine Linux 遭遇 CVE-2026-97229 攻击：GitLab 实例从零重建、全量重置密码](https://alpinelinux.org/posts/GitLab-security-incident-CVE-2026-97229.html)
-
-- **原标题 / Original**: GitLab Security Incident: Attempted Exploitation of CVE-2026-97229
+- **原标题 / Original**: 群晖发布公告：确认勒索病毒攻击利用了2024年12月已修复漏洞，请立即升级 DSM 到最新版
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐`
-- **💡 核心概要 / What It Is**: Alpine Linux 官方披露其 GitLab 实例在 10 月 20 至 21 日遭攻击者利用 CVE-2026-97229（CVSS 10.0）尝试入侵的完整事件复盘。
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#非AI/通用工具` `#小众软件`
+- **💡 核心概要 / What It Is**: 群晖发布公告确认近期勒索病毒攻击事件：攻击者利用的是 2024 年 12 月已修复的安全弱点（Synology-SA-24:20，PWN2OWN 2024 报告，严重程度危急），攻击仍运行旧 DSM 版本的设备，可能导致数据加密与勒索。
 
-### 9. [Cursor 发布 Agent SDK：用代码定义并部署开发工作流智能体](https://cursor.com/blog/agent-sdk)
+### 7. [Hindsight 开源：Rust 打造的跨 Mac / Windows / Linux 屏幕时间记录工具](https://www.v2ex.com/t/1253024#reply0)
 
-- **原标题 / Original**: The Agent SDK
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#开源/仓库` `#独立开发`
-- **💡 核心概要 / What It Is**: Cursor 正式发布 Agent SDK，开发者可用代码定义智能体，处理 PR 审查、合规工作流、事件排查等开发生命周期中的重复性工作。
+- **原标题 / Original**: 用 Rust 做了个跨 Mac / Windows / Linux 的轻量、优雅的电脑屏幕使用时间记录工具
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 作者用 Rust 开发的跨 Windows / macOS / Linux 电脑屏幕使用时间记录工具 Hindsight，可后台自动记录应用和窗口活动，按日 / 周 / 月出图表并按类别统计。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享了用 Rust 打造跨平台时间记录工具的思路，可参考其在轻量资源占用和插件生态上的工程取舍。
+
+### 8. [mydash 开源：Claude Code / Codex 产出的方案、PDF、网页原型在手机上直接看](https://www.v2ex.com/t/1253296#reply0)
+
+- **原标题 / Original**: 做了个 mydash： Claude Code / Codex 产出的方案、报告、PDF、网页原型，在手机上直接看（自托管，开源）
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发` `#自动化` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一个自托管的 Node 小服务 mydash，把 Claude Code 和 Codex 产出的方案、调研报告、PDF、Excel、Word、PPT 和网页原型排版后在电脑或手机浏览器查看。
+- **🎯 推荐与借鉴 / Takeaway**: 解决了 AI agent 产出物只能在终端看路径的查看痛点，自托管加手机推送的工作流可直接借鉴。
+
+### 9. [AI 女装试穿网站开源：1407 套服装一键换装，支持 ComfyUI 本地推理](https://www.v2ex.com/t/1253249#reply0)
+
+- **原标题 / Original**: 自己做了个 AI 女装试穿网站， 1407 套衣服随便换，代码开源
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一个在线 AI 女装试穿站，内置 1407 张服装参考图，支持中英文搜索、分类筛选，上传人物照即可生成 AI 试穿效果。
+- **💰 商业模式与变现 / Business Logic**: 源于服装图集点子的自用工具，图库浏览无需 API Key，换装功能接入云端模型按额度消耗，也可本地跑省成本。
+- **🎯 推荐与借鉴 / Takeaway**: 作者开源了 AI 女装试穿全栈项目，覆盖图库搜索、多模型换装与本地 ComfyUI 部署，适合参考 AI 生图类产品的工程组织。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-29 情报精选 (9 篇)](archives/2026-10-29.md)
+- [📅 2026-10-30 情报精选 (9 篇)](archives/2026-10-30.md)
+- [📅 2026-10-29 情报精选 (15 篇)](archives/2026-10-29.md)
 - [📅 2026-10-28 情报精选 (14 篇)](archives/2026-10-28.md)
 - [📅 2026-10-27 情报精选 (9 篇)](archives/2026-10-27.md)
 - [📅 2026-10-26 情报精选 (15 篇)](archives/2026-10-26.md)
