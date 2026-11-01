@@ -6,43 +6,48 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-10-31
+## 今日精选 (Today's Top Signals) · 2026-11-01
 
-### 1. [1ms.dog 上线：柴犬捡球可视化查网络延迟卡在哪](https://www.v2ex.com/t/1253432#reply0)
+### 1. [handy-transcribe 开源：本地语音转写 CLI，76 个模型随取随用，16 分钟视频 49 秒转完](https://www.v2ex.com/t/1253550#reply0)
 
-- **原标题 / Original**: 测速 500 兆，打游戏照样卡。我做了个网站，专门查「卡在哪」
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#非AI/通用工具` `#Cloudflare` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一个打开即测的网络延迟诊断网站，一只柴犬从浏览器跑向 40 多个常用网站捡球，延迟越高球扔得越远，直观看出谁快谁慢。
-- **💰 商业模式与变现 / Business Logic**: 针对测速网站只给带宽、不查逐点延迟的痛点，将国内常用与海外服务分开分析，判断是线路、路由器还是对面服务的问题，并按用途打分、列出多出口运营商和 AS 信息。
-- **🎯 推荐与借鉴 / Takeaway**: 原文给出网络延迟诊断工具的场景切入和测试地址被后台拖慢的踩坑细节，工程与产品思路都可借鉴。
+- **原标题 / Original**: 做了个本地音频转写工具：不花一分钱， 76 个模型随取随用， 16 分钟视频 49 秒转完
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#自动化` `#AI工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 作者开源了本地语音转写 CLI handy-transcribe 及配套 agent 技能 pi-media-transcribe，把音视频直接转成可入库的 Markdown 笔记。
+- **🎯 推荐与借鉴 / Takeaway**: 开源本地转写方案讲清了云 ASR 成本痛点和工程取舍，Rust CLI 加 agent 技能的组合思路可借鉴。
 
-### 2. [Papilot 开源：在 PDF 上批注让 AI 改 LaTeX，像 Cursor 一样逐条 Review](https://www.v2ex.com/t/1253422#reply0)
+### 2. [Nolan Lawson 实测 12 个 JS 框架的 AI 构建成本：Hono+htmx 最省，Angular 最贵](https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/)
 
-- **原标题 / Original**: 做了个类似 Cursor 的写论文的开源工具：直接在 PDF 上批注，让 AI 改稿，然后像 Cursor 一样 Review
+- **原标题 / Original**: The AI cost of JavaScript frameworks
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
+- **标签 / Tags**: `#评测/基准` `#AI工具` `#开源/仓库`
+- **💡 核心概要 / What It Is**: Nolan Lawson 用 Claude（Opus 5.5）驱动 agent 以 12 个 JS 框架/元框架各构建同一个 Pokémon 应用 5 次，做基准对比。
+
+### 3. [Memdoor 工作流：5 个 Qwen3.8-27B 多智能体在 LiveCodeBench Hard 上均分 9.8 超 Fable 5](https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve)
+
+- **原标题 / Original**: Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard
 - **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#独立开发` `#开源/仓库` `#CLI` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 开源工具 Papilot，让你直接在编译后的 PDF 上批注 LaTeX 文档，由 AI 修改源码并在 PDF 上逐条审阅改动。
-- **💰 商业模式与变现 / Business Logic**: 解决 git diff 只能看到源码变动、无法对应 PDF 排版结果，导致难以 review AI 改稿的痛点。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把 Cursor 的 review 流程搬到 LaTeX 论文修改上，在 PDF 批注并逐条审阅 AI 改动，思路对学术写作者有直接借鉴。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub` `#AI工具`
+- **💡 核心概要 / What It Is**: Memdoor 推出的多智能体编程工作流 team-solve，五个角色（planner、两个 ideator、solver、manager）加一个 repair worker，各自从全新上下文出发、只通过磁盘文件通信，由 shell 脚本跑样例判分。
 
-### 3. [NexusDock 上线：把多设备与 MCP 能力统一接入 AI 客户端，设备端 AgentDock 开源](https://www.v2ex.com/t/1253390#reply0)
+### 4. [搭手 1.0 发布：搜索条、可视化自动化与 AI 工作台，一个人写完](https://www.v2ex.com/t/1253518#reply0)
 
-- **原标题 / Original**: 做了个把所有设备统一接入 AI 的项目： NexusDock，送会员
+- **原标题 / Original**: 搭手 1.0 发布：搜索条、可视化自动化和 AI，一个人写完了
 - **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#独立开发` `#开源/仓库` `#V2EX` `#GitHub` `#OpenAI`
-- **💡 核心概要 / What It Is**: NexusDock 把电脑、手机、服务器等设备及其 MCP、Skills、插件能力汇聚到一个 MCP 入口，ChatGPT、Claude 等支持 MCP 的 AI 客户端连接一次即可访问已授权设备。
-- **🎯 推荐与借鉴 / Takeaway**: 作者分享了把多设备与 MCP 能力统一汇聚的方案，设备端已开源并给出免费策略，对做 AI 工具接入的开发者有工程借鉴。
+- **标签 / Tags**: `#新出海产品` `#桌面端` `#AI工具` `#自动化` `#独立开发` `#V2EX`
+- **💡 核心概要 / What It Is**: 搭手是一款跨 Windows 和 macOS 的效率工具 1.0，整合 Alt+Space 搜索条、可视化「组合动作」工作流和 AI 工作台，把找东西、做重复事和 AI 操作放进同一入口。
+- **🎯 推荐与借鉴 / Takeaway**: 作者完整公开了一个人开发效率工具的功能取舍、技术实现与定价限制，工程细节和未做云同步等决策都有参考价值。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-10-31 情报精选 (3 篇)](archives/2026-10-31.md)
+- [📅 2026-11-01 情报精选 (4 篇)](archives/2026-11-01.md)
+- [📅 2026-10-31 情报精选 (8 篇)](archives/2026-10-31.md)
 - [📅 2026-10-30 情报精选 (16 篇)](archives/2026-10-30.md)
 - [📅 2026-10-29 情报精选 (15 篇)](archives/2026-10-29.md)
 - [📅 2026-10-28 情报精选 (14 篇)](archives/2026-10-28.md)
-- [📅 2026-10-27 情报精选 (9 篇)](archives/2026-10-27.md)
+- [📅 2026-10-27 情报精选 (10 篇)](archives/2026-10-27.md)
 - [📅 2026-10-26 情报精选 (15 篇)](archives/2026-10-26.md)
 - [📅 2026-10-25 情报精选 (4 篇)](archives/2026-10-25.md)
 - [📅 2026-10-24 情报精选 (9 篇)](archives/2026-10-24.md)
