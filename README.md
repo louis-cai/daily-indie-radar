@@ -6,53 +6,54 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-02
+## 今日精选 (Today's Top Signals) · 2026-11-03
 
-### 1. [who.1ms.dog 开源上线：一眼看出你的代理在哪露了馅](https://www.v2ex.com/t/1253711#reply3)
+### 1. [开源自部署 Agent 平台 Demi 发布：浏览器内聊天开发运维，多设备操作告别 SSH](https://www.v2ex.com/t/1254077#reply1)
 
-- **原标题 / Original**: 挂着日本节点，网站一眼就看出我是中国人。所以我写了个工具， 看谁卖了我
-- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#出海` `#非AI/通用工具` `#V2EX` `#GitHub` `#Cloudflare`
-- **💡 核心概要 / What It Is**: 一个开源的浏览器隐私检测页面，汇总 71 个网页可调用的「嗅探器」接口，生成你的浏览器画像，并用 9 项伪装检测指出代理用户哪里露了馅。【痛点逻辑】作者挂日本节点仍被网站认出是中国人，原因是时区、浏览器语言、DNS、WebRTC 互相矛盾；他自己照检测结果修复，暴露点从 7 处降到 2 处。
-- **🎯 推荐与借鉴 / Takeaway**: 作者亲测梳理了代理用户被网站识破的 9 项泄露点与修复方法，工具开源可自部署，对出海开发者排查指纹与 DNS 泄露很有参考。
+- **原标题 / Original**: 开源了一个自部署的 Agent 平台 Demi，在浏览器中进行聊天/开发/生图/运维，在任何地方操作自己的电脑和服务器，告别 SSH 与远程桌面
+- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#独立开发` `#AI工具` `#开源/仓库` `#出海` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: Demi 是一个用 Rust 和 Web 技术栈开发的开源自部署 Agent 平台，类似 ChatGPT + Codex / Claude + Claude Code 的替代品，在浏览器中即可聊天、开发、生图、运维。
+- **🎯 推荐与借鉴 / Takeaway**: 作者从 Cursor 定价与多设备开发痛点出发，自研开源自部署 Agent 平台，架构用单一 Shell 工具实现多机同构，工程思路可借鉴。
 
-### 2. [CropDen 作者开源社媒图片尺寸数据：14 平台 55 个尺寸含 App 遮挡区像素坐标](https://www.v2ex.com/t/1253720#reply0)
+### 2. [Glint v1.1.0-beta.1 发布：驻守菜单栏的 GitHub CI 监控，红了会叫你并一键复制错误日志](https://www.v2ex.com/t/1254241#reply1)
 
-- **原标题 / Original**: 开源了一份社媒图片尺寸数据： 14 个平台 55 个尺寸，带 App 遮挡区域的像素坐标
+- **原标题 / Original**: 做了一个驻守菜单栏的 GitHub CI 监控：红了会叫你，点开就能复制错误日志
 - **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 作者做裁图站 CropDen 时整理的开源社媒图片尺寸数据集，覆盖 Instagram、YouTube、TikTok 等 14 个平台、55 个尺寸，并把头像遮挡、快拍回复栏等 App 遮挡区域标注成像素坐标，另附 6 种护照和签证照片规格。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把做裁图站时整理的社媒遮挡区坐标数据独立开源，还顺带记录了抠图库 AGPL 许可证和 Chrome 插件审核两个踩坑点。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub` `#桌面端` `#独立开发` `#CLI` `#V2EX`
+- **💡 核心概要 / What It Is**: Glint 是一款驻守系统菜单栏的 GitHub Actions CI 监控工具，圆点聚合所有仓库最差状态，失败时通知并可一键复制错误日志上下文（带 repo@sha），方便直接丢给 AI 或同事。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者从自身刷 CI 的重复痛点出发做菜单栏监控工具，工程与省 API 限额思路都可借鉴。
 
-### 3. [OmniDiff 开源：Rust 编写的内容感知 Git difftool，中位数 diff 仅 4.2ms](https://github.com/ivankovic/omnidiff)
+### 3. [快推 EasyPost 开源：Chrome 扩展多平台一键分发，免维护 Cookie](https://www.v2ex.com/t/1254227#reply0)
 
-- **原标题 / Original**: Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#CLI` `#开源/仓库` `#Hacker News` `#GitHub`
-- **💡 核心概要 / What It Is**: 一款用 Rust 编写的开源内容感知 Git difftool，能按文件类型选择算法结构化 diff 代码、图片、字体、归档和 PDF 等。
-- **💰 商业模式与变现 / Business Logic**: 以 AGPL v3 开源，同时通过 GitHub Sponsors 提供商业订阅许可，覆盖不愿公开源码的企业内部使用。
+- **原标题 / Original**: 嫌 Playwright 发小红书 / 抖音要天天维护 Cookie？我做了个 Chrome 扩展 + Native Messaging 的多平台分发工具，支持 Claude Code Skill
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#Chrome插件` `#自动化` `#AI工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 开发者 gybin02 自用的内容分发工具快推 EasyPost，一个 Chrome 扩展加 CLI，支持多平台一键发布视频和图文。【商业/痛点逻辑】针对 Playwright 发小红书、抖音需天天维护 Cookie、易被风控识别的痛点，改跑在真实 Chrome 里复用登录态，不导出 Cookie 不交账号密码，最后一步发布由用户手动点击确认。
+- **🎯 推荐与借鉴 / Takeaway**: 作者用真实 Chrome 登录态替代 Playwright 自动发帖，思路和风险说明对做多平台分发的开发者有工程借鉴。
 
-### 4. [AudioScript 声稿开源：本地实时双语字幕，免云端免虚拟声卡](https://www.v2ex.com/t/1253667#reply0)
+### 4. [壶中天开源：fork Atoll 魔改一个月的 macOS 中文刘海工作台](https://www.v2ex.com/t/1254015#reply0)
 
-- **原标题 / Original**: 「讯飞同传」免费平替，本地实时双语字幕软件： AudioScript 声稿
+- **原标题 / Original**: [分享创造] 壶中天： fork 了 Atoll 魔改一个多月，开源的 macOS 中文刘海工作台
 - **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款本地实时双语字幕软件，监听系统声音，把外语视频、播客、会议实时转成原文加译文的双语悬浮字幕。【商业/痛点逻辑】现有方案要么走云端有隐私和延迟问题，要么需装 BlackHole 等虚拟声卡配置麻烦；本工具直接采集系统声音，识别翻译全在本机完成，音频文本不上传，无需注册。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者分享了本地实时双语字幕工具的完整实现思路，对系统声音采集和离线识别翻译的工程选型有借鉴价值。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款开源的 macOS 刘海工作台应用「壶中天」，鼠标扫到刘海展开面板，集成音乐控制、农历日历、通知、启动台、剪贴板历史等功能。【商业与痛点逻辑】作者不满意 NotchNook 收费 $25、boring.notch 和 Atoll 缺少中文支持与农历调休，于是 fork GPL-3.0 的 Atoll 自用一个多月，发了 5 个版本后开源。
+- **🎯 推荐与借鉴 / Takeaway**: 作者完整分享了 fork 开源项目魔改为中文本地化工作台的过程，含功能取舍与开源协议处理，对想做桌面端本地化工具的开发者有借鉴。
 
-### 5. [AnyModelBot v0.1.16 开源：本地常驻 AI 机器人，多模型接入不限单一订阅](https://www.v2ex.com/t/1253851#reply1)
+### 5. [MixHub 开源：一个侧栏统一管理 Claude Code、Codex、Gemini 等多 agent 会话](https://www.v2ex.com/t/1254038#reply0)
 
-- **原标题 / Original**: 做了一个 AI Bot 的开源项目，欢迎大家体验
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#桌面端` `#自动化` `#出海` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款 MIT 开源的常驻 AI Bot（AnyModelBot，v0.1.16），可跑在 Windows、macOS、Linux 或 Docker 上，能读写文件、跑命令、操作电脑、定时后台任务，并接入微信、飞书、Telegram、Slack、Discord 等聊天软件。
-- **🎯 推荐与借鉴 / Takeaway**: 开源 AI Bot 走本地部署加多模型按 token 计费路线，权限分档与预算上限设计对做桌面智能体的开发者有工程借鉴。
+- **原标题 / Original**: 做了个小工具，在一个侧栏里看 Claude Code、Codex 等 agent 的所有会话
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#自动化` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: MixHub 是一个 tmux 工作区工具，在左侧侧栏集中列出本机的 Claude Code、Codex、Gemini、OpenCode 会话及状态，右侧保留原版 CLI。
+- **🎯 推荐与借鉴 / Takeaway**: 作者针对多 agent 会话管理混乱的自制方案，展示了读取各家 agent 本地会话文件聚合状态的轻量工程思路。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-02 情报精选 (5 篇)](archives/2026-11-02.md)
+- [📅 2026-11-03 情报精选 (5 篇)](archives/2026-11-03.md)
+- [📅 2026-11-02 情报精选 (7 篇)](archives/2026-11-02.md)
 - [📅 2026-11-01 情报精选 (4 篇)](archives/2026-11-01.md)
 - [📅 2026-10-31 情报精选 (8 篇)](archives/2026-10-31.md)
 - [📅 2026-10-30 情报精选 (16 篇)](archives/2026-10-30.md)
