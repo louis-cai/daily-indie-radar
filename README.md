@@ -6,53 +6,43 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-03
+## 今日精选 (Today's Top Signals) · 2026-11-04
 
-### 1. [开源自部署 Agent 平台 Demi 发布：浏览器内聊天开发运维，多设备操作告别 SSH](https://www.v2ex.com/t/1254077#reply1)
+### 1. [Tw93 详解 Mole Windows 版开发：AI 时代客户端选型、原生架构与签名踩坑](https://sspai.com/post/117713)
 
-- **原标题 / Original**: 开源了一个自部署的 Agent 平台 Demi，在浏览器中进行聊天/开发/生图/运维，在任何地方操作自己的电脑和服务器，告别 SSH 与远程桌面
-- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#独立开发` `#AI工具` `#开源/仓库` `#出海` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: Demi 是一个用 Rust 和 Web 技术栈开发的开源自部署 Agent 平台，类似 ChatGPT + Codex / Claude + Claude Code 的替代品，在浏览器中即可聊天、开发、生图、运维。
-- **🎯 推荐与借鉴 / Takeaway**: 作者从 Cursor 定价与多设备开发痛点出发，自研开源自部署 Agent 平台，架构用单一 Shell 工具实现多机同构，工程思路可借鉴。
+- **原标题 / Original**: 你不知道的客户端开发：AI 时代下的选型、原生与借力
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
+- **标签 / Tags**: `#实操指南` `#桌面端` `#独立开发` `#AI工具` `#少数派`
+- **💡 核心概要 / What It Is**: 少数派作者 Tw93 复盘其 Mac 清理工具 Mole 的 Windows 版开发全过程，涵盖多端技术选型思路与实操细节。
 
-### 2. [Glint v1.1.0-beta.1 发布：驻守菜单栏的 GitHub CI 监控，红了会叫你并一键复制错误日志](https://www.v2ex.com/t/1254241#reply1)
+### 2. [《胜利女神：妮姬》PC 启动器遭供应链投毒，可窃取 SSH 私钥、API 密钥和加密货币钱包](https://www.appinn.com/nikke-pc-launcher-supply-chain-attack-2/)
 
-- **原标题 / Original**: 做了一个驻守菜单栏的 GitHub CI 监控：红了会叫你，点开就能复制错误日志
-- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub` `#桌面端` `#独立开发` `#CLI` `#V2EX`
-- **💡 核心概要 / What It Is**: Glint 是一款驻守系统菜单栏的 GitHub Actions CI 监控工具，圆点聚合所有仓库最差状态，失败时通知并可一键复制错误日志上下文（带 repo@sha），方便直接丢给 AI 或同事。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者从自身刷 CI 的重复痛点出发做菜单栏监控工具，工程与省 API 限额思路都可借鉴。
+- **原标题 / Original**: 《胜利女神：妮姬》PC 客户端遭供应链投毒，可能窃取密码、密钥和加密货币钱包
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
+- **标签 / Tags**: `#安全/对齐` `#非AI/通用工具` `#其他`
+- **💡 核心概要 / What It Is**: 《胜利女神：妮姬》国际服 PC 启动器从官方 CDN 加载的 JavaScript 被篡改，玩家正常启动游戏即可能运行远程控制木马，可窃取浏览器密码、SSH 私钥、GitHub/AWS/OpenAI 等服务密钥及加密货币钱包文件，并针对 Claude Code、Cursor、Gemini CLI 等开发工具设置了约 1790 条敏感路径。
 
-### 3. [快推 EasyPost 开源：Chrome 扩展多平台一键分发，免维护 Cookie](https://www.v2ex.com/t/1254227#reply0)
+### 3. [《胜利女神：妮姬》PC 启动器遭供应链投毒，可能窃取密码、密钥和加密货币钱包](https://www.appinn.com/nikke-pc-launcher-supply-chain-attack/)
 
-- **原标题 / Original**: 嫌 Playwright 发小红书 / 抖音要天天维护 Cookie？我做了个 Chrome 扩展 + Native Messaging 的多平台分发工具，支持 Claude Code Skill
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#Chrome插件` `#自动化` `#AI工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 开发者 gybin02 自用的内容分发工具快推 EasyPost，一个 Chrome 扩展加 CLI，支持多平台一键发布视频和图文。【商业/痛点逻辑】针对 Playwright 发小红书、抖音需天天维护 Cookie、易被风控识别的痛点，改跑在真实 Chrome 里复用登录态，不导出 Cookie 不交账号密码，最后一步发布由用户手动点击确认。
-- **🎯 推荐与借鉴 / Takeaway**: 作者用真实 Chrome 登录态替代 Playwright 自动发帖，思路和风险说明对做多平台分发的开发者有工程借鉴。
+- **原标题 / Original**: 《胜利女神：妮姬》PC 客户端遭供应链投毒，可能窃取密码、密钥和加密货币钱包
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 null
+- **标签 / Tags**: `#安全/对齐` `#行业动态` `#非AI/通用工具`
+- **💡 核心概要 / What It Is**: 你看到的内容可能由第三方 AI 基于小众软件文章提炼总结而成，可能与原文真实意图存在偏差，不代表小众软件观点。
 
-### 4. [壶中天开源：fork Atoll 魔改一个月的 macOS 中文刘海工作台](https://www.v2ex.com/t/1254015#reply0)
+### 4. [证书熊（sslbear）上线：SSL 证书自动续签并部署到 8 家云与宝塔，24 项服务](https://www.v2ex.com/t/1254396#reply0)
 
-- **原标题 / Original**: [分享创造] 壶中天： fork 了 Atoll 魔改一个多月，开源的 macOS 中文刘海工作台
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款开源的 macOS 刘海工作台应用「壶中天」，鼠标扫到刘海展开面板，集成音乐控制、农历日历、通知、启动台、剪贴板历史等功能。【商业与痛点逻辑】作者不满意 NotchNook 收费 $25、boring.notch 和 Atoll 缺少中文支持与农历调休，于是 fork GPL-3.0 的 Atoll 自用一个多月，发了 5 个版本后开源。
-- **🎯 推荐与借鉴 / Takeaway**: 作者完整分享了 fork 开源项目魔改为中文本地化工作台的过程，含功能取舍与开源协议处理，对想做桌面端本地化工具的开发者有借鉴。
-
-### 5. [MixHub 开源：一个侧栏统一管理 Claude Code、Codex、Gemini 等多 agent 会话](https://www.v2ex.com/t/1254038#reply0)
-
-- **原标题 / Original**: 做了个小工具，在一个侧栏里看 Claude Code、Codex 等 agent 的所有会话
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#自动化` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: MixHub 是一个 tmux 工作区工具，在左侧侧栏集中列出本机的 Claude Code、Codex、Gemini、OpenCode 会话及状态，右侧保留原版 CLI。
-- **🎯 推荐与借鉴 / Takeaway**: 作者针对多 agent 会话管理混乱的自制方案，展示了读取各家 agent 本地会话文件聚合状态的轻量工程思路。
+- **原标题 / Original**: 做了个 SSL 证书自动续签和自动部署的服务，支持 8 家云的 CDN、OSS、点播直播和宝塔，送兑换码
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#SaaS` `#自动化` `#独立开发` `#非AI/通用工具` `#V2EX`
+- **💡 核心概要 / What It Is**: 证书熊（sslbear）是一项 SSL 证书自动续签与自动部署服务，签发 Let's Encrypt 证书，支持单域名和通配符，到期前 15 天自动续签。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者自述产品细节，围绕云证书 3 个月续签痛点给出自动化方案，凭证安全设计可作工程借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-03 情报精选 (5 篇)](archives/2026-11-03.md)
+- [📅 2026-11-04 情报精选 (4 篇)](archives/2026-11-04.md)
+- [📅 2026-11-03 情报精选 (9 篇)](archives/2026-11-03.md)
 - [📅 2026-11-02 情报精选 (7 篇)](archives/2026-11-02.md)
 - [📅 2026-11-01 情报精选 (4 篇)](archives/2026-11-01.md)
 - [📅 2026-10-31 情报精选 (8 篇)](archives/2026-10-31.md)
