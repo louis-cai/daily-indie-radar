@@ -6,44 +6,74 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-04
+## 今日精选 (Today's Top Signals) · 2026-11-05
 
-### 1. [Tw93 详解 Mole Windows 版开发：AI 时代客户端选型、原生架构与签名踩坑](https://sspai.com/post/117713)
+### 1. [Mole 更新至 1.19 并推出 Windows 版：73.9K Star 背后的慢产品哲学](https://www.v2ex.com/t/1254590#reply0)
 
-- **原标题 / Original**: 你不知道的客户端开发：AI 时代下的选型、原生与借力
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#实操指南` `#桌面端` `#独立开发` `#AI工具` `#少数派`
-- **💡 核心概要 / What It Is**: 少数派作者 Tw93 复盘其 Mac 清理工具 Mole 的 Windows 版开发全过程，涵盖多端技术选型思路与实操细节。
+- **原标题 / Original**: 在快 AI 时代，如何做一款慢产品？
+- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 📌 cases
+- **标签 / Tags**: `#产品更新` `#独立开发` `#出海` `#桌面端` `#开源/仓库` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开源 Mac 清理工具 Mole 的两个月迭代复盘，覆盖 AI 工具清理、系统数据清理与 Windows 桌面版发布。
+- **💰 商业模式与变现 / Business Logic**: 作者用 Agent 装卸 853 款 Mac 软件补齐 13 类通用规则和 90 多条清理路径，逐个实测 30 多款 AI 工具，并为 400 多位未激活用户手写补发邮件，认为代码变便宜后细节才是壁垒。
+- **🎯 推荐与借鉴 / Takeaway**: 作者复盘两个月亲手打磨 Mole 的过程，展示了 AI 时代不可扩展的细节如何拉开产品差距，工程与运营参考点都具体。
 
-### 2. [《胜利女神：妮姬》PC 启动器遭供应链投毒，可窃取 SSH 私钥、API 密钥和加密货币钱包](https://www.appinn.com/nikke-pc-launcher-supply-chain-attack-2/)
+### 2. [开源网页版解锁检测工具：154 项流媒体/AI 服务测真实分流线路](https://www.v2ex.com/t/1254616#reply0)
 
-- **原标题 / Original**: 《胜利女神：妮姬》PC 客户端遭供应链投毒，可能窃取密码、密钥和加密货币钱包
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#安全/对齐` `#非AI/通用工具` `#其他`
-- **💡 核心概要 / What It Is**: 《胜利女神：妮姬》国际服 PC 启动器从官方 CDN 加载的 JavaScript 被篡改，玩家正常启动游戏即可能运行远程控制木马，可窃取浏览器密码、SSH 私钥、GitHub/AWS/OpenAI 等服务密钥及加密货币钱包文件，并针对 Claude Code、Cursor、Gemini CLI 等开发工具设置了约 1790 条敏感路径。
+- **原标题 / Original**: [开源] 154 项流媒体/AI 解锁检测，直接在浏览器里跑，测真实线路解锁
+- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub` `#非AI/通用工具` `#V2EX` `#Cloudflare`
+- **💡 核心概要 / What It Is**: 一个纯静态网页工具，在浏览器里检测 154 项流媒体与 AI 服务（ChatGPT、Claude、Gemini、Netflix、Disney+ 等）的解锁情况，测的是用户实际分流线路而非 VPS IP。
+- **🎯 推荐与借鉴 / Takeaway**: 作者开源了一个浏览器端流媒体与 AI 解锁检测工具，跨域绕过思路和线路分流诊断对自建代理用户有直接参考价值。
 
-### 3. [《胜利女神：妮姬》PC 启动器遭供应链投毒，可能窃取密码、密钥和加密货币钱包](https://www.appinn.com/nikke-pc-launcher-supply-chain-attack/)
+### 3. [Sshole 披露 OpenSSH musl 漏洞：锁定账户接受 257–1024 字符任意密码](https://sshhole.com)
 
-- **原标题 / Original**: 《胜利女神：妮姬》PC 客户端遭供应链投毒，可能窃取密码、密钥和加密货币钱包
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 null
-- **标签 / Tags**: `#安全/对齐` `#行业动态` `#非AI/通用工具`
-- **💡 核心概要 / What It Is**: 你看到的内容可能由第三方 AI 基于小众软件文章提炼总结而成，可能与原文真实意图存在偏差，不代表小众软件观点。
+- **原标题 / Original**: Sshole
+- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#安全/对齐` `#开源/仓库` `#出海`
+- **💡 核心概要 / What It Is**: 一个讲述 OpenSSH 在 musl（Alpine、OpenWrt 等）系统上密码绕过漏洞的详解网站，附带浏览器内可复现的演示。
+- **🎯 推荐与借鉴 / Takeaway**: 作者亲测还原了一个潜伏十年的 musl 系统 OpenSSH 密码绕过漏洞，工程排障与自查命令都可直接借鉴。
 
-### 4. [证书熊（sslbear）上线：SSL 证书自动续签并部署到 8 家云与宝塔，24 项服务](https://www.v2ex.com/t/1254396#reply0)
+### 4. [Gauge 开源 CLI 发布：让 coding agent 更容易用你的产品](https://github.com/gauge-sh/gauge-cli)
 
-- **原标题 / Original**: 做了个 SSL 证书自动续签和自动部署的服务，支持 8 家云的 CDN、OSS、点播直播和宝塔，送兑换码
+- **原标题 / Original**: Show HN: Gauge – Open-Source CLI to recursively improve your docs
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#CLI` `#开源/仓库` `#AI工具` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: Gauge 是一款开源 CLI，用于提升 Agent Experience，通过 hillclimbing 循环让 Skills、CLI、SDK、MCP 和文档更容易被 coding agent 发现和使用。
+- **🎯 推荐与借鉴 / Takeaway**: 项目直指 AI Agent 用不好开发者产品的痛点，把评测、定位摩擦、验证修复做成可复用的本地闭环，工程思路值得借鉴。
+
+### 5. [Readaria 开源：自托管 RSS 阅读器，支持微信公众号源、TTS 朗读与 AI 播客生成](https://www.v2ex.com/t/1254732#reply0)
+
+- **原标题 / Original**: [开源] Readaria：自托管 RSS 阅读器 + AI 播客生成（微信源/语音朗读/移动端 PWA）
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#独立开发` `#开源/仓库` `#AI工具` `#移动端` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: Readaria 是一款自托管 RSS 阅读器，支持博客、Bilibili、X、小红书及微信公众号（走 RSSHub 路由）聚合，并内置服务端 TTS 朗读与 AI 播客生成。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者把运营两年的 RSS SaaS 完整开源，微信源聚合、TTS 朗读和 AI 播客的落地思路对自托管工具开发者有参考。
+
+### 6. [RoamDial iOS 版上架：3.5 万个全球电台随机听，安卓封测进行中](https://www.v2ex.com/t/1254622#reply0)
+
+- **原标题 / Original**: 全球 3.5 万个电台随机听 RoamDial： iOS 版上架了，安卓正在封测，发帖送一波永久 Pro 码
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#移动端` `#独立开发` `#出海` `#V2EX`
+- **💡 核心概要 / What It Is**: RoamDial 是一款聚合全球 3.5 万+ 电台的随机收听应用，iOS 已上架，安卓版在 Google Play 封闭测试。
+- **💰 商业模式与变现 / Business Logic**: 延续网页版无账号无广告的思路，免费提供全部电台与 CarPlay 等功能，Pro 以 $9.99 一次买断解锁不限次听歌识曲、全部小组件和电台闹钟。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者亲述 iOS 上架与 Google Play 个人号 12 人 14 天封测的真实流程，也展示免费加买断的定价思路。
+
+### 7. [灵幕 SmarterSub 发布：本地 AI 字幕软件，商业纪录片剧组已在用](https://www.v2ex.com/t/1254752#reply0)
+
+- **原标题 / Original**: 做了个本地 AI 字幕软件，商业纪录片剧组已经在用了，送 15 个激活码
 - **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#SaaS` `#自动化` `#独立开发` `#非AI/通用工具` `#V2EX`
-- **💡 核心概要 / What It Is**: 证书熊（sslbear）是一项 SSL 证书自动续签与自动部署服务，签发 Let's Encrypt 证书，支持单域名和通配符，到期前 15 天自动续签。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者自述产品细节，围绕云证书 3 个月续签痛点给出自动化方案，凭证安全设计可作工程借鉴。
+- **标签 / Tags**: `#新出海产品` `#AI工具` `#桌面端` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款本地运行的 AI 字幕软件，支持 Windows 和 Apple Silicon Mac，集识别、翻译、声音补录于一体，7 天全功能免费试用。
+- **🎯 推荐与借鉴 / Takeaway**: 作者以真实视频制作需求为切入点，展示了本地 AI 字幕工具的模型选型、LoRA 训练和定价思路，工程与商业判断都可直接借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-04 情报精选 (4 篇)](archives/2026-11-04.md)
+- [📅 2026-11-05 情报精选 (7 篇)](archives/2026-11-05.md)
+- [📅 2026-11-04 情报精选 (8 篇)](archives/2026-11-04.md)
 - [📅 2026-11-03 情报精选 (9 篇)](archives/2026-11-03.md)
-- [📅 2026-11-02 情报精选 (7 篇)](archives/2026-11-02.md)
+- [📅 2026-11-02 情报精选 (8 篇)](archives/2026-11-02.md)
 - [📅 2026-11-01 情报精选 (4 篇)](archives/2026-11-01.md)
 - [📅 2026-10-31 情报精选 (8 篇)](archives/2026-10-31.md)
 - [📅 2026-10-30 情报精选 (16 篇)](archives/2026-10-30.md)
