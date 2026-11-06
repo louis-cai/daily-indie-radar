@@ -6,71 +6,77 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-05
+## 今日精选 (Today's Top Signals) · 2026-11-06
 
-### 1. [Mole 更新至 1.19 并推出 Windows 版：73.9K Star 背后的慢产品哲学](https://www.v2ex.com/t/1254590#reply0)
+### 1. [Firenook 开源发布：Rust 版 Firebase 模拟器，写入快 40 倍、内存省 10 倍](https://firenook.dev/)
 
-- **原标题 / Original**: 在快 AI 时代，如何做一款慢产品？
-- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 📌 cases
-- **标签 / Tags**: `#产品更新` `#独立开发` `#出海` `#桌面端` `#开源/仓库` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 开源 Mac 清理工具 Mole 的两个月迭代复盘，覆盖 AI 工具清理、系统数据清理与 Windows 桌面版发布。
-- **💰 商业模式与变现 / Business Logic**: 作者用 Agent 装卸 853 款 Mac 软件补齐 13 类通用规则和 90 多条清理路径，逐个实测 30 多款 AI 工具，并为 400 多位未激活用户手写补发邮件，认为代码变便宜后细节才是壁垒。
-- **🎯 推荐与借鉴 / Takeaway**: 作者复盘两个月亲手打磨 Mole 的过程，展示了 AI 时代不可扩展的细节如何拉开产品差距，工程与运营参考点都具体。
+- **原标题 / Original**: Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM
+- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#SaaS` `#Stripe` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: Firenook 0.2.1 是 Firebase Local Emulator Suite 的 Rust 开源替代品，覆盖 Firestore、Auth、Storage、Functions、Pub/Sub、Tasks、Eventarc 和 Extensions 八个模拟器。
+- **🎯 推荐与借鉴 / Takeaway**: 用 Rust 重写 Firebase 本地模拟器，迁移成本仅改一个命令词，性能数据和兼容性处理都有工程参考价值。
 
-### 2. [开源网页版解锁检测工具：154 项流媒体/AI 服务测真实分流线路](https://www.v2ex.com/t/1254616#reply0)
+### 2. [iphone-control 开源：基于 Rust 让 AI 在 Linux 上操作真机 iPhone](https://www.v2ex.com/t/1255024#reply2)
 
-- **原标题 / Original**: [开源] 154 项流媒体/AI 解锁检测，直接在浏览器里跑，测真实线路解锁
-- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub` `#非AI/通用工具` `#V2EX` `#Cloudflare`
-- **💡 核心概要 / What It Is**: 一个纯静态网页工具，在浏览器里检测 154 项流媒体与 AI 服务（ChatGPT、Claude、Gemini、Netflix、Disney+ 等）的解锁情况，测的是用户实际分流线路而非 VPS IP。
-- **🎯 推荐与借鉴 / Takeaway**: 作者开源了一个浏览器端流媒体与 AI 解锁检测工具，跨域绕过思路和线路分流诊断对自建代理用户有直接参考价值。
+- **原标题 / Original**: [开源] iPhone -control: 基于 Rust 构建，在 Linux 上让 AI 操作真机 iPhone
+- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款开源工具，让 AI 在 Linux 上直接操作真机 iPhone，提供截图、点击、滑动、输入中文、开关 App 等 15 个 MCP 工具。【商业/痛点逻辑】解决 go-ios、pymobiledevice3、WDA 拼装方案安装繁琐、签名麻烦、隧道易断的问题；AI 可读界面元素按名称操作，多步操作一次发完，实测总耗时减少 44%。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把 go-ios、pymobiledevice3、WDA 拼装方案重写为单一 Rust 二进制，工程整合思路和多步操作省时的实测数据值得借鉴。
 
-### 3. [Sshole 披露 OpenSSH musl 漏洞：锁定账户接受 257–1024 字符任意密码](https://sshhole.com)
+### 3. [BUI 开源：把 Blender 界面解耦为多语言 UI 库，基准快于 gpui](https://github.com/ppmpreetham/BUI)
 
-- **原标题 / Original**: Sshole
-- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#安全/对齐` `#开源/仓库` `#出海`
-- **💡 核心概要 / What It Is**: 一个讲述 OpenSSH 在 musl（Alpine、OpenWrt 等）系统上密码绕过漏洞的详解网站，附带浏览器内可复现的演示。
-- **🎯 推荐与借鉴 / Takeaway**: 作者亲测还原了一个潜伏十年的 musl 系统 OpenSSH 密码绕过漏洞，工程排障与自查命令都可直接借鉴。
+- **原标题 / Original**: Blender's UI and Runtime: Much Faster Than GPUI
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#桌面端` `#GitHub`
+- **💡 核心概要 / What It Is**: BUI 把 Blender 的界面控件绘制、交互规则与外观解耦成一个独立 UI 库，核心是小型 C 运行时，支持 Python、Rust、JavaScript/React、C/C++ 和 Dear ImGui。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把 Blender 界面解耦成可跨语言使用的 UI 库，基准数据详实，对桌面端性能与工程取舍有参考价值。
 
-### 4. [Gauge 开源 CLI 发布：让 coding agent 更容易用你的产品](https://github.com/gauge-sh/gauge-cli)
+### 4. [Beayy 开源：后台自动记录电脑手机手表的一天，每晚生成日总结](https://www.v2ex.com/t/1254898#reply0)
 
-- **原标题 / Original**: Show HN: Gauge – Open-Source CLI to recursively improve your docs
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#CLI` `#开源/仓库` `#AI工具` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: Gauge 是一款开源 CLI，用于提升 Agent Experience，通过 hillclimbing 循环让 Skills、CLI、SDK、MCP 和文档更容易被 coding agent 发现和使用。
-- **🎯 推荐与借鉴 / Takeaway**: 项目直指 AI Agent 用不好开发者产品的痛点，把评测、定位摩擦、验证修复做成可复用的本地闭环，工程思路值得借鉴。
+- **原标题 / Original**: 做了个开源的「自动日记」： Beayy 在后台记下电脑、手机、手表上的一天，每晚写日总结
+- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#AI工具` `#桌面端` `#移动端` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开源自动日记工具 Beayy，在后台记录电脑前台应用与窗口、屏幕文字、手机屏幕使用时间、iPhone 停留点和可选的 Apple Watch 录音转写，模型替你写流水账。
+- **🎯 推荐与借鉴 / Takeaway**: 开源的个人自动记录工具，本机加密存储加自选模型的隐私设计，对想做桌面端数据采集产品的开发者有工程参考价值。
 
-### 5. [Readaria 开源：自托管 RSS 阅读器，支持微信公众号源、TTS 朗读与 AI 播客生成](https://www.v2ex.com/t/1254732#reply0)
+### 5. [Rivet (YC W23) 开源发布：在 S3 上编排与扩展 AI Agent](https://github.com/rivet-dev/rivet)
 
-- **原标题 / Original**: [开源] Readaria：自托管 RSS 阅读器 + AI 播客生成（微信源/语音朗读/移动端 PWA）
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#独立开发` `#开源/仓库` `#AI工具` `#移动端` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: Readaria 是一款自托管 RSS 阅读器，支持博客、Bilibili、X、小红书及微信公众号（走 RSSHub 路由）聚合，并内置服务端 TTS 朗读与 AI 播客生成。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者把运营两年的 RSS SaaS 完整开源，微信源聚合、TTS 朗读和 AI 播客的落地思路对自托管工具开发者有参考。
+- **原标题 / Original**: Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#自动化` `#GitHub` `#Cloudflare` `#Hacker News`
+- **💡 核心概要 / What It Is**: Rivet 是开源的 Actor 编排平台，让 AI Agent、会话或租户各自对应一个长驻进程，内置内存状态、SQLite、WebSockets 与调度。
 
-### 6. [RoamDial iOS 版上架：3.5 万个全球电台随机听，安卓封测进行中](https://www.v2ex.com/t/1254622#reply0)
+### 6. [Thinking Machines 发布 Inkling 2 Small：594B 参数 MoE 模型，下周开放 Apache 2.0 权重](https://thinkingmachines.ai/news/inkling-2-small/)
 
-- **原标题 / Original**: 全球 3.5 万个电台随机听 RoamDial： iOS 版上架了，安卓正在封测，发帖送一波永久 Pro 码
+- **原标题 / Original**: Inkling 2 Small
 - **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#移动端` `#独立开发` `#出海` `#V2EX`
-- **💡 核心概要 / What It Is**: RoamDial 是一款聚合全球 3.5 万+ 电台的随机收听应用，iOS 已上架，安卓版在 Google Play 封闭测试。
-- **💰 商业模式与变现 / Business Logic**: 延续网页版无账号无广告的思路，免费提供全部电台与 CarPlay 等功能，Pro 以 $9.99 一次买断解锁不限次听歌识曲、全部小组件和电台闹钟。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者亲述 iOS 上架与 Google Play 个人号 12 人 14 天封测的真实流程，也展示免费加买断的定价思路。
+- **标签 / Tags**: `#模型发布` `#安全/对齐` `#现象/趋势`
+- **💡 核心概要 / What It Is**: Thinking Machines 发布第二代模型 Inkling 2 Small，MoE 架构 594B 总参数、17B 激活，支持图像输入与可变 effort，在 Artificial Analysis Intelligence Index 得分 31。
 
-### 7. [灵幕 SmarterSub 发布：本地 AI 字幕软件，商业纪录片剧组已在用](https://www.v2ex.com/t/1254752#reply0)
+### 7. [Glint 发布：驻守菜单栏的 GitHub CI 状态监控](https://www.v2ex.com/t/1255020#reply0)
 
-- **原标题 / Original**: 做了个本地 AI 字幕软件，商业纪录片剧组已经在用了，送 15 个激活码
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#桌面端` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款本地运行的 AI 字幕软件，支持 Windows 和 Apple Silicon Mac，集识别、翻译、声音补录于一体，7 天全功能免费试用。
-- **🎯 推荐与借鉴 / Takeaway**: 作者以真实视频制作需求为切入点，展示了本地 AI 字幕工具的模型选型、LoRA 训练和定价思路，工程与商业判断都可直接借鉴。
+- **原标题 / Original**: 做了一个驻守菜单栏的 GitHub CI 监控
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#桌面端` `#开源/仓库` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: Glint 是一款驻守系统托盘的 GitHub CI 状态监控工具，用一个圆点聚合所有监控仓库的状态，绿色继续干活、红色有失败、橙色 CI 在跑。
+- **💰 商业模式与变现 / Business Logic**: 解决 Push 后反复切浏览器刷 Actions 页面的碎片化痛点，失败时不用开网页就能定位到具体 job ▸ step，并一键复制错误日志，另有常驻壁纸层的磨砂小组件。
+- **🎯 推荐与借鉴 / Takeaway**: 针对开发者频繁刷 CI 页面的碎片化痛点，托盘聚合状态加一键定位失败 job，可作为桌面小工具的场景切入点参考。
+
+### 8. [Muffin 开源：C++/Qt 纯原生桌面 Markdown 编辑器，挑战 Electron 套壳](https://www.v2ex.com/t/1255035#reply0)
+
+- **原标题 / Original**: 桌面 Markdown 编辑器几乎全是网页套壳，我们用 C++/Qt 写了个纯原生的： Muffin
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#非AI/通用工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: Muffin 是一款用 C++20 + Qt 6 纯原生实现的桌面 Markdown 编辑器，不捆绑 Chromium、不依赖 Node。【商业/痛点逻辑】针对 Typora、Obsidian、MarkText 等主流编辑器基于网页内核或 Electron 导致启动慢、内存高、大文件卡顿的问题，主打冷启动快、内存占用低。
+- **🎯 推荐与借鉴 / Takeaway**: 纯 C++/Qt 原生实现替代 Electron 套壳的思路清晰，大文件渲染数据可作桌面端性能工程借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-05 情报精选 (7 篇)](archives/2026-11-05.md)
+- [📅 2026-11-06 情报精选 (8 篇)](archives/2026-11-06.md)
+- [📅 2026-11-05 情报精选 (13 篇)](archives/2026-11-05.md)
 - [📅 2026-11-04 情报精选 (8 篇)](archives/2026-11-04.md)
 - [📅 2026-11-03 情报精选 (9 篇)](archives/2026-11-03.md)
 - [📅 2026-11-02 情报精选 (8 篇)](archives/2026-11-02.md)
