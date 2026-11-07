@@ -6,80 +6,73 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-06
+## 今日精选 (Today's Top Signals) · 2026-11-07
 
-### 1. [Firenook 开源发布：Rust 版 Firebase 模拟器，写入快 40 倍、内存省 10 倍](https://firenook.dev/)
+### 1. [Ghostty 开源终端库 libghostty 1.0 发布：C API 与 ABI 正式稳定](https://mitchellh.com/writing/libghostty-1-0)
 
-- **原标题 / Original**: Show HN: Firenook – Firebase emulators in Rust: 40× faster writes, 10× less RAM
-- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#SaaS` `#Stripe` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: Firenook 0.2.1 是 Firebase Local Emulator Suite 的 Rust 开源替代品，覆盖 Firestore、Auth、Storage、Functions、Pub/Sub、Tasks、Eventarc 和 Extensions 八个模拟器。
-- **🎯 推荐与借鉴 / Takeaway**: 用 Rust 重写 Firebase 本地模拟器，迁移成本仅改一个命令词，性能数据和兼容性处理都有工程参考价值。
+- **原标题 / Original**: Libghostty 1.0
+- **评分 / Signal Score**: ⭐ `87.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub`
+- **💡 核心概要 / What It Is**: libghostty 1.0 发布，这是从 Ghostty 核心抽出的可移植、高性能 C 语言终端模拟库，库与 C ABI 均已稳定并遵循语义化版本。
+- **🎯 推荐与借鉴 / Takeaway**: Ghostty 作者详解 libghostty 1.0 的 ABI 稳定策略与跨平台打包实践，对开发可嵌入 C 库有直接工程借鉴。
 
-### 2. [iphone-control 开源：基于 Rust 让 AI 在 Linux 上操作真机 iPhone](https://www.v2ex.com/t/1255024#reply2)
+### 2. [CloneGuard 开源：运行前扫描仓库中的窃取凭据恶意代码](https://github.com/tharun208/cloneguard)
 
-- **原标题 / Original**: [开源] iPhone -control: 基于 Rust 构建，在 Linux 上让 AI 操作真机 iPhone
-- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款开源工具，让 AI 在 Linux 上直接操作真机 iPhone，提供截图、点击、滑动、输入中文、开关 App 等 15 个 MCP 工具。【商业/痛点逻辑】解决 go-ios、pymobiledevice3、WDA 拼装方案安装繁琐、签名麻烦、隧道易断的问题；AI 可读界面元素按名称操作，多步操作一次发完，实测总耗时减少 44%。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把 go-ios、pymobiledevice3、WDA 拼装方案重写为单一 Rust 二进制，工程整合思路和多步操作省时的实测数据值得借鉴。
+- **原标题 / Original**: Show HN: CloneGuard – Scan a repo for credential-stealing tricks before it runs
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#CLI` `#开源/仓库` `#GitHub` `#安全/对齐` `#Hacker News`
+- **💡 核心概要 / What It Is**: 一款开源的 Go 命令行安全扫描工具 cloneguard，在克隆或运行陌生项目前检测常见恶意手法。【痛点逻辑】针对假招聘者发送伪装成 take-home 作业的仓库，在 npm install 或编辑器打开时静默窃取 SSH 密钥、AWS 凭据、浏览器密码等场景。
+- **🎯 推荐与借鉴 / Takeaway**: 作者因假招聘者恶意项目盗取密钥而写的静态扫描工具，只读文件不执行代码，可嵌入脚本或 git hook 做运行前检查。
 
-### 3. [BUI 开源：把 Blender 界面解耦为多语言 UI 库，基准快于 gpui](https://github.com/ppmpreetham/BUI)
+### 3. [macOS 隐藏个人知识图谱被逆向拆解：作者开源本地查看工具 iKnow](https://8rank.ai/game/apple-intelligence-personal-knowledge-graph)
 
-- **原标题 / Original**: Blender's UI and Runtime: Much Faster Than GPUI
-- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#桌面端` `#GitHub`
-- **💡 核心概要 / What It Is**: BUI 把 Blender 的界面控件绘制、交互规则与外观解耦成一个独立 UI 库，核心是小型 C 运行时，支持 Python、Rust、JavaScript/React、C/C++ 和 Dear ImGui。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把 Blender 界面解耦成可跨语言使用的 UI 库，基准数据详实，对桌面端性能与工程取舍有参考价值。
+- **原标题 / Original**: Every Mac comes with an (undocumented) family member classifier
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#安全/对齐` `#开源/仓库` `#现象/趋势`
+- **💡 核心概要 / What It Is**: 一篇对 macOS 内置 knowledgeconstructiond 与 intelligenceplatformd 两个守护进程的逆向分析，附带开源的本地仪表盘 iKnow，可只读浏览 ~/Library/IntelligencePlatform 下的个人知识图谱。
+- **🎯 推荐与借鉴 / Takeaway**: 作者逆向拆解了 macOS 隐藏的个人知识图谱机制并开源本地查看工具，对关注隐私与端上 AI 数据结构的开发者有直接工程参考。
 
-### 4. [Beayy 开源：后台自动记录电脑手机手表的一天，每晚生成日总结](https://www.v2ex.com/t/1254898#reply0)
+### 4. [Shepi 发布：Herdr 的原生 Mac 客户端，统一管理多个 AI 编程 agent](https://www.v2ex.com/t/1255246#reply0)
 
-- **原标题 / Original**: 做了个开源的「自动日记」： Beayy 在后台记下电脑、手机、手表上的一天，每晚写日总结
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#AI工具` `#桌面端` `#移动端` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 开源自动日记工具 Beayy，在后台记录电脑前台应用与窗口、屏幕文字、手机屏幕使用时间、iPhone 停留点和可选的 Apple Watch 录音转写，模型替你写流水账。
-- **🎯 推荐与借鉴 / Takeaway**: 开源的个人自动记录工具，本机加密存储加自选模型的隐私设计，对想做桌面端数据采集产品的开发者有工程参考价值。
+- **原标题 / Original**: Herdr 的终端界面能把事情做好。Shepi 让你在 Mac 上用得更愉快。
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#桌面端` `#独立开发` `#非AI/通用工具` `#CLI` `#V2EX`
+- **💡 核心概要 / What It Is**: Shepi 是作者独立开发的 Herdr 原生 Mac 客户端，为同时运行多个 AI 编程 agent 提供桌面入口，与 Herdr TUI 实时共享同一套工作空间、标签页和 agents。
+- **🎯 推荐与借鉴 / Takeaway**: 作者展示了如何为终端工具补齐桌面入口的完整设计，多 agent 工作流的状态管理与交互细节值得工程借鉴。
 
-### 5. [Rivet (YC W23) 开源发布：在 S3 上编排与扩展 AI Agent](https://github.com/rivet-dev/rivet)
+### 5. [Waymark 开源：编译式持久工作流引擎，仅依赖 Postgres](https://github.com/piercefreeman/waymark)
 
-- **原标题 / Original**: Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#自动化` `#GitHub` `#Cloudflare` `#Hacker News`
-- **💡 核心概要 / What It Is**: Rivet 是开源的 Actor 编排平台，让 AI Agent、会话或租户各自对应一个长驻进程，内置内存状态、SQLite、WebSockets 与调度。
+- **原标题 / Original**: Show HN: Waymark – A workflow engine that compiles jobs instead of replaying
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#GitHub`
+- **💡 核心概要 / What It Is**: Waymark 是一个开源 Python 工作流引擎库，用于构建可承受服务器重启、任务崩溃和长时间运行的后台任务。
+- **🎯 推荐与借鉴 / Takeaway**: 作者用编译而非重放的思路重做工作流引擎，只依赖 Postgres，对想给后台任务加持久化的 Python 开发者有工程借鉴。
 
-### 6. [Thinking Machines 发布 Inkling 2 Small：594B 参数 MoE 模型，下周开放 Apache 2.0 权重](https://thinkingmachines.ai/news/inkling-2-small/)
+### 6. [Dev-circuit-ultra：自研开发 loop 对比 OpenSpec 省 30% token、51% 文档维护](https://www.v2ex.com/t/1255229#reply0)
 
-- **原标题 / Original**: Inkling 2 Small
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#模型发布` `#安全/对齐` `#现象/趋势`
-- **💡 核心概要 / What It Is**: Thinking Machines 发布第二代模型 Inkling 2 Small，MoE 架构 594B 总参数、17B 激活，支持图像输入与可变 effort，在 Artificial Analysis Intelligence Index 得分 31。
+- **原标题 / Original**: [Dev-circuit-ultra]-自己做的比 OpenSpec 更少上下文、更少流程、更快交付的开发 loop
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#独立开发` `#AI工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一套面向独立开发者的五步功能开发循环，以 skill 形式加载到 Claude Code、Codex、pi、DeepSeek Harness 等编码 agent。
+- **🎯 推荐与借鉴 / Takeaway**: 作者公开了一套轻量替代 OpenSpec 的开发 loop 与 A/B 数据，读者可参考其在 token 成本和文档维护上的工程取舍思路。
 
-### 7. [Glint 发布：驻守菜单栏的 GitHub CI 状态监控](https://www.v2ex.com/t/1255020#reply0)
+### 7. [devvm 开源：一条命令为每个项目建隔离沙箱 VM，专配 Claude Code 等 coding agent](https://devvm.dev/)
 
-- **原标题 / Original**: 做了一个驻守菜单栏的 GitHub CI 监控
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#桌面端` `#开源/仓库` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: Glint 是一款驻守系统托盘的 GitHub CI 状态监控工具，用一个圆点聚合所有监控仓库的状态，绿色继续干活、红色有失败、橙色 CI 在跑。
-- **💰 商业模式与变现 / Business Logic**: 解决 Push 后反复切浏览器刷 Actions 页面的碎片化痛点，失败时不用开网页就能定位到具体 job ▸ step，并一键复制错误日志，另有常驻壁纸层的磨砂小组件。
-- **🎯 推荐与借鉴 / Takeaway**: 针对开发者频繁刷 CI 页面的碎片化痛点，托盘聚合状态加一键定位失败 job，可作为桌面小工具的场景切入点参考。
-
-### 8. [Muffin 开源：C++/Qt 纯原生桌面 Markdown 编辑器，挑战 Electron 套壳](https://www.v2ex.com/t/1255035#reply0)
-
-- **原标题 / Original**: 桌面 Markdown 编辑器几乎全是网页套壳，我们用 C++/Qt 写了个纯原生的： Muffin
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#非AI/通用工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: Muffin 是一款用 C++20 + Qt 6 纯原生实现的桌面 Markdown 编辑器，不捆绑 Chromium、不依赖 Node。【商业/痛点逻辑】针对 Typora、Obsidian、MarkText 等主流编辑器基于网页内核或 Electron 导致启动慢、内存高、大文件卡顿的问题，主打冷启动快、内存占用低。
-- **🎯 推荐与借鉴 / Takeaway**: 纯 C++/Qt 原生实现替代 Electron 套壳的思路清晰，大文件渲染数据可作桌面端性能工程借鉴。
+- **原标题 / Original**: Devvm.dev: One VM for every project
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#独立开发` `#GitHub`
+- **💡 核心概要 / What It Is**: devvm 是一款免费开源（MIT）工具，在项目文件夹里一键创建带工具链的隔离沙箱 VM，供开发者或 Claude Code、Codex、opencode 等 coding agent 在其中编码。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
+- [📅 2026-11-07 情报精选 (7 篇)](archives/2026-11-07.md)
 - [📅 2026-11-06 情报精选 (8 篇)](archives/2026-11-06.md)
 - [📅 2026-11-05 情报精选 (13 篇)](archives/2026-11-05.md)
-- [📅 2026-11-04 情报精选 (8 篇)](archives/2026-11-04.md)
-- [📅 2026-11-03 情报精选 (9 篇)](archives/2026-11-03.md)
-- [📅 2026-11-02 情报精选 (8 篇)](archives/2026-11-02.md)
+- [📅 2026-11-04 情报精选 (9 篇)](archives/2026-11-04.md)
+- [📅 2026-11-03 情报精选 (10 篇)](archives/2026-11-03.md)
+- [📅 2026-11-02 情报精选 (9 篇)](archives/2026-11-02.md)
 - [📅 2026-11-01 情报精选 (4 篇)](archives/2026-11-01.md)
 - [📅 2026-10-31 情报精选 (8 篇)](archives/2026-10-31.md)
 - [📅 2026-10-30 情报精选 (16 篇)](archives/2026-10-30.md)
