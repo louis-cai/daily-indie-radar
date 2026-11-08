@@ -6,68 +6,45 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-07
+## 今日精选 (Today's Top Signals) · 2026-11-08
 
-### 1. [Ghostty 开源终端库 libghostty 1.0 发布：C API 与 ABI 正式稳定](https://mitchellh.com/writing/libghostty-1-0)
+### 1. [HyperFlow H3 Flash 开源：MiniMax-H3 压缩至 14B，6 步生成视频+同步音频](https://github.com/Video-Rebirth/hyperflow-h3-flash)
 
-- **原标题 / Original**: Libghostty 1.0
-- **评分 / Signal Score**: ⭐ `87.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#GitHub`
-- **💡 核心概要 / What It Is**: libghostty 1.0 发布，这是从 Ghostty 核心抽出的可移植、高性能 C 语言终端模拟库，库与 C ABI 均已稳定并遵循语义化版本。
-- **🎯 推荐与借鉴 / Takeaway**: Ghostty 作者详解 libghostty 1.0 的 ABI 稳定策略与跨平台打包实践，对开发可嵌入 C 库有直接工程借鉴。
+- **原标题 / Original**: Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8
+- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发` `#GitHub`
+- **💡 核心概要 / What It Is**: Video Rebirth 发布的 MiniMax-H3 压缩版，用结构剪枝、低秩分解和旋转 W8A8 INT8 量化把约 31B 模型压到 13.7B/13.9B，一次性生成视频和同步立体声音频。
+- **🎯 推荐与借鉴 / Takeaway**: 把 31B 视频+音频模型压到 14B、6 步采样并在消费级 GPU 跑通，压缩与量化工程细节可直接借鉴。
 
-### 2. [CloneGuard 开源：运行前扫描仓库中的窃取凭据恶意代码](https://github.com/tharun208/cloneguard)
+### 2. [Cursor 的 Claude Code 扩展遭假更新投毒：后门自查清单](https://www.v2ex.com/t/1255321#reply0)
 
-- **原标题 / Original**: Show HN: CloneGuard – Scan a repo for credential-stealing tricks before it runs
-- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#CLI` `#开源/仓库` `#GitHub` `#安全/对齐` `#Hacker News`
-- **💡 核心概要 / What It Is**: 一款开源的 Go 命令行安全扫描工具 cloneguard，在克隆或运行陌生项目前检测常见恶意手法。【痛点逻辑】针对假招聘者发送伪装成 take-home 作业的仓库，在 npm install 或编辑器打开时静默窃取 SSH 密钥、AWS 凭据、浏览器密码等场景。
-- **🎯 推荐与借鉴 / Takeaway**: 作者因假招聘者恶意项目盗取密钥而写的静态扫描工具，只读文件不执行代码，可嵌入脚本或 git hook 做运行前检查。
+- **原标题 / Original**: 五天两起假更新投毒： Cursor 的 Claude Code 扩展被塞后门，自查清单
+- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#其他`
+- **💡 核心概要 / What It Is**: Cursor 市场在 10 月 29 日放出被篡改的 anthropic.claude-code 2.1.312 / 2.1.313，扩展 ID 为真实 ID，被微软拆解出后门行为。
+- **🎯 推荐与借鉴 / Takeaway**: 整理了 Cursor 假更新后门的自查与清理要点，提醒开发者升级版本不等于清除持久化残留，工程上值得逐条核对。
 
-### 3. [macOS 隐藏个人知识图谱被逆向拆解：作者开源本地查看工具 iKnow](https://8rank.ai/game/apple-intelligence-personal-knowledge-graph)
+### 3. [动动乐园上线：打开网页用摄像头就能玩的 100+ 体感小游戏](https://www.v2ex.com/t/1255360#reply0)
 
-- **原标题 / Original**: Every Mac comes with an (undocumented) family member classifier
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#安全/对齐` `#开源/仓库` `#现象/趋势`
-- **💡 核心概要 / What It Is**: 一篇对 macOS 内置 knowledgeconstructiond 与 intelligenceplatformd 两个守护进程的逆向分析，附带开源的本地仪表盘 iKnow，可只读浏览 ~/Library/IntelligencePlatform 下的个人知识图谱。
-- **🎯 推荐与借鉴 / Takeaway**: 作者逆向拆解了 macOS 隐藏的个人知识图谱机制并开源本地查看工具，对关注隐私与端上 AI 数据结构的开发者有直接工程参考。
+- **原标题 / Original**: 女儿生病出不了门，给她做了 100+体感小游戏：打开网页，站到摄像头前就能玩
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#独立开发` `#V2EX`
+- **💡 核心概要 / What It Is**: 动动乐园是一个体感小游戏合集，打开网页、站到摄像头前即可玩，覆盖幼儿园到高中（3～18 岁）共 100 多个游戏，每个学段三档难度。【商业/痛点逻辑】作者为生病在家的女儿缺少运动量而做，无需手柄和设备，笔记本或台式机摄像头即可；后带入幼儿园班级使用，加了班级换人、班级运动小报等功能。
+- **🎯 推荐与借鉴 / Takeaway**: 一位爸爸为生病女儿做出 100 多个摄像头体感小游戏，从家庭需求长成免费产品，可参考其痛点切入与功能迭代路径。
 
-### 4. [Shepi 发布：Herdr 的原生 Mac 客户端，统一管理多个 AI 编程 agent](https://www.v2ex.com/t/1255246#reply0)
+### 4. [Claude Code 的 "Don't Ask Again" 被指致 1,122 个公开 GitHub 文件泄漏密码](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again)
 
-- **原标题 / Original**: Herdr 的终端界面能把事情做好。Shepi 让你在 Mac 上用得更愉快。
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#桌面端` `#独立开发` `#非AI/通用工具` `#CLI` `#V2EX`
-- **💡 核心概要 / What It Is**: Shepi 是作者独立开发的 Herdr 原生 Mac 客户端，为同时运行多个 AI 编程 agent 提供桌面入口，与 Herdr TUI 实时共享同一套工作空间、标签页和 agents。
-- **🎯 推荐与借鉴 / Takeaway**: 作者展示了如何为终端工具补齐桌面入口的完整设计，多 agent 工作流的状态管理与交互细节值得工程借鉴。
-
-### 5. [Waymark 开源：编译式持久工作流引擎，仅依赖 Postgres](https://github.com/piercefreeman/waymark)
-
-- **原标题 / Original**: Show HN: Waymark – A workflow engine that compiles jobs instead of replaying
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#GitHub`
-- **💡 核心概要 / What It Is**: Waymark 是一个开源 Python 工作流引擎库，用于构建可承受服务器重启、任务崩溃和长时间运行的后台任务。
-- **🎯 推荐与借鉴 / Takeaway**: 作者用编译而非重放的思路重做工作流引擎，只依赖 Postgres，对想给后台任务加持久化的 Python 开发者有工程借鉴。
-
-### 6. [Dev-circuit-ultra：自研开发 loop 对比 OpenSpec 省 30% token、51% 文档维护](https://www.v2ex.com/t/1255229#reply0)
-
-- **原标题 / Original**: [Dev-circuit-ultra]-自己做的比 OpenSpec 更少上下文、更少流程、更快交付的开发 loop
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#独立开发` `#AI工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 一套面向独立开发者的五步功能开发循环，以 skill 形式加载到 Claude Code、Codex、pi、DeepSeek Harness 等编码 agent。
-- **🎯 推荐与借鉴 / Takeaway**: 作者公开了一套轻量替代 OpenSpec 的开发 loop 与 A/B 数据，读者可参考其在 token 成本和文档维护上的工程取舍思路。
-
-### 7. [devvm 开源：一条命令为每个项目建隔离沙箱 VM，专配 Claude Code 等 coding agent](https://devvm.dev/)
-
-- **原标题 / Original**: Devvm.dev: One VM for every project
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#独立开发` `#GitHub`
-- **💡 核心概要 / What It Is**: devvm 是一款免费开源（MIT）工具，在项目文件夹里一键创建带工具链的隔离沙箱 VM，供开发者或 Claude Code、Codex、opencode 等 coding agent 在其中编码。
+- **原标题 / Original**: Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#安全/对齐` `#GitHub` `#开源/仓库` `#其他` `#Hacker News` `#Anthropic`
+- **💡 核心概要 / What It Is**: Apiiro 博客文章称 Claude Code 的 "Don't Ask Again" 授权方式与 1,122 个公开 GitHub 文件中的密码泄漏相关。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-07 情报精选 (7 篇)](archives/2026-11-07.md)
+- [📅 2026-11-08 情报精选 (4 篇)](archives/2026-11-08.md)
+- [📅 2026-11-07 情报精选 (8 篇)](archives/2026-11-07.md)
 - [📅 2026-11-06 情报精选 (8 篇)](archives/2026-11-06.md)
 - [📅 2026-11-05 情报精选 (13 篇)](archives/2026-11-05.md)
 - [📅 2026-11-04 情报精选 (9 篇)](archives/2026-11-04.md)
