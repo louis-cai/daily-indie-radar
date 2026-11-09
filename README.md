@@ -6,44 +6,46 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-08
+## 今日精选 (Today's Top Signals) · 2026-11-09
 
-### 1. [HyperFlow H3 Flash 开源：MiniMax-H3 压缩至 14B，6 步生成视频+同步音频](https://github.com/Video-Rebirth/hyperflow-h3-flash)
+### 1. [net-diagnosis 开源：纯浏览器 20 秒定位网络卡顿在哪一段](https://www.v2ex.com/t/1255453#reply0)
 
-- **原标题 / Original**: Show HN: We compressed a 31B video+audio diffusion model to 14B, 6 steps, INT8
-- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#独立开发` `#GitHub`
-- **💡 核心概要 / What It Is**: Video Rebirth 发布的 MiniMax-H3 压缩版，用结构剪枝、低秩分解和旋转 W8A8 INT8 量化把约 31B 模型压到 13.7B/13.9B，一次性生成视频和同步立体声音频。
-- **🎯 推荐与借鉴 / Takeaway**: 把 31B 视频+音频模型压到 14B、6 步采样并在消费级 GPU 跑通，压缩与量化工程细节可直接借鉴。
+- **原标题 / Original**: [开源] 网络卡顿到底卡在哪一段？做了个纯浏览器的网络诊断， 20 秒给结论
+- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款纯浏览器网络诊断工具，同时测多条网络路径，把「卡了」定位到 Wi-Fi/路由器、宽带、跨境线路、代理或目标网站具体哪一段，20 秒给出结论并持续记录。
+- **🎯 推荐与借鉴 / Takeaway**: 作者开源了纯浏览器网络诊断方案，路径分段定位思路和 STUN 丢包验证细节对排查跨境卡顿有工程借鉴。
 
-### 2. [Cursor 的 Claude Code 扩展遭假更新投毒：后门自查清单](https://www.v2ex.com/t/1255321#reply0)
+### 2. [EarlyLore 上线：基于 44.5 万款产品数据的立项挑刺工作台](https://www.v2ex.com/t/1255546#reply0)
 
-- **原标题 / Original**: 五天两起假更新投毒： Cursor 的 Claude Code 扩展被塞后门，自查清单
-- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐` `#其他`
-- **💡 核心概要 / What It Is**: Cursor 市场在 10 月 29 日放出被篡改的 anthropic.claude-code 2.1.312 / 2.1.313，扩展 ID 为真实 ID，被微软拆解出后门行为。
-- **🎯 推荐与借鉴 / Takeaway**: 整理了 Cursor 假更新后门的自查与清理要点，提醒开发者升级版本不等于清除持久化残留，工程上值得逐条核对。
+- **原标题 / Original**: 直接问 AI「这个想法能不能做」它只会顺着你夸，我结合 44.5 万款产品的真实流量与定价做了个立项挑刺与竞品库 EarlyLore [附 V2EX 兑换码]
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#独立开发` `#SaaS` `#AI工具` `#冷启动` `#V2EX`
+- **💡 核心概要 / What It Is**: EarlyLore 是 wwk 上线的立项调研工作台，在动手写代码前先拉真实竞品数据并给想法挑刺。它针对直接问大模型只会附和、查竞品要切十几个标签页的痛点，清洗了 44.5 万款产品的流量、定价、首屏样式与社区讨论数据。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把 44.5 万款产品的流量与定价数据做成立项前的竞品调研工具，切中了独立开发者凭兴趣做伪需求的痛点。
 
-### 3. [动动乐园上线：打开网页用摄像头就能玩的 100+ 体感小游戏](https://www.v2ex.com/t/1255360#reply0)
+### 3. [叮咪开源 Windows 快捷启动器：Alt + Space 设提醒、记笔记、开程序](https://www.v2ex.com/t/1255538#reply0)
 
-- **原标题 / Original**: 女儿生病出不了门，给她做了 100+体感小游戏：打开网页，站到摄像头前就能玩
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#独立开发` `#V2EX`
-- **💡 核心概要 / What It Is**: 动动乐园是一个体感小游戏合集，打开网页、站到摄像头前即可玩，覆盖幼儿园到高中（3～18 岁）共 100 多个游戏，每个学段三档难度。【商业/痛点逻辑】作者为生病在家的女儿缺少运动量而做，无需手柄和设备，笔记本或台式机摄像头即可；后带入幼儿园班级使用，加了班级换人、班级运动小报等功能。
-- **🎯 推荐与借鉴 / Takeaway**: 一位爸爸为生病女儿做出 100 多个摄像头体感小游戏，从家庭需求长成免费产品，可参考其痛点切入与功能迭代路径。
+- **原标题 / Original**: 做了个开源的 Windows 小工具： Alt + Space 一句话设提醒、记笔记、开程序
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#非AI/通用工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开发者基于 uTools 的日常高频需求，开源了 Windows 快捷启动工具叮咪，按 Alt + Space 呼出输入框，可开程序、设提醒、记笔记。
+- **🎯 推荐与借鉴 / Takeaway**: 开源启动器作者复盘功能取舍与本地优先设计，时间解析规则和加密同步细节对桌面工具开发有工程借鉴。
 
-### 4. [Claude Code 的 "Don't Ask Again" 被指致 1,122 个公开 GitHub 文件泄漏密码](https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again)
+### 4. [hongzhao v0.2.0 开源：给 AI 编程智能体的纯文本记忆账本](https://www.v2ex.com/t/1255466#reply0)
 
-- **原标题 / Original**: Claude Code's "Don't Ask Again" exposes passwords in 1,122 public GitHub files
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#安全/对齐` `#GitHub` `#开源/仓库` `#其他` `#Hacker News` `#Anthropic`
-- **💡 核心概要 / What It Is**: Apiiro 博客文章称 Claude Code 的 "Don't Ask Again" 授权方式与 1,122 个公开 GitHub 文件中的密码泄漏相关。
+- **原标题 / Original**: [分享创造] hongzhao：给 AI 编程智能体的纯文本记忆账本
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#独立开发` `#开源/仓库` `#CLI` `#GitHub`
+- **💡 核心概要 / What It Is**: hongzhao 是一个给 AI 编程智能体用的纯文本记忆账本，用三本 Markdown+YAML 账本（事实主张、项目契约、知识条目）管理记忆，无需服务和数据库。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把智能体记忆当账本而非检索问题，零 LLM 确定性编译加人工审阅门，工程思路对做 AI 工具的开发者有借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-08 情报精选 (4 篇)](archives/2026-11-08.md)
+- [📅 2026-11-09 情报精选 (4 篇)](archives/2026-11-09.md)
+- [📅 2026-11-08 情报精选 (5 篇)](archives/2026-11-08.md)
 - [📅 2026-11-07 情报精选 (8 篇)](archives/2026-11-07.md)
 - [📅 2026-11-06 情报精选 (8 篇)](archives/2026-11-06.md)
 - [📅 2026-11-05 情报精选 (13 篇)](archives/2026-11-05.md)
