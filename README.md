@@ -6,44 +6,50 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-10
+## 今日精选 (Today's Top Signals) · 2026-11-11
 
-### 1. [Recalc 开源：每个单元格都能跑 Claude Code 或 Codex 终端](https://github.com/sshah03/recalc)
+### 1. [Process Explorer for macOS](https://github.com/microsoft/Procexp-Mac)
 
-- **原标题 / Original**: Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals
-- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#桌面端` `#Hacker News` `#GitHub`
-- **💡 核心概要 / What It Is**: Recalc 是一款免费开源的桌面电子表格，每个单元格可存放数值、公式、终端命令或 AI agent，已在 GitHub 以 Apache 2.0 开源。它按 agent 时代重做表格，让 Claude Code、Codex、pi 等实例把计划与结果写进单元格，旁边的测试单元格随代码变动自动重跑，失败即标红，并通过 MCP server 理解表格结构。
-- **🎯 推荐与借鉴 / Takeaway**: 把表格每个单元格变成可运行的终端或 AI agent，测试单元格自动重跑与结果校验的设计值得 agent 工作流借鉴。
-
-### 2. [Egg 开源：编译成 C99 的内存安全小语言，无 GC 且免写生命周期标注](https://www.v2ex.com/t/1255840#reply0)
-
-- **原标题 / Original**: Egg：没有 GC、不写生命周期标注，但内存安全的小语言，编译成 C99
 - **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#CLI` `#GitHub`
-- **💡 核心概要 / What It Is**: Egg 是一门编译成可移植 C99 的小型语言，靠单一所有者做到内存安全，不用 GC 也不用写生命周期标注。【痛点逻辑】释放后使用、重复释放和内存泄漏都会直接编译报错，整数溢出与数组越界则 panic，语言核心默认不能做 IO 和分配内存，要在 uses 里显式声明。
-- **🎯 推荐与借鉴 / Takeaway**: 作者用真实应用移植和逐字节对拍检验这门新语言的取舍，编译期内存安全的设计可供工程借鉴。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端`
 
-### 3. [Expo 开源 Exact 跨平台 UI 框架：同一份 Contract 跑通 web、macOS、iOS 与 Linux](https://github.com/expo/exact)
+### 2. [bo2-mac 把《黑色行动2》x86 代码静态重编译为 ARM64 原生 macOS 应用，M1 上跑 51–60 fps](https://github.com/adrbn/bo2-mac)
 
-- **原标题 / Original**: Exact – a new cross platform UI framework
+- **原标题 / Original**: Show HN: Black Ops II statically recompiled to native ARM64 macOS
 - **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#桌面端` `#移动端` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: Exact 是 Expo 开源的跨平台应用运行时，界面用声明式 Contract 语言描述，数据逻辑用 TypeScript 或 Rust 编写，同一份代码可原生运行在 web、macOS、iOS 与 Linux。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: bo2-mac 是把玩家自己 Steam 版《黑色行动2》的三个 x86 可执行文件（战役、僵尸、多人）提前转换成 ARM64 原生 macOS 应用的开源项目，不依赖 Wine、Rosetta 或 JIT。
+- **🎯 推荐与借鉴 / Takeaway**: 项目完整展示了把 x86 代码静态重编译到 ARM64 的工程路径与 13 条实测排障记录，对做跨架构移植的开发者有参考价值。
+
+### 3. [SSHYard V1.0.0 发布：纯 Go 原生 SSH/SFTP 客户端，内置 AI 智能体](https://www.v2ex.com/t/1256021#reply2)
+
+- **原标题 / Original**: SSHYard 已正式发布 V1.0.0 - 高颜值纯原生 SSH 客户端，功能齐全且体积非常小，随楼抽 50 位评论者每位赠送 50 个$v2ex
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#桌面端` `#AI工具`
+- **💡 核心概要 / What It Is**: SSHYard V1.0.0 正式发布，一款免费开源的 SSH/SFTP 客户端，覆盖 macOS、Windows 和 Linux，把终端、文件管理与 AI 助手收进同一窗口。
+- **🎯 推荐与借鉴 / Takeaway**: 纯 Go 原生渲染做出体积小且功能齐全的跨平台客户端，还接入本机 AI 智能体，对桌面工具选型有参考价值。
+
+### 4. [微软为 Mac 推出并开源 Process Explorer：比活动监视器更细的进程管理工具](https://www.appinn.com/process-explorer-for-macos/)
+
+- **原标题 / Original**: 微软为 Mac 推出 Process Explorer：比活动监视器更强大的进程管理工具
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#GitHub`
+- **💡 核心概要 / What It Is**: 微软把 Sysinternals 的经典进程管理工具 Process Explorer 带到 macOS，并在 GitHub 开源。针对活动监视器信息不足的痛点，它用进程树展示父子进程，可查看进程的远程 IP、端口与 TCP 连接状态，并定位占用某个文件的进程。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-10 情报精选 (3 篇)](archives/2026-11-10.md)
+- [📅 2026-11-11 情报精选 (4 篇)](archives/2026-11-11.md)
+- [📅 2026-11-10 情报精选 (5 篇)](archives/2026-11-10.md)
 - [📅 2026-11-09 情报精选 (11 篇)](archives/2026-11-09.md)
 - [📅 2026-11-08 情报精选 (5 篇)](archives/2026-11-08.md)
 - [📅 2026-11-07 情报精选 (8 篇)](archives/2026-11-07.md)
 - [📅 2026-11-06 情报精选 (8 篇)](archives/2026-11-06.md)
-- [📅 2026-11-05 情报精选 (13 篇)](archives/2026-11-05.md)
+- [📅 2026-11-05 情报精选 (12 篇)](archives/2026-11-05.md)
 - [📅 2026-11-04 情报精选 (8 篇)](archives/2026-11-04.md)
 - [📅 2026-11-03 情报精选 (10 篇)](archives/2026-11-03.md)
-- [📅 2026-11-02 情报精选 (9 篇)](archives/2026-11-02.md)
+- [📅 2026-11-02 情报精选 (8 篇)](archives/2026-11-02.md)
 - [📅 2026-11-01 情报精选 (4 篇)](archives/2026-11-01.md)
 - [📅 2026-10-31 情报精选 (8 篇)](archives/2026-10-31.md)
 - [📅 2026-10-30 情报精选 (16 篇)](archives/2026-10-30.md)
