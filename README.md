@@ -6,41 +6,30 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-11
+## 今日精选 (Today's Top Signals) · 2026-11-12
 
-### 1. [Process Explorer for macOS](https://github.com/microsoft/Procexp-Mac)
+### 1. [华为开源 MACaQ 量化工具：122B 模型仅需 64 分钟、32.5 GB 显存](https://github.com/huawei-csl/MACaQ)
 
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端`
+- **原标题 / Original**: Huawei releases MACaQ, its internal quantizer for local inference
+- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#GitHub`
+- **💡 核心概要 / What It Is**: 华为开源 MACaQ，一款面向本地推理的高质量 GGUF 量化工具，可量化文本、图像、视频与音频模型，不局限于文本。 【商业/痛点逻辑】针对低精度量化的耗时与显存占用，量化 122B 参数模型只需 64 分钟和 32.5 GB 显存；达到 Llama-3-8B 同等最佳困惑度时量化时间少 11 倍，并称困惑度低于 MR-GPTQ 与 DuQuant++。
+- **🎯 推荐与借鉴 / Takeaway**: 量化工具覆盖文本、图像、视频与音频模型，122B 模型 64 分钟量化完成，可参考其显存占用与多后端适配思路。
 
-### 2. [bo2-mac 把《黑色行动2》x86 代码静态重编译为 ARM64 原生 macOS 应用，M1 上跑 51–60 fps](https://github.com/adrbn/bo2-mac)
+### 2. [KeepXClean 开源 X 评论区与时间线净化扩展：单条判定 < 1ms、零登录不轮询接口](https://www.v2ex.com/t/1256499#reply0)
 
-- **原标题 / Original**: Show HN: Black Ops II statically recompiled to native ARM64 macOS
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: bo2-mac 是把玩家自己 Steam 版《黑色行动2》的三个 x86 可执行文件（战役、僵尸、多人）提前转换成 ARM64 原生 macOS 应用的开源项目，不依赖 Wine、Rosetta 或 JIT。
-- **🎯 推荐与借鉴 / Takeaway**: 项目完整展示了把 x86 代码静态重编译到 ARM64 的工程路径与 13 条实测排障记录，对做跨架构移植的开发者有参考价值。
-
-### 3. [SSHYard V1.0.0 发布：纯 Go 原生 SSH/SFTP 客户端，内置 AI 智能体](https://www.v2ex.com/t/1256021#reply2)
-
-- **原标题 / Original**: SSHYard 已正式发布 V1.0.0 - 高颜值纯原生 SSH 客户端，功能齐全且体积非常小，随楼抽 50 位评论者每位赠送 50 个$v2ex
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#桌面端` `#AI工具`
-- **💡 核心概要 / What It Is**: SSHYard V1.0.0 正式发布，一款免费开源的 SSH/SFTP 客户端，覆盖 macOS、Windows 和 Linux，把终端、文件管理与 AI 助手收进同一窗口。
-- **🎯 推荐与借鉴 / Takeaway**: 纯 Go 原生渲染做出体积小且功能齐全的跨平台客户端，还接入本机 AI 智能体，对桌面工具选型有参考价值。
-
-### 4. [微软为 Mac 推出并开源 Process Explorer：比活动监视器更细的进程管理工具](https://www.appinn.com/process-explorer-for-macos/)
-
-- **原标题 / Original**: 微软为 Mac 推出 Process Explorer：比活动监视器更强大的进程管理工具
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#GitHub`
-- **💡 核心概要 / What It Is**: 微软把 Sysinternals 的经典进程管理工具 Process Explorer 带到 macOS，并在 GitHub 开源。针对活动监视器信息不足的痛点，它用进程树展示父子进程，可查看进程的远程 IP、端口与 TCP 连接状态，并定位占用某个文件的进程。
+- **原标题 / Original**: 开源了一个本地优先的 X (Twitter) 评论区与时间线净空扩展 KeepXClean（< 1ms、零登录、不轮询接口）
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#Chrome插件` `#独立开发` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: KeepXClean 是一款本地优先的 Chrome 扩展，用于净化 X 评论区与时间线里的水军、高仿钓鱼号与推广广告。【痛点逻辑】现有过滤插件要么后台高频轮询 X 接口易触发风控，要么把文本发往远端大模型带来延迟与隐私顾虑，它改为在浏览器本地内存中同步过滤 X 自身的 GraphQL 数据流。
+- **🎯 推荐与借鉴 / Takeaway**: 在浏览器本地对 X 的 GraphQL 响应做同步确定性过滤，避开接口轮询风控与隐私顾虑，工程思路可借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-11 情报精选 (4 篇)](archives/2026-11-11.md)
+- [📅 2026-11-12 情报精选 (2 篇)](archives/2026-11-12.md)
+- [📅 2026-11-11 情报精选 (7 篇)](archives/2026-11-11.md)
 - [📅 2026-11-10 情报精选 (5 篇)](archives/2026-11-10.md)
 - [📅 2026-11-09 情报精选 (11 篇)](archives/2026-11-09.md)
 - [📅 2026-11-08 情报精选 (5 篇)](archives/2026-11-08.md)
