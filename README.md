@@ -6,53 +6,53 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-13
+## 今日精选 (Today's Top Signals) · 2026-11-14
 
-### 1. [Relax：Makepad 开源的 Rust JIT 编译器，改代码可热更新运行中程序](https://makepad.github.io/relax/)
+### 1. [Ratatui 维护者提出终端 cell borders 协议：边框不占行列的 TUI 面板方案](https://www.joshka.net/cell-borders/)
 
-- **原标题 / Original**: Relax: JIT compiler for Rust to reduce build times
-- **评分 / Signal Score**: ⭐ `86.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#GitHub`
-- **💡 核心概要 / What It Is**: Relax 是 Makepad 项目推出的 Rust 实时编译器与 JIT 运行时，可直接从源码运行 Cargo 包，无需 rustc、LLVM 或链接器。它针对 Rust 构建慢的痛点，在函数首次调用时编译，热点函数在后台逐步升到更高优化级别，保存改动即可把新代码热更新进运行中的进程并保留状态。
-- **🎯 推荐与借鉴 / Takeaway**: 正文逐项列出 Relax 相对 rustc 的性能取舍与适用边界，可作为自研开发工具链时的工程参照。
+- **原标题 / Original**: Terminal borders that don't cost a cell
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#GitHub`
+- **💡 核心概要 / What It Is**: Ratatui 维护者 Josh 提出一套终端 cell border 协议，让边框线画在 cell 边缘上而不占用行或列，已做成 Ghostty 补丁（此前在 Rio 有早期版本）。
 
-### 2. [Mole 发酵两个多月：Windows 版上线、GitHub 73.9K Star，靠 853 款软件实测打磨「慢产品」](https://sspai.com/post/118512)
+### 2. [mkw-recomp 开源：在 Windows / Linux 原生运行《马力欧卡丁车世界》，无需模拟器](https://www.appinn.com/mkw-recomp/)
 
-- **原标题 / Original**: 在快 AI 时代，我是怎么把 Mole 做成一款「慢产品」的？
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 📌 cases
-- **标签 / Tags**: `#变现实录` `#独立开发` `#开源/仓库` `#AI工具` `#出海` `#产品更新` `#少数派` `#GitHub`
-- **💡 核心概要 / What It Is**: Mac/Windows 系统清理工具 Mole，作者 Tw93 分享从 1.13 到 1.19 的打磨过程，Windows 桌面版于 10 月 14 日发布，GitHub Star 达 73.9K。
-- **🎯 推荐与借鉴 / Takeaway**: 作者复盘用 AI Agent 实测 853 款软件补清理规则、补发激活邮件等不可扩展细节，对做付费独立产品的体验打磨很有参考。
-
-### 3. [Edge0 开源 145B 端侧模型：29GB 内存、80+ tokens/s 本地运行](https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer)
-
-- **原标题 / Original**: Edge0-145B: Frontier AI Capabilities on Your Own Computer
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#模型发布` `#开源/仓库` `#AI工具` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: Edge0 团队开源 Edge0-145B 与 Edge0-120B 端侧模型及统一推理框架，宣称可在笔记本本地运行 145B 参数模型。
-- **💰 商业模式与变现 / Business Logic**: 瞄准云端 AI 的 API 费用、隐私限制与联网依赖三重痛点，通过稀疏专家共享矩阵、三层层级加载与 CPU/GPU 协同调度，实测峰值内存 29GB、解码 80+ tokens/s、支持 128K–256K 上下文。
-- **🎯 推荐与借鉴 / Takeaway**: 官方完整披露了端侧大模型的内存与速度实测数据，工程上如何让145B模型跑进笔记本值得借鉴。
-
-### 4. [GKD 作者发布 Priv Kit 等三件套：Android 应用免装 Shizuku 接入特权能力](https://www.v2ex.com/t/1256795#reply0)
-
-- **原标题 / Original**: GKD 如何接入 Android 特权能力 / 一套给 Android 应用接入特权能力的方案
+- **原标题 / Original**: mkw-recomp – 在 Windows / Linux 上原生运行 Switch 2《马力欧赛车世界》，不需要模拟器
 - **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#移动端` `#非AI/通用工具` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 一套让 Android 应用自行接入 Shell/Root 特权能力的开源方案，包含 Priv Kit、remap 和 android-api-diff 三个可配合使用的项目，GKD 已在使用。
-- **🎯 推荐与借鉴 / Takeaway**: GKD 作者分享三个嵌入式特权方案，解决 Android 应用免装 Shizuku 调用系统 API 的工程难题。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#非AI/通用工具` `#GitHub`
+- **💡 核心概要 / What It Is**: mkw-recomp 是一个开源静态重编译项目，把 Switch 2 游戏《马力欧卡丁车世界》转换为可在 Windows / Linux 上原生运行的 PC 程序，不需要模拟器。
 
-### 5. [Unemployment Labs 取证分析：DeepSeek、Moonshot 等 6 个中国模型权重带 NVIDIA Blackwell 硬件指纹](https://unemploymentlabs.com/checkpoint-forensics)
+### 3. [RealtimeVAD 开源：比 Silero 提前 92ms 判断说话结束，加速语音助手响应](https://github.com/KoljaB/RealtimeVAD)
 
-- **原标题 / Original**: Chinese frontier AI models carry the fingerprint of export-controlled GPUs
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#论文/研究` `#DeepSeek`
-- **💡 核心概要 / What It Is**: Unemployment Labs 发布的一项取证研究，通过模型公开权重的初始化数值痕迹，判断其使用的 GPU 型号。
+- **原标题 / Original**: Show HN: RealtimeVAD – trading false positives for 110ms earlier end-of-speech
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#出海` `#独立开发` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: RealtimeVAD 是一个开源的实时语音端点检测库，在保留 Silero VAD 判定语音的基础上，每 10ms 对比音频电平与房间噪声，提前发出说话者可能停下来的 pause 信号。
+- **🎯 推荐与借鉴 / Takeaway**: 开源库以投机生成思路换取语音端点提前约 92ms 响应，作者给出适用与不适用管线的边界条件，工程选型判断有参考价值。
+
+### 4. [开源分屏插件 Panelize v2.2 更新：自定义 AI 网站与 Magpie/Ollama 本地 API 一窗对比](https://www.v2ex.com/t/1257051#reply0)
+
+- **原标题 / Original**: 开源分屏插件 Panelize v2.2 更新：把 ChatGPT/Claude 网页、Perplexity/秘塔与 Magpie/Ollama 放进同一窗口对比
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#Chrome插件` `#AI工具` `#GitHub` `#OpenAI`
+- **💡 核心概要 / What It Is**: 开源浏览器扩展 Panelize，无需 API Key 即可在一个窗口分屏打开 ChatGPT、Claude、Gemini、DeepSeek 等 13 个已登录 AI 网页，一次输入同步发送、并排对比回答。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者自述分屏对比 AI 回答的扩展如何按用户反馈迭代 v2.2，可参考其本地隐私设计与 API 兼容接入思路。
+
+### 5. [LayerSplit 上线：把单张图拆成透明图层并补全遮挡，可导出分层 PSD](https://www.v2ex.com/t/1257020#reply0)
+
+- **原标题 / Original**: 做了个把一张图拆成透明图层（可导出 PSD）的在线工具，被挡住的部分会补全，首次免费求拍砖
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#AI工具` `#独立开发` `#出海` `#SaaS` `#V2EX`
+- **💡 核心概要 / What It Is**: LayerSplit 是一个在线工具，上传一张平面图片后，AI 会把图中的元素拆成单独命名、可导出的透明图层。
+- **💰 商业模式与变现 / Business Logic**: 解决只有导出图、源文件丢失，或想局部修改 AI 生成图却只能重新抠图的痛点；用 Google 登录送 150 积分（最多 15 层）首次免费获客，之后每层 10 积分，提供一次性积分包和月付订阅。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者分享新工具的发布与定价设计，可参考其从真实抠图痛点切入及首次免费送积分的获客思路。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-13 情报精选 (5 篇)](archives/2026-11-13.md)
+- [📅 2026-11-14 情报精选 (5 篇)](archives/2026-11-14.md)
+- [📅 2026-11-13 情报精选 (11 篇)](archives/2026-11-13.md)
 - [📅 2026-11-12 情报精选 (5 篇)](archives/2026-11-12.md)
 - [📅 2026-11-11 情报精选 (7 篇)](archives/2026-11-11.md)
 - [📅 2026-11-10 情报精选 (5 篇)](archives/2026-11-10.md)
