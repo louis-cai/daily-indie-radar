@@ -6,81 +6,52 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-14
+## 今日精选 (Today's Top Signals) · 2026-11-16
 
-### 1. [Lovable 平台应用大规模数据暴露：研究发现超 20 万条私信与护照信息可匿名访问](https://www.crissyfield.de/research/lovable-en/)
+### 1. [ChatPRD 独立创始人如何对抗 token fraud：六种滥用模式与最终关停免费试用](https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo)
 
-- **原标题 / Original**: Lovable apps expose passport details and more than 200K private messages
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#安全/对齐` `#出海` `#SaaS` `#AI工具` `#Supabase`
-- **💡 核心概要 / What It Is**: 一项安全研究分析了 159,041 个 Lovable 项目，发现 24,664 个加载即可读取 Supabase 数据的站点中，约 30% 含邮箱等个人记录，泄露案例包括 20 多万条聊天消息、8 万多用户资料及 1,000 多条护照号等证件信息。
+- **原标题 / Original**: How I fight token fraud as a solo founder
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 📌 cases
+- **标签 / Tags**: `#变现实录` `#SaaS` `#AI工具` `#独立开发` `#Stripe` `#Vercel`
+- **💡 核心概要 / What It Is**: ChatPRD 独立创始人 Claire Vo 分享其 AI 产品过去一年因 token fraud 损失数万美元后的完整防御复盘。
+- **💰 商业模式与变现 / Business Logic**: 欺诈者滥刷免费试用、倒卖 promo code、用 relay 包装产品并挂 24/7 计算工人，作者逐一给出业务和技术控制手段，并最终彻底关停免费试用。
+- **🎯 推荐与借鉴 / Takeaway**: ChatPRD 独立开发者亲述 token fraud 的六种攻击模式和应对控制，对出售 AI 计算的 SaaS 是一份真实踩坑警示。
 
-### 2. [DeepSeek V3 用 190 行纯 JAX 复现开源：MacBook Air 上 2.6 小时训练 36.2M 参数模型](https://github.com/Vaibhaav-Tiwari/deepseek-v3-jax)
+### 2. [turbo-browser-mcp 开源：把 25-33 个浏览器原语压成 10 个批量工具，10 字段表单 token 省 98.9%](https://github.com/Tthanh2k6/turbo-browser-mcp)
 
-- **原标题 / Original**: Show HN: DeepSeek V3 in ~200 lines of pure Jax
+- **原标题 / Original**: Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP
 - **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#GitHub` `#DeepSeek`
-- **💡 核心概要 / What It Is**: 一个开源项目，用 190 行无依赖的纯 JAX 从零实现 DeepSeek-V3 论文架构，含 MLA、DeepSeekMoE、auxiliary-loss-free 负载均衡和多 token 预测。
-- **🎯 推荐与借鉴 / Takeaway**: 用 190 行纯 JAX 从零复现 DeepSeek-V3 架构并在 MacBook Air 上完成训练，工程实现与逐模块讲解对理解 MoE、MLA 细节很有参考价值。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: turbo-browser-mcp 是一个基于 Playwright 的 MCP 服务器，专为 LLM 浏览器自动化设计，把常见的 25-33 个细粒度原语合并成 10 个批量工具。
+- **🎯 推荐与借鉴 / Takeaway**: 开源的 Playwright MCP 服务器，用批量工具与 delta 快照把浏览器自动化 token 消耗大幅压缩，基准数据可复现，适合做 LLM 浏览器代理的工程借鉴。
 
-### 3. [agweb 开源：为 coding agent 设计的不抢焦点 macOS 浏览器](https://github.com/paul-nameless/agweb)
+### 3. [Bitly 旧短链被劫持：Burger King 2011 年推文链接被他人重新注册](https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/)
 
-- **原标题 / Original**: Show HN: Agweb – a browser for agents that stays out of your way
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#独立开发` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: agweb 是一款基于 WebKit 的 macOS 浏览器，专为同时运行多个 coding agent 设计，agent 通过 agweb 命令行驱动，窗口永不抢焦点。
-- **🎯 推荐与借鉴 / Takeaway**: 为并行运行的 coding agent 设计的 macOS 浏览器，聚焦不抢焦、省 CPU 与 token 的工程取舍，值得做 agent 工具链的读者参考。
+- **原标题 / Original**: Old Bitly links are being hijacked
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#行业动态`
+- **💡 核心概要 / What It Is**: Bitly 旧短链的 back-half 可被他人重新注册并指向任意页面。Ransomnews 逐条实测发现，Burger King 与 McDonald's 2011 年推文里的短链在 2026 年 11 月 15 日被再次注册并指向无关的 Wikipedia 页面。
 
-### 4. [Ratatui 维护者提出终端 cell borders 协议：边框不占行列的 TUI 面板方案](https://www.joshka.net/cell-borders/)
+### 4. [Clice v1.0 发布：用现代 C++ 重写的 C/C++ 语言服务器](https://ykiko.me/en/articles/2105384023094834022/)
 
-- **原标题 / Original**: Terminal borders that don't cost a cell
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#GitHub`
-- **💡 核心概要 / What It Is**: Ratatui 维护者 Josh 提出一套终端 cell border 协议，让边框线画在 cell 边缘上而不占用行或列，已做成 Ghostty 补丁（此前在 Rio 有早期版本）。
-
-### 5. [mkw-recomp 开源：在 Windows / Linux 原生运行《马力欧卡丁车世界》，无需模拟器](https://www.appinn.com/mkw-recomp/)
-
-- **原标题 / Original**: mkw-recomp – 在 Windows / Linux 上原生运行 Switch 2《马力欧赛车世界》，不需要模拟器
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#非AI/通用工具` `#GitHub`
-- **💡 核心概要 / What It Is**: mkw-recomp 是一个开源静态重编译项目，把 Switch 2 游戏《马力欧卡丁车世界》转换为可在 Windows / Linux 上原生运行的 PC 程序，不需要模拟器。
-
-### 6. [RealtimeVAD 开源：比 Silero 提前 92ms 判断说话结束，加速语音助手响应](https://github.com/KoljaB/RealtimeVAD)
-
-- **原标题 / Original**: Show HN: RealtimeVAD – trading false positives for 110ms earlier end-of-speech
+- **原标题 / Original**: Clice v1.0 Released: Welcome to Modern C++
 - **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#出海` `#独立开发` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: RealtimeVAD 是一个开源的实时语音端点检测库，在保留 Silero VAD 判定语音的基础上，每 10ms 对比音频电平与房间噪声，提前发出说话者可能停下来的 pause 信号。
-- **🎯 推荐与借鉴 / Takeaway**: 开源库以投机生成思路换取语音端点提前约 92ms 响应，作者给出适用与不适用管线的边界条件，工程选型判断有参考价值。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#Hacker News` `#GitHub`
+- **💡 核心概要 / What It Is**: Clice v1.0 正式发布，一个用 C++23 从零编写的 C/C++ 语言服务器，同时提供 index、lint、refactor、modularize 等命令行工具。
 
-### 7. [开源分屏插件 Panelize v2.2 更新：自定义 AI 网站与 Magpie/Ollama 本地 API 一窗对比](https://www.v2ex.com/t/1257051#reply0)
+### 5. [db-branch 开源：基于 ZFS 为 MySQL 和 PostgreSQL 提供秒级数据库分支](https://github.com/db-branch/db-branch)
 
-- **原标题 / Original**: 开源分屏插件 Panelize v2.2 更新：把 ChatGPT/Claude 网页、Perplexity/秘塔与 Magpie/Ollama 放进同一窗口对比
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#Chrome插件` `#AI工具` `#GitHub` `#OpenAI`
-- **💡 核心概要 / What It Is**: 开源浏览器扩展 Panelize，无需 API Key 即可在一个窗口分屏打开 ChatGPT、Claude、Gemini、DeepSeek 等 13 个已登录 AI 网页，一次输入同步发送、并排对比回答。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者自述分屏对比 AI 回答的扩展如何按用户反馈迭代 v2.2，可参考其本地隐私设计与 API 兼容接入思路。
-
-### 8. [LayerSplit 上线：把单张图拆成透明图层并补全遮挡，可导出分层 PSD](https://www.v2ex.com/t/1257020#reply0)
-
-- **原标题 / Original**: 做了个把一张图拆成透明图层（可导出 PSD）的在线工具，被挡住的部分会补全，首次免费求拍砖
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#独立开发` `#出海` `#SaaS` `#V2EX`
-- **💡 核心概要 / What It Is**: LayerSplit 是一个在线工具，上传一张平面图片后，AI 会把图中的元素拆成单独命名、可导出的透明图层。
-- **💰 商业模式与变现 / Business Logic**: 解决只有导出图、源文件丢失，或想局部修改 AI 生成图却只能重新抠图的痛点；用 Google 登录送 150 积分（最多 15 层）首次免费获客，之后每层 10 积分，提供一次性积分包和月付订阅。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者分享新工具的发布与定价设计，可参考其从真实抠图痛点切入及首次免费送积分的获客思路。
-
-### 9. [Lexifina 用 Lean 形式化美国税法：发现 138 处起草错误与 3 个未公开税务漏洞](https://lexifina.com/blog/formalizing-the-us-tax-code)
-
-- **原标题 / Original**: Formalizing US Tax Code (Using Lean)
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#自动化` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: Lexifina 将美国税法 Title 26 逐条翻译成 Lean 形式化代码，用证明检查器自动找出法律文本错误和真实漏洞。【商业与痛点逻辑】在 2025 年个税上验证模型后，搜索重新发现了已公开的节税策略，并找到 3 个未见于税务师文献的漏洞，如夫妻分开申报少缴 $1,482。
+- **原标题 / Original**: Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#SaaS` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: 一款自托管工具，基于 ZFS 克隆为 MySQL 和 PostgreSQL 创建秒级、零拷贝的 copy-on-write 数据库分支，可随时重置或销毁。
+- **🎯 推荐与借鉴 / Takeaway**: 用 ZFS 克隆让 MySQL 和 PostgreSQL 秒级出库分支，零拷贝可随意丢弃，对 AI 代理沙箱和按 PR 建库的工程实践有直接借鉴价值。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
+- [📅 2026-11-16 情报精选 (5 篇)](archives/2026-11-16.md)
 - [📅 2026-11-14 情报精选 (9 篇)](archives/2026-11-14.md)
 - [📅 2026-11-13 情报精选 (11 篇)](archives/2026-11-13.md)
 - [📅 2026-11-12 情报精选 (5 篇)](archives/2026-11-12.md)
