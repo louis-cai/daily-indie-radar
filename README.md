@@ -6,54 +6,62 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-16
+## 今日精选 (Today's Top Signals) · 2026-11-17
 
-### 1. [ChatPRD 独立创始人如何对抗 token fraud：六种滥用模式与最终关停免费试用](https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo)
+### 1. [Optimizely 遭入侵波及 178 家机构：Zoom、GitLab、BBC 等站点被注入恶意脚本](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/)
 
-- **原标题 / Original**: How I fight token fraud as a solo founder
-- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 📌 cases
-- **标签 / Tags**: `#变现实录` `#SaaS` `#AI工具` `#独立开发` `#Stripe` `#Vercel`
-- **💡 核心概要 / What It Is**: ChatPRD 独立创始人 Claire Vo 分享其 AI 产品过去一年因 token fraud 损失数万美元后的完整防御复盘。
-- **💰 商业模式与变现 / Business Logic**: 欺诈者滥刷免费试用、倒卖 promo code、用 relay 包装产品并挂 24/7 计算工人，作者逐一给出业务和技术控制手段，并最终彻底关停免费试用。
-- **🎯 推荐与借鉴 / Takeaway**: ChatPRD 独立开发者亲述 token fraud 的六种攻击模式和应对控制，对出售 AI 计算的 SaaS 是一份真实踩坑警示。
+- **原标题 / Original**: Optimizely compromised, served malware on Zoom, GitLab
+- **评分 / Signal Score**: ⭐ `85.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#Hacker News`
+- **💡 核心概要 / What It Is**: 2026年11月16日，Optimizely Web 实验平台的 Project JavaScript 被注入恶意代码，波及 Zoom、GitLab、BBC、CNN、Salesforce、IKEA、HSBC 等 178 家机构的站点。
+- **🎯 推荐与借鉴 / Takeaway**: 通过第三方 JavaScript 供应链攻击的真实案例，给出 CSP 监控与 connect-src 限制的工程级防范思路。
 
-### 2. [turbo-browser-mcp 开源：把 25-33 个浏览器原语压成 10 个批量工具，10 字段表单 token 省 98.9%](https://github.com/Tthanh2k6/turbo-browser-mcp)
+### 2. [Windows 11 被逆向发现收集编码 Agent 使用数据：MissionControlAggregator 遥测机制拆解](https://xusheng.dev/posts/windows-coding-agent-telemetry/)
 
-- **原标题 / Original**: Show HN: Turbo-Browser-MCP – Batch forms, DOM deltas and submit guards for MCP
-- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: turbo-browser-mcp 是一个基于 Playwright 的 MCP 服务器，专为 LLM 浏览器自动化设计，把常见的 25-33 个细粒度原语合并成 10 个批量工具。
-- **🎯 推荐与借鉴 / Takeaway**: 开源的 Playwright MCP 服务器，用批量工具与 delta 快照把浏览器自动化 token 消耗大幅压缩，基准数据可复现，适合做 LLM 浏览器代理的工程借鉴。
+- **原标题 / Original**: Windows 11 is collecting data on which coding agents and developer tools you use
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#安全/对齐` `#非AI/通用工具` `#现象/趋势`
+- **💡 核心概要 / What It Is**: 作者逆向分析 Windows 11 的 MissionControlAggregator.dll，发现系统会检测用户使用了哪些编码 Agent（codex.exe、claude.exe、copilot.exe、cursor.exe 等）和开发工具，并通过 ETW 生成 Segments.SubCohorts 诊断报告。
+- **🎯 推荐与借鉴 / Takeaway**: 完整的逆向工程实录展示了从二进制线索到验证数据上传的全过程，读者可参考其系统化的排查与验证方法。
 
-### 3. [Bitly 旧短链被劫持：Burger King 2011 年推文链接被他人重新注册](https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/)
+### 3. [wechat-use 开源：用 Docker 跑真实微信桌面，让 AI Agent 通过 MCP 操作微信](https://www.v2ex.com/t/1257619#reply1)
 
-- **原标题 / Original**: Old Bitly links are being hijacked
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐` `#行业动态`
-- **💡 核心概要 / What It Is**: Bitly 旧短链的 back-half 可被他人重新注册并指向任意页面。Ransomnews 逐条实测发现，Burger King 与 McDonald's 2011 年推文里的短链在 2026 年 11 月 15 日被再次注册并指向无关的 Wikipedia 页面。
+- **原标题 / Original**: 还有人关注微信自动化吗，搞了个 wechat-use，给 AI Agent 操作真实的微信桌面
+- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#桌面端` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开发者开源的 wechat-use 项目，用 Docker 运行真实 Linux 微信桌面，让支持 MCP 的 AI Agent 查看界面并执行桌面操作。
+- **🎯 推荐与借鉴 / Takeaway**: 作者把两年微信 RPA 经验与 Computer Use 思路结合，开源了 Docker 化的 Agent 操作方案，工程实现和风控提醒都有借鉴价值。
 
-### 4. [Clice v1.0 发布：用现代 C++ 重写的 C/C++ 语言服务器](https://ykiko.me/en/articles/2105384023094834022/)
+### 4. [lend 开源：让远程 coding agent 用你的凭据但看不到密钥，每步 Touch ID 审批](https://blog.antonio.cx/running-agents-with-lend)
 
-- **原标题 / Original**: Clice v1.0 Released: Welcome to Modern C++
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#Hacker News` `#GitHub`
-- **💡 核心概要 / What It Is**: Clice v1.0 正式发布，一个用 C++23 从零编写的 C/C++ 语言服务器，同时提供 index、lint、refactor、modularize 等命令行工具。
+- **原标题 / Original**: Running coding agents without handing them my credentials
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#GitHub`
+- **💡 核心概要 / What It Is**: lend 是一个 SSH agent 代理，让跑在 VM 上的 coding agent 请求在本地笔记本执行命令，凭据永不离开本地。【商业/痛点逻辑】解决复制 token 到 VM 或 ssh -A 转发带来的密钥泄露风险，改为本地策略校验加 Touch ID 逐次审批。
 
-### 5. [db-branch 开源：基于 ZFS 为 MySQL 和 PostgreSQL 提供秒级数据库分支](https://github.com/db-branch/db-branch)
+### 5. [Xrose 开源：基于 Rust 与 GPUI 的跨平台代理与异地组网客户端](https://www.v2ex.com/t/1257738#reply1)
 
-- **原标题 / Original**: Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS
+- **原标题 / Original**: Xrose：全新、开源、原生、跨平台的 sing-box/Xray 和 EasyTier/Tailscale 客户端
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#SaaS` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: 一款自托管工具，基于 ZFS 克隆为 MySQL 和 PostgreSQL 创建秒级、零拷贝的 copy-on-write 数据库分支，可随时重置或销毁。
-- **🎯 推荐与借鉴 / Takeaway**: 用 ZFS 克隆让 MySQL 和 PostgreSQL 秒级出库分支，零拷贝可随意丢弃，对 AI 代理沙箱和按 PR 建库的工程实践有直接借鉴价值。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#非AI/通用工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开发者开源了基于 Rust 与 GPUI Kit 构建的跨平台桌面网络客户端 Xrose，支持 Windows、macOS 和 Linux。该工具采用 GPLv3 协议，支持 sing-box 与 Xray 双代理内核并提供配置热重载，同时内置集成 EasyTier 与 Tailscale 异地组网功能，可自动协调多 TUN 共存带来的路由与 DNS 冲突。
+- **🎯 推荐与借鉴 / Takeaway**: 该项目展示了基于 Rust 和 GPUI 整合代理与异地组网的工程设计，处理多 TUN 冲突的实现思路值得桌面端开发者借鉴。
+
+### 6. [OpenCode 发布 Browse：MCP 服务器加 Chrome 扩展让 agent 使用你的真实浏览器](https://opencode.ai/product/browse)
+
+- **原标题 / Original**: OpenCode Browse
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#AI工具` `#Chrome插件` `#开源/仓库` `#Hacker News`
+- **💡 核心概要 / What It Is**: OpenCode Browse 包含一个 MCP 服务器和 Chromium 扩展，让 AI agent 使用你的真实浏览器，支持 Chrome、Edge、Brave、Arc 等多个 Chromium 系浏览器。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-16 情报精选 (5 篇)](archives/2026-11-16.md)
+- [📅 2026-11-17 情报精选 (6 篇)](archives/2026-11-17.md)
+- [📅 2026-11-16 情报精选 (8 篇)](archives/2026-11-16.md)
 - [📅 2026-11-14 情报精选 (9 篇)](archives/2026-11-14.md)
-- [📅 2026-11-13 情报精选 (11 篇)](archives/2026-11-13.md)
+- [📅 2026-11-13 情报精选 (12 篇)](archives/2026-11-13.md)
 - [📅 2026-11-12 情报精选 (5 篇)](archives/2026-11-12.md)
 - [📅 2026-11-11 情报精选 (7 篇)](archives/2026-11-11.md)
 - [📅 2026-11-10 情报精选 (5 篇)](archives/2026-11-10.md)
