@@ -6,61 +6,49 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-17
+## 今日精选 (Today's Top Signals) · 2026-11-18
 
-### 1. [Optimizely 遭入侵波及 178 家机构：Zoom、GitLab、BBC 等站点被注入恶意脚本](https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/)
+### 1. [Google AI Overviews 使外部点击减少约 40%：SEO 与 GEO 应对分析](https://revscope.co/blog/search-seo-geo-2026/)
 
-- **原标题 / Original**: Optimizely compromised, served malware on Zoom, GitLab
-- **评分 / Signal Score**: ⭐ `85.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐` `#Hacker News`
-- **💡 核心概要 / What It Is**: 2026年11月16日，Optimizely Web 实验平台的 Project JavaScript 被注入恶意代码，波及 Zoom、GitLab、BBC、CNN、Salesforce、IKEA、HSBC 等 178 家机构的站点。
-- **🎯 推荐与借鉴 / Takeaway**: 通过第三方 JavaScript 供应链攻击的真实案例，给出 CSP 监控与 connect-src 限制的工程级防范思路。
+- **原标题 / Original**: Google's AI answers reducing search traffic by 40%
+- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 📌 growth
+- **标签 / Tags**: `#获客增长` `#SEO` `#现象/趋势` `#AI工具` `#出海` `#Google`
+- **💡 核心概要 / What It Is**: RevScope 发布的深度分析，梳理 Google AI Overviews 对搜索流量的实际冲击与 GEO（生成式引擎优化）哪些做法有效。
+- **💰 商业模式与变现 / Business Logic**: 随机对照实验显示 AI Overviews 使外部点击减少约 39.8%，自然点击整体损失约 18.5%；桌面端首位结果 CTR 一年内从 17.83% 降至 7.43%。
+- **🎯 推荐与借鉴 / Takeaway**: 汇总实验与行业数据说明 Google AI Overviews 折损约四成点击，给出经数据检验的 GEO 策略与踩坑警示。
 
-### 2. [Windows 11 被逆向发现收集编码 Agent 使用数据：MissionControlAggregator 遥测机制拆解](https://xusheng.dev/posts/windows-coding-agent-telemetry/)
+### 2. [TaroBird 上线：用手机远程指挥电脑上的 Codex、Claude Code 等 Agent](https://www.v2ex.com/t/1257920#reply0)
 
-- **原标题 / Original**: Windows 11 is collecting data on which coding agents and developer tools you use
-- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建` `#安全/对齐` `#非AI/通用工具` `#现象/趋势`
-- **💡 核心概要 / What It Is**: 作者逆向分析 Windows 11 的 MissionControlAggregator.dll，发现系统会检测用户使用了哪些编码 Agent（codex.exe、claude.exe、copilot.exe、cursor.exe 等）和开发工具，并通过 ETW 生成 Segments.SubCohorts 诊断报告。
-- **🎯 推荐与借鉴 / Takeaway**: 完整的逆向工程实录展示了从二进制线索到验证数据上传的全过程，读者可参考其系统化的排查与验证方法。
+- **原标题 / Original**: TaroBird：自己写了个 IM，出门也能拿手机指挥电脑上的 Codex、Claude Code 等 Agent
+- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#移动端` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: TaroBird 是一款让用户通过手机远程监控和指挥电脑上 Codex、Claude Code 等 Agent 的工具，支持查看进度、回复问题、点批准。
+- **🎯 推荐与借鉴 / Takeaway**: 针对 Agent 卡在确认等待的真实痛点做手机端遥控，技术上是桥接官方 CLI 而非自建 agent，思路可借鉴。
 
-### 3. [wechat-use 开源：用 Docker 跑真实微信桌面，让 AI Agent 通过 MCP 操作微信](https://www.v2ex.com/t/1257619#reply1)
+### 3. [Xtaff Browser 更新至 0.5：新增示教录制与 MCP 远程跨设备操作](https://www.v2ex.com/t/1257955#reply1)
 
-- **原标题 / Original**: 还有人关注微信自动化吗，搞了个 wechat-use，给 AI Agent 操作真实的微信桌面
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#桌面端` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 开发者开源的 wechat-use 项目，用 Docker 运行真实 Linux 微信桌面，让支持 MCP 的 AI Agent 查看界面并执行桌面操作。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把两年微信 RPA 经验与 Computer Use 思路结合，开源了 Docker 化的 Agent 操作方案，工程实现和风控提醒都有借鉴价值。
+- **原标题 / Original**: Xtaff Browser 更新了，说几个我自己用得上的改动
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#Chrome插件` `#AI工具` `#独立开发` `#产品更新` `#V2EX`
+- **💡 核心概要 / What It Is**: Xtaff Browser 是一个让 Agent 直接操作日常 Chrome 的插件加 MCP 工具，此次从 0.2 更新到 0.5。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享了让 Agent 操作浏览器时兼顾安全与效率的取舍，示教录制和隐私脱敏的实现细节有工程借鉴价值。
 
-### 4. [lend 开源：让远程 coding agent 用你的凭据但看不到密钥，每步 Touch ID 审批](https://blog.antonio.cx/running-agents-with-lend)
+### 4. [PostHog 实战总结：不是所有任务都需要 LLM，决策模型便宜 444.6 倍](https://newsletter.posthog.com/p/decision-models)
 
-- **原标题 / Original**: Running coding agents without handing them my credentials
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#AI工具` `#GitHub`
-- **💡 核心概要 / What It Is**: lend 是一个 SSH agent 代理，让跑在 VM 上的 coding agent 请求在本地笔记本执行命令，凭据永不离开本地。【商业/痛点逻辑】解决复制 token 到 VM 或 ssh -A 转发带来的密钥泄露风险，改为本地策略校验加 Touch ID 逐次审批。
-
-### 5. [Xrose 开源：基于 Rust 与 GPUI 的跨平台代理与异地组网客户端](https://www.v2ex.com/t/1257738#reply1)
-
-- **原标题 / Original**: Xrose：全新、开源、原生、跨平台的 sing-box/Xray 和 EasyTier/Tailscale 客户端
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#非AI/通用工具` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: 开发者开源了基于 Rust 与 GPUI Kit 构建的跨平台桌面网络客户端 Xrose，支持 Windows、macOS 和 Linux。该工具采用 GPLv3 协议，支持 sing-box 与 Xray 双代理内核并提供配置热重载，同时内置集成 EasyTier 与 Tailscale 异地组网功能，可自动协调多 TUN 共存带来的路由与 DNS 冲突。
-- **🎯 推荐与借鉴 / Takeaway**: 该项目展示了基于 Rust 和 GPUI 整合代理与异地组网的工程设计，处理多 TUN 冲突的实现思路值得桌面端开发者借鉴。
-
-### 6. [OpenCode 发布 Browse：MCP 服务器加 Chrome 扩展让 agent 使用你的真实浏览器](https://opencode.ai/product/browse)
-
-- **原标题 / Original**: OpenCode Browse
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#Chrome插件` `#开源/仓库` `#Hacker News`
-- **💡 核心概要 / What It Is**: OpenCode Browse 包含一个 MCP 服务器和 Chromium 扩展，让 AI agent 使用你的真实浏览器，支持 Chrome、Edge、Brave、Arc 等多个 Chromium 系浏览器。
+- **原标题 / Original**: Not Everything Needs an LLM
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
+- **标签 / Tags**: `#教程/实践` `#AI工具` `#SaaS`
+- **💡 核心概要 / What It Is**: PostHog 团队分享在生产中使用决策模型（decision models，如 Jev）替代 LLM 调用的经验总结。
+- **💰 商业模式与变现 / Business Logic**: 决策模型返回带概率的结构化答案，比前沿模型便宜最高 444.6 倍、快 193.6 倍；其 Replay Vision 的 PII 清洗管线中 98.7% 的会话摘要直接跳过 LLM 调用。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-17 情报精选 (6 篇)](archives/2026-11-17.md)
+- [📅 2026-11-18 情报精选 (4 篇)](archives/2026-11-18.md)
+- [📅 2026-11-17 情报精选 (11 篇)](archives/2026-11-17.md)
 - [📅 2026-11-16 情报精选 (8 篇)](archives/2026-11-16.md)
-- [📅 2026-11-14 情报精选 (9 篇)](archives/2026-11-14.md)
+- [📅 2026-11-14 情报精选 (10 篇)](archives/2026-11-14.md)
 - [📅 2026-11-13 情报精选 (12 篇)](archives/2026-11-13.md)
 - [📅 2026-11-12 情报精选 (5 篇)](archives/2026-11-12.md)
 - [📅 2026-11-11 情报精选 (7 篇)](archives/2026-11-11.md)
