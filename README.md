@@ -6,48 +6,48 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-18
+## 今日精选 (Today's Top Signals) · 2026-11-19
 
-### 1. [Google AI Overviews 使外部点击减少约 40%：SEO 与 GEO 应对分析](https://revscope.co/blog/search-seo-geo-2026/)
+### 1. [Ruby2ßhell 漏洞披露：Ruby 单字节编码一字节溢出可在原生 Rails 默认配置下实现 pre-auth RCE](https://verialabs.com/ruby2shell/)
 
-- **原标题 / Original**: Google's AI answers reducing search traffic by 40%
-- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 📌 growth
-- **标签 / Tags**: `#获客增长` `#SEO` `#现象/趋势` `#AI工具` `#出海` `#Google`
-- **💡 核心概要 / What It Is**: RevScope 发布的深度分析，梳理 Google AI Overviews 对搜索流量的实际冲击与 GEO（生成式引擎优化）哪些做法有效。
-- **💰 商业模式与变现 / Business Logic**: 随机对照实验显示 AI Overviews 使外部点击减少约 39.8%，自然点击整体损失约 18.5%；桌面端首位结果 CTR 一年内从 17.83% 降至 7.43%。
-- **🎯 推荐与借鉴 / Takeaway**: 汇总实验与行业数据说明 Google AI Overviews 折损约四成点击，给出经数据检验的 GEO 策略与踩坑警示。
+- **原标题 / Original**: Ruby2ßhell: Pre-authentication RCE on stock Rails
+- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#安全/对齐` `#开源/仓库` `#行业动态` `#GitHub` `#Hacker News`
+- **💡 核心概要 / What It Is**: Verialabs 披露代号 Ruby2ßhell 的 Ruby 安全漏洞，单字节编码下对 ß 做 upcase 会写入两个字节但循环只检查一次边界，造成一字节堆溢出。
+- **🎯 推荐与借鉴 / Takeaway**: 披露了 Ruby 编码处理的一字节堆溢出可致 Rails 默认配置下 pre-auth RCE，自托管 Rails 服务的开发者应尽快核对升级版本。
 
-### 2. [TaroBird 上线：用手机远程指挥电脑上的 Codex、Claude Code 等 Agent](https://www.v2ex.com/t/1257920#reply0)
+### 2. [Nginx 披露 HTTP/2 高危漏洞 CVE-2026-123007，官方已发布修复版本](https://www.appinn.com/nginx-http2-security-vulnerabilities-2026/)
 
-- **原标题 / Original**: TaroBird：自己写了个 IM，出门也能拿手机指挥电脑上的 Codex、Claude Code 等 Agent
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#移动端` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: TaroBird 是一款让用户通过手机远程监控和指挥电脑上 Codex、Claude Code 等 Agent 的工具，支持查看进度、回复问题、点批准。
-- **🎯 推荐与借鉴 / Takeaway**: 针对 Agent 卡在确认等待的真实痛点做手机端遥控，技术上是桥接官方 CLI 而非自建 agent，思路可借鉴。
+- **原标题 / Original**: Nginx 爆出严重漏洞，HTTP/2 用户注意：可能被远程执行代码｜CVE-2026-123007 评分 8.1分
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建`
+- **💡 核心概要 / What It Is**: Nginx 于 2026 年 11 月 18 日披露多个安全漏洞，其中两项涉及 HTTP/2，攻击者可能无需登录远程执行代码（RCE），CVE-2026-123007 评分 8.1。
+- **🎯 推荐与借鉴 / Takeaway**: 梳理了 Nginx HTTP/2 高危漏洞的检查与修复步骤，作者亲历升级 WordPress 与 Discourse 的踩坑过程，对自建站运维有直接参考。
 
-### 3. [Xtaff Browser 更新至 0.5：新增示教录制与 MCP 远程跨设备操作](https://www.v2ex.com/t/1257955#reply1)
+### 3. [clearbg.org 上线：作者自部署 BiRefNet 做 remove.bg 替代抠图网站](https://www.v2ex.com/t/1258373#reply0)
 
-- **原标题 / Original**: Xtaff Browser 更新了，说几个我自己用得上的改动
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#Chrome插件` `#AI工具` `#独立开发` `#产品更新` `#V2EX`
-- **💡 核心概要 / What It Is**: Xtaff Browser 是一个让 Agent 直接操作日常 Chrome 的插件加 MCP 工具，此次从 0.2 更新到 0.5。
-- **🎯 推荐与借鉴 / Takeaway**: 作者分享了让 Agent 操作浏览器时兼顾安全与效率的取舍，示教录制和隐私脱敏的实现细节有工程借鉴价值。
+- **原标题 / Original**: 自己部署 BiRefNet 做了个抠图网站，第一张图冷启动要等十几秒
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#独立开发` `#开源/仓库` `#Cloudflare` `#AI工具` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: remove.bg 宣布 12 月 1 日关闭独立网站和自助 API 后，作者自部署 BiRefNet 模型上线抠图替代品 clearbg.org，接口兼容旧代码，换域名和 key 即可继续用。
+- **🎯 推荐与借鉴 / Takeaway**: 作者公开了模型选型、边缘处理和 GPU 冷启动的完整踩坑细节，可作同类图像服务部署的工程参考。
 
-### 4. [PostHog 实战总结：不是所有任务都需要 LLM，决策模型便宜 444.6 倍](https://newsletter.posthog.com/p/decision-models)
+### 4. [TaroBird 开源：让 Codex、Claude Code 等 CLI 变身桌面手机多端同步的 Personal AI](https://www.v2ex.com/t/1258241#reply1)
 
-- **原标题 / Original**: Not Everything Needs an LLM
-- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#教程/实践` `#AI工具` `#SaaS`
-- **💡 核心概要 / What It Is**: PostHog 团队分享在生产中使用决策模型（decision models，如 Jev）替代 LLM 调用的经验总结。
-- **💰 商业模式与变现 / Business Logic**: 决策模型返回带概率的结构化答案，比前沿模型便宜最高 444.6 倍、快 193.6 倍；其 Replay Vision 的 PII 清洗管线中 98.7% 的会话摘要直接跳过 LLM 调用。
+- **原标题 / Original**: TaroBird：让 Codex、Claude Code、DSH 等 CLI 变身 Personal AI，桌面手机多端同步
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#桌面端` `#移动端` `#开源/仓库` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: TaroBird 是一个专门给 AI agent 用的 IM，把 Codex、Claude Code、Kimi Code、DeepSeek Harness 等 CLI 封装成有名字、人设和记忆的 Bot。
+- **🎯 推荐与借鉴 / Takeaway**: 作者开源了一套把 Codex、Claude Code 等 CLI 封装成可远程操控 Bot 的方案，工程思路是复用官方 CLI 而非重造 agent。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-18 情报精选 (4 篇)](archives/2026-11-18.md)
+- [📅 2026-11-19 情报精选 (4 篇)](archives/2026-11-19.md)
+- [📅 2026-11-18 情报精选 (6 篇)](archives/2026-11-18.md)
 - [📅 2026-11-17 情报精选 (11 篇)](archives/2026-11-17.md)
-- [📅 2026-11-16 情报精选 (8 篇)](archives/2026-11-16.md)
+- [📅 2026-11-16 情报精选 (9 篇)](archives/2026-11-16.md)
 - [📅 2026-11-14 情报精选 (10 篇)](archives/2026-11-14.md)
 - [📅 2026-11-13 情报精选 (12 篇)](archives/2026-11-13.md)
 - [📅 2026-11-12 情报精选 (5 篇)](archives/2026-11-12.md)
