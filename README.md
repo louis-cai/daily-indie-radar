@@ -6,47 +6,73 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-19
+## 今日精选 (Today's Top Signals) · 2026-11-20
 
-### 1. [Ruby2ßhell 漏洞披露：Ruby 单字节编码一字节溢出可在原生 Rails 默认配置下实现 pre-auth RCE](https://verialabs.com/ruby2shell/)
+### 1. [Cloudflare 解析 nginx2root：五个新 nginx 漏洞及源站防护边界](https://blog.cloudflare.com/nginx2root/)
 
-- **原标题 / Original**: Ruby2ßhell: Pre-authentication RCE on stock Rails
-- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#安全/对齐` `#开源/仓库` `#行业动态` `#GitHub` `#Hacker News`
-- **💡 核心概要 / What It Is**: Verialabs 披露代号 Ruby2ßhell 的 Ruby 安全漏洞，单字节编码下对 ß 做 upcase 会写入两个字节但循环只检查一次边界，造成一字节堆溢出。
-- **🎯 推荐与借鉴 / Takeaway**: 披露了 Ruby 编码处理的一字节堆溢出可致 Rails 默认配置下 pre-auth RCE，自托管 Rails 服务的开发者应尽快核对升级版本。
+- **原标题 / Original**: nginx2root: Five new nginx vulnerabilities, and how Cloudflare protects origins from the worst of them
+- **评分 / Signal Score**: ⭐ `88.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#Cloudflare` `#安全/对齐`
+- **💡 核心概要 / What It Is**: F5 与 nginx.org 于 11 月 18 日披露十个 nginx 漏洞，其中 Xint 团队命名的 nginx2root 包含五个内存破坏漏洞，未认证攻击者可致 worker 崩溃甚至配合 Linux 内核 SCTP 漏洞提权至 root。
+- **🎯 推荐与借鉴 / Takeaway**: 原文拆解了五个 nginx 漏洞的成因与修复思路，并说明代理如何切断攻击路径，对自建源站的开发者是实用的加固清单。
 
-### 2. [Nginx 披露 HTTP/2 高危漏洞 CVE-2026-123007，官方已发布修复版本](https://www.appinn.com/nginx-http2-security-vulnerabilities-2026/)
+### 2. [Ferry 发布：免费无内购的 iPhone / iPad 连 Mac 远程桌面，实现高性能模式](https://www.v2ex.com/t/1258592#reply0)
 
-- **原标题 / Original**: Nginx 爆出严重漏洞，HTTP/2 用户注意：可能被远程执行代码｜CVE-2026-123007 评分 8.1分
-- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#出海基建`
-- **💡 核心概要 / What It Is**: Nginx 于 2026 年 11 月 18 日披露多个安全漏洞，其中两项涉及 HTTP/2，攻击者可能无需登录远程执行代码（RCE），CVE-2026-123007 评分 8.1。
-- **🎯 推荐与借鉴 / Takeaway**: 梳理了 Nginx HTTP/2 高危漏洞的检查与修复步骤，作者亲历升级 WordPress 与 Discourse 的踩坑过程，对自建站运维有直接参考。
+- **原标题 / Original**: 逆向了 macOS 屏幕共享的高性能模式，做了个免费的 iPhone / iPad 连 Mac 远程桌面
+- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#移动端` `#桌面端` `#非AI/通用工具` `#开源/仓库` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款叫 Ferry 的 iOS 远程桌面 App，免费、无广告、无内购、免注册，国区 App Store 可下载。
+- **💰 商业模式与变现 / Business Logic**: 因 UU 远程免费版将限 1080p 30 帧且虚拟屏要会员，作者逆向 macOS 14 的屏幕共享高性能协议自行实现，走 AES 加密的 HEVC 视频流加 AAC-ELD 声音，UDP 传输、手机硬解，并为连接创建虚拟显示器。
+- **🎯 推荐与借鉴 / Takeaway**: 作者逆向 macOS 高性能屏幕共享协议做成免费 App，可参考其协议分析与帧率实测对比。
 
-### 3. [clearbg.org 上线：作者自部署 BiRefNet 做 remove.bg 替代抠图网站](https://www.v2ex.com/t/1258373#reply0)
+### 3. [Onlook (YC W25) 开源发布：给设计师的可视化 AI 开发画布](https://github.com/onlook-dev/onlook/)
 
-- **原标题 / Original**: 自己部署 BiRefNet 做了个抠图网站，第一张图冷启动要等十几秒
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#独立开发` `#开源/仓库` `#Cloudflare` `#AI工具` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: remove.bg 宣布 12 月 1 日关闭独立网站和自助 API 后，作者自部署 BiRefNet 模型上线抠图替代品 clearbg.org，接口兼容旧代码，换域名和 key 即可继续用。
-- **🎯 推荐与借鉴 / Takeaway**: 作者公开了模型选型、边缘处理和 GPU 冷启动的完整踩坑细节，可作同类图像服务部署的工程参考。
+- **原标题 / Original**: Launch HN: Onlook (YC W25) – An open-source developer tool for designers
+- **评分 / Signal Score**: ⭐ `81.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#桌面端` `#开源/仓库` `#独立开发` `#GitHub` `#Hacker News` `#Anthropic` `#OpenAI`
+- **💡 核心概要 / What It Is**: Onlook 是一款面向设计师的开源桌面工具，在无限画布上实时呈现真实运行的应用，通过可视化方式修改界面并让 AI Agent 写代码。
+- **💰 商业模式与变现 / Business Logic**: 定位为 Figma、V0、Replit Agent、Webflow 等的开源替代，设计结果直接作用于真实 Git 仓库而非原型，免去设计稿重建环节。
+- **🎯 推荐与借鉴 / Takeaway**: 面向设计师的开源可视化开发工具，用自带 AI Agent 直接编辑真实仓库，工程与产品思路都值得参考。
 
-### 4. [TaroBird 开源：让 Codex、Claude Code 等 CLI 变身桌面手机多端同步的 Personal AI](https://www.v2ex.com/t/1258241#reply1)
+### 4. [sessfork 开源：零依赖把 Chrome 登录态分叉给无头浏览器，AI 后台干活不抢焦点](https://www.v2ex.com/t/1258533#reply0)
 
-- **原标题 / Original**: TaroBird：让 Codex、Claude Code、DSH 等 CLI 变身 Personal AI，桌面手机多端同步
-- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#桌面端` `#移动端` `#开源/仓库` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: TaroBird 是一个专门给 AI agent 用的 IM，把 Codex、Claude Code、Kimi Code、DeepSeek Harness 等 CLI 封装成有名字、人设和记忆的 Bot。
-- **🎯 推荐与借鉴 / Takeaway**: 作者开源了一套把 Codex、Claude Code 等 CLI 封装成可远程操控 Bot 的方案，工程思路是复用官方 CLI 而非重造 agent。
+- **原标题 / Original**: 受够了 AI Agent 用浏览器疯狂抢焦点，写了个零依赖工具把 Chrome 登录态无锁分叉到无头浏览器
+- **评分 / Signal Score**: ⭐ `78.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#AI工具` `#Chrome插件` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 纯 Python 标准库工具 sessfork，对运行中的 Chrome 做无锁快照，把指定站点的登录态导出成 Playwright storageState，供无头浏览器使用。
+- **🎯 推荐与借鉴 / Takeaway**: 针对 AI Agent 抢浏览器焦点和重复登录的痛点给出工程解法，把登录态与前台窗口分离，可借鉴其凭证导出与 MCP 配置思路。
+
+### 5. [UULink 更新：iPhone 远程使用 Claude Code，新增 Windows Beta 并招募测试用户](https://www.v2ex.com/t/1258620#reply17)
+
+- **原标题 / Original**: [更新] iPhone 上远程使用 ClaudeCode 等 Coding Agent 的 UULink 重磅更新，这回征集 Windows 测试用户，另外还是长期送兑换码给真正需要的朋友
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#产品更新` `#独立开发` `#AI工具` `#移动端` `#桌面端` `#V2EX`
+- **💡 核心概要 / What It Is**: UULink 是一款让 iPhone 远程操控电脑上 Claude Code、Codex 等 Coding Agent 的 App，内置内网穿透、扫码即用。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享了远程操控 Coding Agent 工具一个月迭代细节，其打洞优化与 Computer Use 提速思路有工程借鉴价值。
+
+### 6. [牵丝 Filaxis 开源：给 AI Agent 用的远程执行运行时，实测 MCP 模式耗时降 53.4%](https://www.v2ex.com/t/1258616#reply0)
+
+- **原标题 / Original**: [开源] 牵丝 Filaxis：给 AI Agent 用的远程执行运行时（SDK / CLI / MCP），附多跳 SSH 堡垒机 + Docker 对照实测
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#CLI` `#独立开发` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 牵丝 Filaxis，一个面向 AI Agent 的远程执行运行时，提供 SDK、CLI 和 MCP Server 三种接入方式，Apache-2.0 协议，TypeScript 实现，支持 Bun / Node。
+- **🎯 推荐与借鉴 / Takeaway**: 开源项目自述附带受控对照实测数据，读者可参考 Agent 远程执行链路里 Shell 转义、进程收敛等工程细节的处理思路。
+
+### 7. [PostgreSQL 19 正式发布：新增 REPACK 命令与多项性能优化](https://www.postgresql.org/docs/release/19.0/)
+
+- **原标题 / Original**: PostgreSQL 19
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具`
+- **💡 核心概要 / What It Is**: PostgreSQL 19 于 2026-11-19 正式发布，带来大量新特性与性能优化。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-19 情报精选 (4 篇)](archives/2026-11-19.md)
+- [📅 2026-11-20 情报精选 (7 篇)](archives/2026-11-20.md)
+- [📅 2026-11-19 情报精选 (9 篇)](archives/2026-11-19.md)
 - [📅 2026-11-18 情报精选 (6 篇)](archives/2026-11-18.md)
-- [📅 2026-11-17 情报精选 (11 篇)](archives/2026-11-17.md)
+- [📅 2026-11-17 情报精选 (12 篇)](archives/2026-11-17.md)
 - [📅 2026-11-16 情报精选 (9 篇)](archives/2026-11-16.md)
 - [📅 2026-11-14 情报精选 (10 篇)](archives/2026-11-14.md)
 - [📅 2026-11-13 情报精选 (12 篇)](archives/2026-11-13.md)
