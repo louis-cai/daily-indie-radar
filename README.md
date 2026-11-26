@@ -6,64 +6,75 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-25
+## 今日精选 (Today's Top Signals) · 2026-11-26
 
-### 1. [sessfork-mcp 开源：替换 @playwright/mcp 后 Moli 浏览器内存降 90.7%、速度达 Chrome 2.76×](https://www.v2ex.com/t/1259622#reply0)
+### 1. [Chrome 团队开源 Modern Web Guidance：教 AI 用现代 Web 技术替代过时方案](https://www.appinn.com/modern-web-guidance/)
 
-- **原标题 / Original**: 把 @playwright/mcp 换成纯 Rust 管道后，Rust 浏览器 Moli 内存暴降 90.7%、速度反超 Chrome 2.76×（附官方 M4 复现）
-- **评分 / Signal Score**: ⭐ `83.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#自动化` `#独立开发` `#出海` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: sessfork-mcp 是一个纯 Rust 实现的 MCP 工具，用管道直连 Moli 无头浏览器，替代 Node 版 @playwright/mcp。
-- **🎯 推荐与借鉴 / Takeaway**: 砍掉 Node/Playwright 包装层、直连 CDP 管道的实测对比，工程借鉴价值在于架构选型对内存与性能的真实影响。
+- **原标题 / Original**: 别让 AI 用过时的技术写网页，Chrome 官方推出 Skills：Modern Web Guidance
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#非AI/通用工具` `#Google`
+- **💡 核心概要 / What It Is**: Google Chrome 团队推出的开源 Skills「Modern Web Guidance」，内置 200 多项专家审核的开发指南，教 AI 使用现代 Web 原生技术开发网页。
+- **🎯 推荐与借鉴 / Takeaway**: Chrome 官方开源 Skills 教 AI 用现代 Web 技术，附安装命令与评测数据，对前端 AI 编码效率有直接参考。
 
-### 2. [Rida F'kih 绕过 iOS Safari 60 FPS 限制：Web 应用跑满 120Hz](https://rida.dev/blog/bypassing-ios-safari-60-fps-limit)
+### 2. [Minipg 开源：把 PostgreSQL 做成单个可执行文件](https://progrium.github.io/minipg/)
 
-- **原标题 / Original**: Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native
-- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#实操指南` `#教程/实践` `#非AI/通用工具` `#移动端` `#现象/趋势`
-- **💡 核心概要 / What It Is**: Rida F'kih 公开了一套绕过 iOS Safari 60 FPS 上限的方法，让 Web 应用在 iPhone 上以 120Hz 读取输入并渲染画面。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把滚动容器与 OffscreenCanvas 拼成高刷输入输出链路，移动端 Web 开发者可借鉴其调优思路。
+- **原标题 / Original**: Minipg: PostgreSQL as a Single Executable
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#CLI` `#独立开发` `#Hacker News` `#GitHub`
+- **💡 核心概要 / What It Is**: Minipg 把 PostgreSQL 打包成一个可执行文件，用 .pgdb 目录当作数据库，无需配置服务器，命令按需自动启停。【商业/痛点逻辑】解决本地开发与 CI 中 Postgres 环境搭建繁琐的痛点，静态二进制无需特权或 /dev/kvm，测试任务可缩到两行命令。
+- **🎯 推荐与借鉴 / Takeaway**: 把 PostgreSQL 打包成单文件可执行，浏览器可跑，工程思路对独立开发者本地与 CI 场景有借鉴价值。
 
-### 3. [Gerdr 开源：Claude Code / Codex 的图形界面，AI 秘书替你派活盯进度](https://www.v2ex.com/t/1259668#reply0)
+### 3. [Rigdepot 0.1.0 开源发布：统一管理团队 Skill、MCP 并同步到 Claude Code / Codex / OpenCode](https://www.v2ex.com/t/1260026#reply0)
 
-- **原标题 / Original**: 做了个 Claude Code / Codex 的图形界面：有个 AI 秘书替你派活，工作台也能让 agent 自己搭
-- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#开源/仓库` `#AI工具` `#独立开发` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: Gerdr 是一款 MIT 开源的图形界面，通过 Claude Code / Codex 的结构化接口直接通信，不经过终端管理多个 coding agent。
-- **🎯 推荐与借鉴 / Takeaway**: 作者把多个 coding agent 的派活与盯梢集中到一个 AI 秘书界面，工程思路和移动端设计都可借鉴。
+- **原标题 / Original**: Rigdepot：把团队的 Skill、MCP、工作流统一管起来，同步到 Claude Code / Codex / OpenCode（开源，Go）
+- **评分 / Signal Score**: ⭐ `74.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#CLI` `#自动化`
+- **💡 核心概要 / What It Is**: 开源的团队 AI 编码资源管理工具，把 Skill、MCP、工作流、Agent 集中放在一个 Git 仓库，通过 rgd sync 一键同步到 Claude Code、Codex、OpenCode。
+- **🎯 推荐与借鉴 / Takeaway**: 解决了团队多套 AI 编码工具重复配置 MCP 和 Skill 的真实痛点，写入安全设计和降级策略值得工程参考。
 
-### 4. [Intruder 花 3 美元接管 5 个美国财政部子域名，AWS 称不打算修复](https://www.intruder.io/research/taking-over-us-treasury-subdomains-for-3-each)
+### 4. [「江山时序」开源：AI 做出两千年中国历史时间轴地图，GitHub 星标涨到 1400](https://sspai.com/post/117510)
 
-- **原标题 / Original**: Taking over US Treasury subdomains for $3 each
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 📖 实操复盘与指南 / Case Study
-- **标签 / Tags**: `#实操指南` `#安全/对齐` `#行业动态` `#出海基建`
-- **💡 核心概要 / What It Is**: Intruder 用 Python 脚本自动轮换 AWS Elastic IP，48 小时扫过 45 万个地址，以每个 3 美元成本接管 28 个悬空 DNS 记录，其中 5 个属美国财政部子域名。
+- **原标题 / Original**: 我用AI做了一张两千年的中国历史地图
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源/仓库` `#独立开发` `#AI工具` `#增长` `#GitHub`
+- **💡 核心概要 / What It Is**: 「江山时序」是一个拖动时间轴就能看中国两千年朝代疆域变迁的开源网页地图，由作者 DeanChen 借助 AI 开发，上线后 GitHub 星标从几十涨到 1400。
 
-### 5. [Moting 开源：Mac 本地会议录音转写工具，支持 AI 纪要](https://www.v2ex.com/t/1259786#reply0)
+### 5. [OhMyShot v0.5.0 开源：macOS 截图录屏工具，支持本地 OCR 与自动缩放录屏](https://www.v2ex.com/t/1260100#reply0)
 
-- **原标题 / Original**: 写了个 Mac 上的会议录音工具，能本地转写，开源出来分享一下
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#桌面端` `#AI工具` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: Moting 是一款 Mac 上的会议录音工具，可分别录制麦克风与系统声音，提供实时字幕和区分说话人的文字稿，可导出 Markdown。
-- **💰 商业模式与变现 / Business Logic**: 主打本地优先隐私，录音和语音识别都在本机完成，模型下载后无需联网，仅生成 AI 纪要时把转写文字发送到用户自配的服务。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者开源了一款本地优先的 Mac 会议转写工具，录音与识别不联网，对关注隐私场景的开发者有工程借鉴。
+- **原标题 / Original**: 开源了一个 macOS 截图录屏工具 OhMyShot：本地 OCR、自动缩放录屏，官网可以直接在线试
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#桌面端` `#开源/仓库` `#非AI/通用工具` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一款开源的 macOS 截图录屏工具 OhMyShot，用 Swift 编写，作者自用一个多月后刚发布 v0.5.0。
+- **💰 商业模式与变现 / Business Logic**: 作者此前因 CleanShot X v5 授权方案和其中文、代码截图 OCR 体验不佳，自建替代品，功能按个人习惯设计。
+- **🎯 推荐与借鉴 / Takeaway**: 作者因 CleanShot X 授权与 OCR 不顺手而自写替代工具，可参考其对本地 OCR 细节打磨与免费开源加签名公证的发布思路。
 
-### 6. [Ladybird（瓢虫）浏览器发布 Alpha 版：从零自研内核，支持 macOS 与 Linux](https://www.appinn.com/ladybird-browser/)
+### 6. [Agentero 开源：整合 Zotero/Obsidian/Overleaf 的本地科研工作台，获 GOAI 二等奖 30 万元奖金](https://www.v2ex.com/t/1260064#reply0)
 
-- **原标题 / Original**: Ladybird（瓢虫）- 不用 Chromium，独立内核的开源浏览器：只开发网页浏览器，别的什么都不做。
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#GitHub`
-- **💡 核心概要 / What It Is**: Ladybird（瓢虫）于 2026 年 11 月 23 日发布 Alpha 测试版，支持 macOS 与 Linux，可直接下载，Windows 版未推出。
+- **原标题 / Original**: [开源] 拿了 GOAI 30w 奖金 + DeepSeek 官方推荐插件：我把 Zotero/Obsidian/Overleaf 整合成一个本地工作台，让 Agent 接管从读论文到写论文的全流程
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#独立开发` `#AI工具` `#开源/仓库` `#桌面端` `#V2EX` `#GitHub` `#DeepSeek`
+- **💡 核心概要 / What It Is**: Agentero 是一款开源的本地科研工作台，把文献管理、双语阅读、双链笔记、实验数据表和 LaTeX 写作整合到同一工作区。
+- **🎯 推荐与借鉴 / Takeaway**: 把文献、笔记、实验数据与 LaTeX 写作收拢进一个本地工作区，为本地 Agent 提供完整上下文，工程整合思路值得做工具的开发者参考。
+
+### 7. [蒲公英脑图（Mindloft）发布技术预览版：免注册无水印、可导 Xmind、一键切演说模式](https://www.v2ex.com/t/1260043#reply0)
+
+- **原标题 / Original**: 自己写了个跨端思维导图「蒲公英脑图」：免注册无水印、直接导 Xmind、能切 PPT 演说、能拍板书转公式
+- **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#独立开发` `#非AI/通用工具` `#桌面端` `#移动端` `#V2EX`
+- **💡 核心概要 / What It Is**: 独立开发者用一个月写成的跨端思维导图与大纲工具「蒲公英脑图（Mindloft）」，Web 免注册可用，桌面和移动端已打包。
+- **💰 商业模式与变现 / Business Logic**: 针对 Xmind 需订阅、在线工具锁账号和私有格式的痛点，主打本地编辑、无水印导出（PNG/SVG/PDF/Markdown）和基础云同步多人协作全免费。
+- **🎯 推荐与借鉴 / Takeaway**: 独立开发者一个月做出的跨端脑图工具，迁移降级清单、开放文件格式与性能压测数据都有工程细节可借鉴。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-25 情报精选 (6 篇)](archives/2026-11-25.md)
+- [📅 2026-11-26 情报精选 (7 篇)](archives/2026-11-26.md)
+- [📅 2026-11-25 情报精选 (10 篇)](archives/2026-11-25.md)
 - [📅 2026-11-24 情报精选 (14 篇)](archives/2026-11-24.md)
-- [📅 2026-11-23 情报精选 (13 篇)](archives/2026-11-23.md)
+- [📅 2026-11-23 情报精选 (14 篇)](archives/2026-11-23.md)
 - [📅 2026-11-22 情报精选 (10 篇)](archives/2026-11-22.md)
-- [📅 2026-11-21 情报精选 (7 篇)](archives/2026-11-21.md)
+- [📅 2026-11-21 情报精选 (8 篇)](archives/2026-11-21.md)
 - [📅 2026-11-20 情报精选 (11 篇)](archives/2026-11-20.md)
 - [📅 2026-11-19 情报精选 (9 篇)](archives/2026-11-19.md)
 - [📅 2026-11-18 情报精选 (6 篇)](archives/2026-11-18.md)
