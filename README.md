@@ -6,101 +6,90 @@
 
 ---
 
-## 今日精选 (Today's Top Signals) · 2026-11-27
+## 今日精选 (Today's Top Signals) · 2026-11-28
 
-### 1. [独立调查：Novita、StreamLake、Ant Digital 的 DeepSeek 请求实为 ByteDance Ark 转发](https://kendell.dev/blog/arkwrapper/)
+### 1. [Balatro 开发者复盘 3 年开发时间线：上线首日 Steam 卖出 119,000 份、数小时收入超 $600,000](https://localthunk.com/blog/balatro-timeline-3aarh)
 
-- **原标题 / Original**: Novita, StreamLake, etc. are ByteDance Ark wrappers
-- **评分 / Signal Score**: ⭐ `82.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#安全/对齐` `#AI工具` `#行业动态` `#现象/趋势` `#Hacker News`
-- **💡 核心概要 / What It Is**: 一篇独立技术调查，作者用可复现的指纹测试证明多家第三方推理商的 DeepSeek/GLM 请求最终转发到 ByteDance Ark（火山引擎/BytePlus）。
-- **🎯 推荐与借鉴 / Takeaway**: 作者用图片下载 IP、请求 ID、tool-call 格式和审查话术追踪上游，方法本身对排查 LLM API 真实链路有参考价值。
+- **原标题 / Original**: The Balatro Timeline
+- **评分 / Signal Score**: ⭐ `88.0` / 100 | **分类**: 📌 cases
+- **标签 / Tags**: `#变现实录` `#独立开发` `#变现` `#出海` `#冷启动` `#Hacker News`
+- **💡 核心概要 / What It Is**: Balatro 开发者 LocalThunk 发布的长文，按时间顺序复盘从 2021 年 12 月立项到 2024 年 2 月发售的全部开发历程。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者亲述 Balatro 从业余项目到发售首日 119,000 份销量的完整时间线，涵盖发行商签约与主播传播路径，参考价值在真实商业节奏。
 
-### 2. [Google Play 要求开发者申报 trader 身份，个人开发者电话与地址将公开显示](https://support.google.com/googleplay/android-developer/answer/17594752?hl=en)
+### 2. [google-trends-for-agent 开源：把 Google Trends 换算成真实日搜量，支持 Claude Code 与 Codex 接入](https://www.v2ex.com/t/1260534#reply0)
 
-- **原标题 / Original**: Google will show solo Android developers' phone numbers and addresses
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 📌 infra
-- **标签 / Tags**: `#政策/监管` `#出海` `#移动端` `#独立开发` `#Google`
-- **💡 核心概要 / What It Is**: Google Play 要求所有开发者账号在 2027 年 2 月 1 日前申报 trader 或非 trader 身份，2027 年 3 月 1 日起生效。对出海安卓开发者的影响是，若申报为 trader，个人开发者账号须提供公开显示的联系电话，地址也会被公开展示，D-U-N-S 号码将出现在应用详情页。
-- **🎯 推荐与借鉴 / Takeaway**: Google Play 要求全球开发者申报 trader 身份，个人开发者需公开电话和地址，独立开发者出海安卓前值得了解的合规变化。
+- **原标题 / Original**: 给 Claude Code / DeepSeek Harness / Codex 接上 Google Trends，开源了个能查真实日搜量的工具
+- **评分 / Signal Score**: ⭐ `77.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#SEO` `#AI工具` `#CLI` `#自动化` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 开发者 exmorning 开源的 google-trends-for-agent 工具，可将 Google Trends 的 0-100 相对指数换算成近似真实日搜索量，替代已归档停更、频繁报 429 的 pytrends。
+- **🎯 推荐与借鉴 / Takeaway**: 开源工具把 Google Trends 相对指数校准成真实日搜量，替代已停更的 pytrends，对出海选词和 SEO 调研有直接用处。
 
-### 3. [Archify 破 10 万+ Star，v3.3.2 新增离线架构诊断、1080p 视频导出与 PR 变更图解](https://www.v2ex.com/t/1260199#reply0)
+### 3. [Cloudflare Workers 被 AI 爬虫刷到 8840 次超限：一次免费额度耗尽的排查与拦截复盘](https://www.v2ex.com/t/1260570#reply1)
 
-- **原标题 / Original**: [开源] Archify 破 10 万+ Star 了，分享下 v3.3.2 新增的离线仓库架构诊断、1080p 演练视频与 PR 变更图解
-- **评分 / Signal Score**: ⭐ `80.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: Archify 是一款纯本地、零账号、离线单 HTML 交付的开源架构图与代码诊断工具（Apache-2.0），已突破 10 万+ Star，作者发布 v3.3.2 并汇报近期大版本变化。
-- **🎯 推荐与借鉴 / Takeaway**: 开源架构图与代码诊断工具的项目进展实录，可参考其离线单 HTML 交付和面向 Agent 的 Skill 分发思路。
+- **原标题 / Original**: robots.txt 早写了，爬虫还是把我免费的 Worker 刷到 8840 次超限
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 📌 infra
+- **标签 / Tags**: `#出海基建` `#Cloudflare` `#现象/趋势` `#V2EX`
+- **💡 核心概要 / What It Is**: 一位独立开发者在 V2EX 复盘自己部署在 Cloudflare Workers 上的免费站点被爬虫刷爆 CPU 额度的完整过程。
+- **🎯 推荐与借鉴 / Takeaway**: 作者完整复盘 Worker 被恶意爬虫刷爆免费额度的定位与拦截过程，是边缘函数上线前值得参考的踩坑警示。
 
-### 4. [Casdoor 更新：支持 Keycloak、Auth0、Okta 迁移，AI Agent 可通过 MCP 管理](https://www.v2ex.com/t/1260446#reply0)
+### 4. [无际翻译开源：纯大模型浏览器双语对照插件，Chrome/Edge/Firefox 已上架](https://www.v2ex.com/t/1260537#reply0)
 
-- **原标题 / Original**: Casdoor 这一个月：Keycloak、Auth0、Okta 能迁了，AI Agent 也能通过 MCP 来管
-- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#产品更新` `#开源/仓库` `#SaaS` `#GitHub`
-- **💡 核心概要 / What It Is**: 开源 IAM/SSO 项目 Casdoor（Go + React，Apache 2.0，1.49 万 star）发布月度更新，主打迁移、MCP 与登录流程编排三大能力。
-- **🎯 推荐与借鉴 / Takeaway**: 开源 IAM 一次发布迁移插件、MCP 管理与可视化 Flows，读者可参考其如何把 IAM 迁移痛点拆成可撤销的工程方案。
+- **原标题 / Original**: 因为忍受不了免费的机器翻译，开源了一款纯大模型浏览器双语对照插件
+- **评分 / Signal Score**: ⭐ `76.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
+- **标签 / Tags**: `#开源神器` `#AI工具` `#Chrome插件` `#独立开发` `#出海` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款只用大模型做网页双语对照翻译的浏览器插件，已在 Chrome / Edge / Firefox 三家商店上架。
+- **💰 商业模式与变现 / Business Logic**: 针对传统机翻质量差、商业 AI 翻译插件订阅贵且功能锁付费档的痛点，采用无账号无订阅模式，用户填自己的 API Key 即可，实测每 100 万 Token 约 1.07 元。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享纯大模型双语对照插件的成本实测与缓存设计，可参考其用自有 API Key 替代订阅付费的产品思路。
 
-### 5. [UnimeType 免切换输入法上线：LLM 整句还原中英混输，覆盖五端并开源模型](https://www.v2ex.com/t/1260289#reply0)
+### 5. [nnStream 开源发布：Win 到 Mac 局域网串流工具，v0.2.1 上线](https://www.v2ex.com/t/1260524#reply0)
 
-- **原标题 / Original**: 我做了一个免切换的中英输入法，直接干掉了切换键和候选框
-- **评分 / Signal Score**: ⭐ `79.0` / 100 | **分类**: 🚀 新出海产品 / Products
-- **标签 / Tags**: `#新出海产品` `#AI工具` `#开源/仓库` `#桌面端` `#移动端` `#独立开发` `#GitHub` `#V2EX`
-- **💡 核心概要 / What It Is**: UnimeType 是一款跨 macOS/Windows/Linux/iOS/Android 的免切换输入法，全程用原生英文键盘混敲拼音和英文，按键后由 LLM 按整句语境还原成中英混排文本。
-- **🎯 推荐与借鉴 / Takeaway**: 产品用 LLM 整句转写替代候选框，解决双语用户跨窗口切换翻车的痛点，隐私处理与开源本地模型思路可借鉴。
-
-### 6. [Arke：Rust + GPUI 开源 Windows 文件管理器，两周破 1000 星](https://www.v2ex.com/t/1260336#reply0)
-
-- **原标题 / Original**: [开源] 受不了资源管理器转圈，用 Rust + GPUI 写了个文件管理器 Arke
-- **评分 / Signal Score**: ⭐ `75.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#非AI/通用工具` `#GitHub` `#独立开发` `#V2EX`
-- **💡 核心概要 / What It Is**: 一款用 Rust + GPUI 编写的 Windows 开源文件管理器 Arke。
-- **💰 商业模式与变现 / Business Logic**: 源于资源管理器打开 NAS 网络共享时窗口未响应的真实痛点，所有读目录、排序、缩略图、搜索、复制删除都不在界面线程上跑，网络盘掉线窗口照样能用。
-- **🎯 推荐与借鉴 / Takeaway**: 作者讲了从个人痛点到开源项目的完整过程，异步 IO 与读 NTFS 直建索引的工程思路对桌面端开发者有借鉴。
-
-### 7. [ConeShare 开源虚拟资料室：支持动态水印、逐页阅读统计和远程 MCP](https://www.v2ex.com/t/1260363#reply0)
-
-- **原标题 / Original**: ConeShare 开源虚拟资料室，外发链接支持动态水印、逐页阅读统计和远程 MCP
+- **原标题 / Original**: 受不了 UU 远程收费和 Sunshine 折腾，自己撸了个 Win → Mac 开源串流软件 nnStream
 - **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#SaaS` `#出海` `#独立开发` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: ConeShare 是一个开源、可自托管的虚拟资料室（VDR），定位为 DocSend / Digify 类产品的替代。
-- **💰 商业模式与变现 / Business Logic**: 解决文档外发时需追踪对方是否打开、每页停留多久，以及动态水印防转发防截图的需求，同时避免 DocSend 高收费和敏感文档上传第三方的顾虑。
-- **🎯 推荐与借鉴 / Takeaway**: 开发者亲述开源 VDR 项目的能力版图与 DocSend 替代思路，对做文档安全分享类产品有工程借鉴。
+- **标签 / Tags**: `#开源神器` `#开源/仓库` `#桌面端` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: nnStream 是一款面向 Windows → Apple Silicon macOS 局域网场景的开源串流工具，作者因 UU 远程即将对纯局域网直连收费、Sunshine 配置繁琐而自行开发。
+- **🎯 推荐与借鉴 / Takeaway**: 作者不满 UU 远程局域网收费，自研开源串流工具替代 Sunshine 方案，思路与实现细节可供同类工具开发借鉴。
 
-### 8. [NormalScript 开源：可嵌入 Node/Bun 的 JavaScript 子集虚拟机，支持暂停恢复](https://psychoscript.com/)
+### 6. [译哥 Poly 上线：Mac 本机视频换语言并用原片音色配音，买断 ¥69 起](https://www.v2ex.com/t/1260512#reply0)
 
-- **原标题 / Original**: NormalScript: A perfectly normal scripting language
-- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#独立开发` `#AI工具` `#GitHub`
-- **💡 核心概要 / What It Is**: NormalScript 是一个以纯 JavaScript 包发布的可嵌入虚拟机，用于在 Node ≥ 24 或 Bun ≥ 1.4 应用内运行 JavaScript 子集脚本与 agent code mode，无需 WASM、原生插件或 worker。
+- **原标题 / Original**: 译哥 Poly：Mac 本机把视频换成另一种语言，并用原片音色配音（v 站用户送 10 个买断码）
+- **评分 / Signal Score**: ⭐ `73.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#桌面端` `#AI工具` `#移动端` `#非AI/通用工具` `#出海` `#V2EX` `#Google` `#DeepSeek`
+- **💡 核心概要 / What It Is**: 一款原生 Swift 写的 macOS 应用，把视频拖进去不到 1 分钟换成另一种语言，保留原片音色并压好双语字幕（目前中英互译）。
+- **💰 商业模式与变现 / Business Logic**: 针对云端 AI 配音按分钟收费、声音同质化、手动流程耗时的痛点，主打视频不上传的本机处理；纯字幕永久免费，配音每视频前 3 分钟免费，买断版首发 ¥69、之后 ¥129，无订阅。
+- **🎯 推荐与借鉴 / Takeaway**: 开发者公开了本机视频配音工具的技术栈、性能数据和买断定价，对做本地化 AI 桌面产品的开发者有工程与定价参考。
 
-### 9. [chrome-live-for-antigravity 开源：零依赖 Chrome 桥接插件，复用已登录标签页](https://www.v2ex.com/t/1260305#reply0)
+### 7. [拾页（Shiye）0.4.3 上架 Chrome 商店：100% 本地的正文全文检索浏览记忆插件](https://www.v2ex.com/t/1260557#reply0)
 
-- **原标题 / Original**: 开源了一个 Google Antigravity（反重力）零依赖 Chrome 桥接与内联实时画框插件，直接复用已登录标签页
-- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#AI工具` `#Chrome插件` `#GitHub` `#Google`
-- **💡 核心概要 / What It Is**: 一款面向 Google Antigravity 的 Chrome 桥接与内联实时画框插件，GPL-3.0 开源。【痛点逻辑】按 Alt+Shift+L 一键托管当前标签页，直接复用已登录 Chrome/Edge，免去无头沙箱重复登录和人机验证；对话流 0 Token 实时画框支持远程点击、拉框圈选网页元素。
-- **🎯 推荐与借鉴 / Takeaway**: 作者开源的 Chrome 桥接插件解决 AI 浏览器沙箱重复登录痛点，批处理实测省 83.9% Token，工程实现可借鉴。
+- **原标题 / Original**: 做了一个 100% 本地的 Chrome 浏览记忆插件：关掉未读标签不怕忘，支持按正文关键词找回（无需账号）
+- **评分 / Signal Score**: ⭐ `72.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#Chrome插件` `#开源/仓库` `#独立开发` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一款 100% 本地的 Chrome 浏览记忆插件，解决关掉未读标签后找回网页的问题。【商业/痛点逻辑】浏览器自带历史只能搜标题和 URL，作者用原生 ES Modules + IndexedDB + Mozilla Readability 实现正文存档与全文检索，支持中文片段、英文拼写容错和片段高亮，无需账号、无 API Key、无默认遥测。
+- **🎯 推荐与借鉴 / Takeaway**: 作者自述了从浏览器记忆痛点出发的插件设计与权限取舍，适合参考本地化小工具的工程与隐私边界处理。
 
-### 10. [rvoip 开源 Rust VoIP 全栈：SIP/WebRTC/语音 AI 共用一个通话模型](https://github.com/eisenzopf/rvoip)
+### 8. [Page Agent Lite 开源：受 Hermes 启发的会记经验 AI 浏览器插件](https://www.v2ex.com/t/1260543#reply0)
 
-- **原标题 / Original**: Rvoip: VoIP stack in Rust
+- **原标题 / Original**: [开源] 受 Hermes 启发，做了个会记经验的 AI 浏览器插件
 - **评分 / Signal Score**: ⭐ `71.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#开源/仓库` `#非AI/通用工具` `#AI工具` `#GitHub`
-- **💡 核心概要 / What It Is**: rvoip 是一个 MIT 协议的 Rust 库，用于构建通信应用，SIP、RTP、WebRTC、QUIC/WebTransport/WebSocket 和语音 AI agent 共用一套通话模型，信令、媒体、编解码、NAT 穿透全部内置，无需单独部署 SIP 服务器或媒体服务器。
+- **标签 / Tags**: `#开源神器` `#AI工具` `#Chrome插件` `#开源/仓库` `#GitHub` `#V2EX`
+- **💡 核心概要 / What It Is**: 一款 Chrome / Edge 浏览器插件 Page Agent Lite，在侧栏下达指令后可自动读页面、填表、点击、翻页。
+- **💰 商业模式与变现 / Business Logic**: 源自作者做在线试题时来回切换 AI 的痛点，任务完成后会把经验步骤存在本机供下次复用，不训练模型。
+- **🎯 推荐与借鉴 / Takeaway**: 作者分享了自己开发的开源浏览器自动化插件，本地记忆方案和不依赖后端的设计思路值得借鉴。
 
-### 11. [Pontia 开源：Grok Bot 平替，用主 Bot 并行管理多个编程 Agent](https://www.v2ex.com/t/1260362#reply0)
+### 9. [涟漪（Ripple）v0.1.31 上线：免费无广的安卓防冲动戒手机工具](https://www.v2ex.com/t/1260525#reply0)
 
-- **原标题 / Original**: [开源] 做了一个 Grok Bot 平替
-- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🛠 开源基础设施 / Open Source
-- **标签 / Tags**: `#开源神器` `#AI工具` `#开源/仓库` `#自动化` `#独立开发` `#V2EX` `#GitHub`
-- **💡 核心概要 / What It Is**: 开源项目 Pontia，一个主 Bot 模式的多 Agent 管理工具，主 Bot 拆解需求并并行管理 Codex、Claude Code、Grok Build、Antigravity、Pi、Kiro 等会话。
-- **🎯 推荐与借鉴 / Takeaway**: 作者基于自己的 Agent 远程控制项目开源了一个 Grok Bot 平替，多 Agent 并行管理与远程接管思路对多开开发者有工程借鉴。
+- **原标题 / Original**: 受够锁机软件收费和冲动卸载，给安卓写了个免费无广的防冲动戒手机工具：涟漪（Ripple）
+- **评分 / Signal Score**: ⭐ `70.0` / 100 | **分类**: 🚀 新出海产品 / Products
+- **标签 / Tags**: `#新出海产品` `#非AI/通用工具` `#移动端` `#独立开发` `#开源/仓库` `#V2EX` `#GitHub`
+- **💡 核心概要 / What It Is**: 一款安卓本地戒手机工具涟漪（Ripple），免费、无广告、免注册，规则与拦截记录仅存本机，当前版本 v0.1.31。
+- **💰 商业模式与变现 / Business Logic**: 作者不满现有锁机软件弹窗开会员和易被冲动卸载，主打三个防绕过设计：15 分钟冷静期、按开机单调时钟计时防改系统时间、以及仅拦截微信视频号、朋友圈、小程序和 QQ 频道而保留聊天与支付。
+- **🎯 推荐与借鉴 / Takeaway**: 作者针对现有锁机工具的付费墙和防卸载缺陷自建本地免费方案，防绕过设计与不做一刀切的拦截思路值得同类工具开发者参考。
 
 ---
 
 ## 历史归档 (Historical Archives)
 
-- [📅 2026-11-27 情报精选 (11 篇)](archives/2026-11-27.md)
+- [📅 2026-11-28 情报精选 (9 篇)](archives/2026-11-28.md)
+- [📅 2026-11-27 情报精选 (13 篇)](archives/2026-11-27.md)
 - [📅 2026-11-26 情报精选 (11 篇)](archives/2026-11-26.md)
 - [📅 2026-11-25 情报精选 (10 篇)](archives/2026-11-25.md)
 - [📅 2026-11-24 情报精选 (14 篇)](archives/2026-11-24.md)
